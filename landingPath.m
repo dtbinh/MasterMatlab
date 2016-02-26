@@ -20,7 +20,7 @@ DescentBoxS = 20;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [500 100 20 0 0 0]';
+x0 = [400 0 20 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -141,9 +141,13 @@ if mod(IT,2)==0
 else
     [Lnett,Inett] = max([Tnett(1) -1 Tnett(3) -1]);
 end
+XWP4ax = x0(1)-WPNED(1,4);
+XWP4ay = x0(2)-WPNED(2,4);
+dXWP4 = sqrt(XWP4ax^2+XWP4ay^2);
+
 Path = x0(1:3);
 tt = 1;
-if abs(gamma(Inett)*rad2deg)>3
+if (abs(gamma(Inett)*rad2deg)>3)
     if gamma(Inett)<0
         WPGlide = -descent;
     else
@@ -213,6 +217,20 @@ if abs(gamma(Inett)*rad2deg)>3
 %     if abs(h-100*tan(descent*deg2rad))<Tmerk(3,Inett)
 %     end
 %     end
+elseif dXWP4<2*R_min
+    
+    TPB1bx = Tmerk(1,Inett);
+    TPB1ax = x0(1)-TPB1bx;
+    TPB1by = Tmerk(2,Inett);
+    TPB1ay = x0(2)-TPB1by;
+    Tb = sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
+    TPB1merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
+    Tb = -sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
+    TPB2merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
+    Tb = sqrt(DescentBoxS^2/(TPB1ax^2+TPB1ay^2));
+    WPB2 = [TPB1ax*Tb+TPB2merk(1);TPB1ay*Tb+TPB2merk(2);x0(3)];
+    tt = 2;
+    Path(:,tt) = WPB2;
 end
 tt = tt+1;
 Path(:,tt) = Tmerk(:,Inett);
