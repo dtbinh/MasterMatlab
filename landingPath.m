@@ -16,10 +16,11 @@ a3 = 100;
 Rl = 40;
 nettH = 0*deg2rad;
 DescentBoxW = 20;
+DescentBoxS = 20;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [500 200 0 0 0 0]';
+x0 = [500 100 20 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -141,6 +142,7 @@ else
     [Lnett,Inett] = max([Tnett(1) -1 Tnett(3) -1]);
 end
 Path = x0(1:3);
+tt = 1;
 if abs(gamma(Inett)*rad2deg)>3
     if gamma(Inett)<0
         WPGlide = -descent;
@@ -156,7 +158,7 @@ if abs(gamma(Inett)*rad2deg)>3
     TPB1merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
     Tb = -sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
     TPB2merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
-    Tb = sqrt(DescentBoxW^2/(TPB1ax^2+TPB1ay^2));
+    Tb = sqrt(DescentBoxS^2/(TPB1ax^2+TPB1ay^2));
 %     if abs(x0(3)-100*tan(descent*deg2rad))<Tmerk(3,Inett)
 %         % Move towards T
 %         WPB4 = [TPB1ax*Tb+TPB2merk(1);TPB1ay*Tb+TPB2merk(2);x0(3)];
@@ -167,7 +169,7 @@ if abs(gamma(Inett)*rad2deg)>3
 %     else
     WPB1 = [TPB1ax*Tb+TPB1merk(1);TPB1ay*Tb+TPB1merk(2);x0(3)+100*tan(WPGlide*deg2rad)];
     WPB2 = [TPB1ax*Tb+TPB2merk(1);TPB1ay*Tb+TPB2merk(2);x0(3)];
-    Tb = sqrt(4*DescentBoxW^2/(TPB1ax^2+TPB1ay^2));
+    Tb = sqrt((DescentBoxW+DescentBoxS)^2/(TPB1ax^2+TPB1ay^2));
     WPB3 = [TPB1ax*Tb+TPB1merk(1);TPB1ay*Tb+TPB1merk(2);WPB1(3)];
     WPB4 = [TPB1ax*Tb+TPB2merk(1);TPB1ay*Tb+TPB2merk(2);x0(3)];
     dWPB3 = sqrt((Tmerk(1,Inett)-WPB3(1))^2+(Tmerk(2,Inett)-WPB3(2))^2);
@@ -182,9 +184,9 @@ if abs(gamma(Inett)*rad2deg)>3
     Path(:,tt) = WPB3;
     odd = true;
     while(~gotoT)
-       if (mod(odd,2)==0 && abs(atan2(Tmerk(3,Inett)-WPB2(3),dWPB2))*rad2deg<3)
+       if (odd && abs(atan2(Tmerk(3,Inett)-WPB2(3),dWPB2))*rad2deg<3)
            gotoT = true;
-       elseif (mod(odd,2)==1 && abs(atan2(Tmerk(3,Inett)-WPB3(3),dWPB3))*rad2deg<3)
+       elseif (~odd && abs(atan2(Tmerk(3,Inett)-WPB3(3),dWPB3))*rad2deg<3)
            gotoT = true;
        else
            if odd
@@ -203,6 +205,7 @@ if abs(gamma(Inett)*rad2deg)>3
                tt = tt+1;
                Path(:,tt) = WPB2;
                odd = true;
+               abs(atan2(Tmerk(3,Inett)-WPB2(3),dWPB2))*rad2deg
            end
        end
        
@@ -213,6 +216,14 @@ if abs(gamma(Inett)*rad2deg)>3
 end
 tt = tt+1;
 Path(:,tt) = Tmerk(:,Inett);
+tt = tt+1;
+Path(:,tt) = WPNED(:,4);
+tt = tt+1;
+Path(:,tt) = WPNED(:,3);
+tt = tt+1;
+Path(:,tt) = WPNED(:,2);
+tt = tt+1;
+Path(:,tt) = WPNED(:,1);
 % %% Initi Dubins
 % 
 % xs = x0(1);
@@ -271,24 +282,24 @@ plot3(loiter2(2,:),loiter2(1,:),loiter2(3,:),'x');
 figure(2);
 plot(WPNED(2,:),WPNED(1,:));
 figure(3)
-plot3(WPNED(2,:),WPNED(1,:),WPNED(3,:),'-x');
+% plot3(WPNED(2,:),WPNED(1,:),WPNED(3,:),'-x');
 hold on;
-plot3(loiter1NED(2,:),loiter1NED(1,:),loiter1NED(3,:),'x');
-plot3(loiter2NED(2,:),loiter2NED(1,:),loiter2NED(3,:),'x');
+% plot3(loiter1NED(2,:),loiter1NED(1,:),loiter1NED(3,:),'x');
+% plot3(loiter2NED(2,:),loiter2NED(1,:),loiter2NED(3,:),'x');
 plot3(x0(2),x0(1),x0(3),'o');
 plot3(cl1NED(2,:),cl1NED(1,:),cl1NED(3,:));
 plot3(cl2NED(2,:),cl2NED(1,:),cl2NED(3,:));
-plot3(Tmerk1(2,:),Tmerk1(1,:),Tmerk1(3,:),'x');
-plot3(Tmerk2(2,:),Tmerk2(1,:),Tmerk2(3,:),'x');
-plot3(Tmerk3(2,:),Tmerk3(1,:),Tmerk3(3,:),'x');
-plot3(Tmerk4(2,:),Tmerk4(1,:),Tmerk4(3,:),'x');
-plot3(WPB1(2,:),WPB1(1,:),WPB1(3,:),'x');
-plot3(WPB2(2,:),WPB2(1,:),WPB2(3,:),'x');
-plot3(WPB3(2,:),WPB3(1,:),WPB3(3,:),'x');
-plot3(WPB4(2,:),WPB4(1,:),WPB4(3,:),'x');
-plot3(TPB1merk(2,:),TPB1merk(1,:),TPB1merk(3,:),'x');
-plot3(TPB2merk(2,:),TPB2merk(1,:),TPB2merk(3,:),'x');
-plot3(Path(2,:),Path(1,:),Path(3,:));
+% plot3(Tmerk1(2,:),Tmerk1(1,:),Tmerk1(3,:),'x');
+% plot3(Tmerk2(2,:),Tmerk2(1,:),Tmerk2(3,:),'x');
+% plot3(Tmerk3(2,:),Tmerk3(1,:),Tmerk3(3,:),'x');
+% plot3(Tmerk4(2,:),Tmerk4(1,:),Tmerk4(3,:),'x');
+% plot3(WPB1(2,:),WPB1(1,:),WPB1(3,:),'x');
+% plot3(WPB2(2,:),WPB2(1,:),WPB2(3,:),'x');
+% plot3(WPB3(2,:),WPB3(1,:),WPB3(3,:),'x');
+% plot3(WPB4(2,:),WPB4(1,:),WPB4(3,:),'x');
+% plot3(TPB1merk(2,:),TPB1merk(1,:),TPB1merk(3,:),'x');
+% plot3(TPB2merk(2,:),TPB2merk(1,:),TPB2merk(3,:),'x');
+plot3(Path(2,:),Path(1,:),Path(3,:),'-x');
 % figure(4)
 % plot(ys,xs,'x');
 % hold on;
