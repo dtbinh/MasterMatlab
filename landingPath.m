@@ -20,7 +20,7 @@ DescentBoxS = 20;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [400 0 20 0 0 0]';
+x0 = [400 200 40 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
