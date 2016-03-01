@@ -16,7 +16,7 @@ a3 = 100;
 Rl = 40;
 nettH = 0*deg2rad;
 DescentBoxW = 20;
-DescentBoxS = 20;
+DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
@@ -168,40 +168,74 @@ if (abs(gamma(Inett)*rad2deg)>3)
     WPC = [c(1,Inett)*tc+c(2,Inett);c(3,Inett)*tc+c(4,Inett);x0(3)];
     WPS0 = [c(1,Inett)*tw+c(2,Inett);c(3,Inett)*tw+c(4,Inett);x0(3)];
     theta0 = atan2(WPS0(2)-WPC(2),WPS0(1)-WPC(1));
-    thetat = 0:(2*pi)/(N-1):w*pi;
+    thetat = 0:(2*pi)/(N-1):2*pi;
     xnn = WPC(1)+R_min*cos(theta0+thetat(2));
     ynn = WPC(2)+R_min*sin(theta0+thetat(2));
     D = sqrt((xnn-WPS0(1))^2+(ynn-WPS0(2))^2);
-    znn = WPC(3)+D*tan(WPGlide);
+    znn = WPC(3)+D*tan(WPGlide*deg2rad);
     WPS1 = [xnn;ynn;znn];
+    tt = tt +1;
+    Path(:,tt) = WPS0;
+    tt = tt + 1;
+    Path(:,tt) = WPS1;
     n = 3;
+    TmerkWPCbx = Tmerk(1,Inett);
+    TmerkWPCax = WPC(1)-TmerkWPCbx;
+    TmerkWPCby = Tmerk(2,Inett);
+    TmerkWPCay = WPC(2)-TmerkWPCby;
+    tExit = -sqrt(R_min^2/(TmerkWPCax^2+TmerkWPCay^2));
+    cExit = [TmerkWPCay*tExit+WPC(1);-TmerkWPCax*tExit+WPC(2);WPS1(3)];
+    DcExit = sqrt((Tmerk(1,Inett)-cExit(1))^2+(Tmerk(2,Inett)-cExit(2))^2);
+    gammaExit = atan2(Tmerk(1,Inett)-cExit(3),DcExit);
     % Find exit WP. It's perpenticular to c
     while(~gotoT)
-       if () 
+       if (abs(atan2(Tmerk(3,Inett)-cExit(3),DcExit))*rad2deg<3)
+           % Create path to cExit at the same height
+           theta0 = atan2(WPS1(2)-WPC(2),WPS1(1)-WPC(1))
+           theta = atan2(cExit(2)-WPC(2),cExit(1)-WPC(1))
+           thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
+           turn = [WPC(1) + R_min*cos(theta0+thetat);WPC(2)+R_min*sin(theta0+thetat);ones(1,N)*cExit(3)];
+           Path = [Path turn];
+           gotoT = true;
+       else
+           WPS0 = WPS1;
+           xnn = WPC(1)+R_min*cos(theta0+thetat(n));
+           ynn = WPC(2)+R_min*sin(theta0+thetat(n));
+           D = sqrt((xnn-WPS0(1))^2+(ynn-WPS0(2))^2);
+           znn = WPS0(3)+D*tan(WPGlide*deg2rad);
+           WPS1 = [xnn;ynn;znn];
+           cExit(3) = WPS1(3);
+           tt = tt+1;
+           Path(:,tt) = WPS1;
+           n = n+1;
+           % n is periodic
+           if n>N
+               n = 1;
+           end
+       end
     end
 
-elseif dXWP4<2*R_min
-    
-    TPB1bx = Tmerk(1,Inett);
-    TPB1ax = x0(1)-TPB1bx;
-    TPB1by = Tmerk(2,Inett);
-    TPB1ay = x0(2)-TPB1by;
-    Tb = sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
-    TPB1merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
-    Tb = -sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
-    TPB2merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
-    Tb = sqrt(DescentBoxS^2/(TPB1ax^2+TPB1ay^2));
-    WPB2 = [TPB1ax*Tb+TPB2merk(1);TPB1ay*Tb+TPB2merk(2);x0(3)];
-    tt = 2;
-    Path(:,tt) = WPB2;
+% elseif dXWP4<2*R_min
+%     
+%     TPB1bx = Tmerk(1,Inett);
+%     TPB1ax = x0(1)-TPB1bx;
+%     TPB1by = Tmerk(2,Inett);
+%     TPB1ay = x0(2)-TPB1by;
+%     Tb = sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
+%     TPB1merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
+%     Tb = -sqrt(DescentBoxL^2/(TPB1ax^2+TPB1ay^2));
+%     TPB2merk = [TPB1ay*Tb+TPB1bx;-TPB1ax*Tb+TPB1by;Tmerk(3,Inett)];
+%     Tb = sqrt(DescentBoxS^2/(TPB1ax^2+TPB1ay^2));
+%     WPB2 = [TPB1ax*Tb+TPB2merk(1);TPB1ay*Tb+TPB2merk(2);x0(3)];
+%     tt = 2;
+%     Path(:,tt) = WPB2;
 end
-tt = tt+1;
+tt = length(Path)+1;
 Path(:,tt) = Tmerk(:,Inett);
 theta0 = atan2(Tmerk(2,Inett)-loiter1NED(2),Tmerk(1,Inett));
 theta = atan2(WPNED(2,4)-loiter1NED(2),WPNED(1,4)-loiter1NED(1));
 thetat = theta0:(theta)/(N-1):theta;
 turn = [loiter1NED(1) + Rl*cos(thetat);loiter1NED(2)+Rl*sin(thetat);ones(1,N)*WPNED(3,4)];
-tt = tt+1;
 Path = [Path turn];
 tt = length(Path)+1;
 Path(:,tt) = WPNED(:,3);
@@ -237,6 +271,7 @@ plot3(cl2NED(2,:),cl2NED(1,:),cl2NED(3,:));
 % plot3(TPB1merk(2,:),TPB1merk(1,:),TPB1merk(3,:),'x');
 % plot3(TPB2merk(2,:),TPB2merk(1,:),TPB2merk(3,:),'x');
 plot3(Path(2,:),Path(1,:),Path(3,:),'-x');
+plot3(cExit(2,:),cExit(1,:),cExit(3,:),'o');
 % figure(4)
 % plot(ys,xs,'x');
 % hold on;
