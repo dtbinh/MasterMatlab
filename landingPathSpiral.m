@@ -20,7 +20,7 @@ DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [400 200 40 0 0 0]';
+x0 = [-400 -200 20 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -196,6 +196,7 @@ if (abs(gamma(Inett)*rad2deg)>3)
            thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
            turn = [WPC(1) + R_min*cos(theta0+thetat);WPC(2)+R_min*sin(theta0+thetat);ones(1,N)*cExit(3)];
            Path = [Path turn];
+           tt = length(Path);
            gotoT = true;
        else
            WPS0 = WPS1;
@@ -230,12 +231,17 @@ if (abs(gamma(Inett)*rad2deg)>3)
 %     tt = 2;
 %     Path(:,tt) = WPB2;
 end
-tt = length(Path)+1;
+tt = tt+1;
 Path(:,tt) = Tmerk(:,Inett);
-theta0 = atan2(Tmerk(2,Inett)-loiter1NED(2),Tmerk(1,Inett));
-theta = atan2(WPNED(2,4)-loiter1NED(2),WPNED(1,4)-loiter1NED(1));
-thetat = theta0:(theta)/(N-1):theta;
-turn = [loiter1NED(1) + Rl*cos(thetat);loiter1NED(2)+Rl*sin(thetat);ones(1,N)*WPNED(3,4)];
+if mod(Inett,2)==1
+    loiterNED = loiter1NED;
+else
+    loiterNED = loiter2NED;
+end
+theta0 = atan2(Tmerk(2,Inett)-loiterNED(2),Tmerk(1,Inett)-loiterNED(1));
+theta = atan2(WPNED(2,4)-loiterNED(2),WPNED(1,4)-loiterNED(1));
+thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
+turn = [loiterNED(1) + Rl*cos(theta0+thetat);loiterNED(2)+Rl*sin(theta0+thetat);ones(1,N)*WPNED(3,4)];
 Path = [Path turn];
 tt = length(Path)+1;
 Path(:,tt) = WPNED(:,3);
@@ -271,7 +277,6 @@ plot3(cl2NED(2,:),cl2NED(1,:),cl2NED(3,:));
 % plot3(TPB1merk(2,:),TPB1merk(1,:),TPB1merk(3,:),'x');
 % plot3(TPB2merk(2,:),TPB2merk(1,:),TPB2merk(3,:),'x');
 plot3(Path(2,:),Path(1,:),Path(3,:),'-x');
-plot3(cExit(2,:),cExit(1,:),cExit(3,:),'o');
 % figure(4)
 % plot(ys,xs,'x');
 % hold on;
