@@ -154,6 +154,11 @@ dXWP4 = sqrt(XWP4ax^2+XWP4ay^2);
 tpn = sqrt(Rl^2/(c(1,Inett)^2+c(3,Inett)^2));
 PN = [c(1,Inett)*tpn+c(2,Inett);c(3,Inett)*tpn+c(4,Inett);x0(3)];
 %TODO Create TmerkOS ansPphi
+
+% Define start circle :TODO Find which direction the OS should be
+% OS = [x0(1)-R_min*cos(]
+TmerkOSbx = Tmerk(1,Inett);
+TmerkOSax = 
 Path = x0(1:3);
 tt = 1;
 if (abs(gamma(Inett)*rad2deg)>3)
