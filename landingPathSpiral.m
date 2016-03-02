@@ -7,8 +7,8 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 %% Input parametere fra Neptus
-nett = [0 0 3]';
-alpha = 0;
+nett = [0 0 -3]';
+alpha = 3;
 descent = 3;
 a1 = 10;
 a2 = 300;
@@ -244,55 +244,65 @@ thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
 turn = [loiterNED(1) + Rl*cos(theta0+thetat);loiterNED(2)+Rl*sin(theta0+thetat);ones(1,N)*WPNED(3,4)];
 Path = [Path turn];
 %% Construct dubin landing path
-%b
-WP34bx = WP(1,3);
-WP34ax = WP(1,4)-WP34bx;
-WP34bz = WP(3,3);
-WP34az = WP(3,4)-WP34bz;
-b = sqrt(WP34ax^2+WP34az^2);
-%c
-WP32bx = WP(1,3);
-WP32ax = WP(1,2)-WP32bx;
-WP32bz = WP(3,3);
-WP32az = WP(3,2)-WP32bz;
-c = sqrt(WP32ax^2+WP32az^2);
-%a
-WP42bx = WP(1,4);
-WP42ax = WP(1,2)-WP42bx;
-WP42bz = WP(3,4);
-WP42az = WP(3,2)-WP42bz;
-a = sqrt(WP42ax^2+WP42az^2);
-
-
 R1 = 5;
-R_min = 1;
-twp = sqrt(R1/(WP34ax^2+WP34az^2));
-WP3C0 = [WP34ax*twp+WP34bx;0;WP34az*twp+WP34bz];
-if WP34ax>0
-    twpc = -sqrt(R_min^2/(WP34ax^2+WP34az^2));
-else
-    twpc = sqrt(R_min^2/(WP34ax^2+WP34az^2));
+R_min = 20;
+
+%b
+for i=2:-1:2
+    WP34bx = WP(1,i+1);
+    WP34ax = WP(1,i+2)-WP34bx;
+    WP34bz = WP(3,i+1);
+    WP34az = WP(3,i+2)-WP34bz;
+    b = sqrt(WP34ax^2+WP34az^2);
+    %c
+    WP32bx = WP(1,i+1);
+    WP32ax = WP(1,i)-WP32bx;
+    WP32bz = WP(3,i+1);
+    WP32az = WP(3,i)-WP32bz;
+    c = sqrt(WP32ax^2+WP32az^2);
+    %a
+    WP42bx = WP(1,i+2);
+    WP42ax = WP(1,i)-WP42bx;
+    WP42bz = WP(3,i+2);
+    WP42az = WP(3,i)-WP42bz;
+    a = sqrt(WP42ax^2+WP42az^2);
+
+
+
+    twp = sqrt(R1/(WP34ax^2+WP34az^2));
+    WP3C0 = [WP34ax*twp+WP34bx;0;WP34az*twp+WP34bz];
+    if i==2
+        twpc = -sqrt(R_min^2/(WP34ax^2+WP34az^2));
+    else
+        twpc = sqrt(R_min^2/(WP34ax^2+WP34az^2));
+    end
+    WP3CC = [WP34az*twpc+WP3C0(1);0;-WP34ax*twpc+WP3C0(3)];
+    % R3 =  R2*tan(pi/2-alphaWP);
+    WP3C2bx = WP3CC(1);
+    WP3C2ax = WP(1,i)-WP3C2bx;
+    WP3C2bz = WP3CC(3);
+    WP3C2az = WP(3,i)-WP3C2bz;
+
+    if i==2
+        twp = -sqrt(R_min^2/(WP3C2ax^2+WP3C2az^2));
+    else
+        twp = sqrt(R_min^2/(WP3C2ax^2+WP3C2az^2));
+    end
+
+    WP3C1 = [-WP3C2az*twp+WP3C2bx;0;-WP3C2ax*twp+WP3C2bz]
+    theta0 = atan2(WP3C0(1)-WP3CC(1),WP3C0(3)-WP3CC(3));
+    theta = atan2(WP3C1(1)-WP3CC(1),WP3C1(3)-WP3CC(3));
+    thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
+    turn = [WP3CC(1) + R_min*sin(theta0+thetat);zeros(1,N);(WP3CC(3)+R_min*cos(theta0+thetat))];
+    %Rotated into place
+    %TODO: Find a better solution
+    for kk=1:length(turn)
+        turn(:,kk) = R*turn(:,kk);
+    end 
+    Path = [Path turn];
+%     tt = length(Path)+1;
+%     Path(:,tt) = WPNED(:,i);
 end
-WP3CC = [WP34az*twpc+WP3C0(1);0;-WP34ax*twpc+WP3C0(3)];
-% R3 =  R2*tan(pi/2-alphaWP);
-WP3C2bx = WP3CC(1);
-WP3C2ax = WP(1,2)-WP3C2bx;
-WP3C2bz = WP3CC(3);
-WP3C2az = WP(3,2)-WP3C2bz;
-
-twp = -sqrt(R_min^2/(WP3C2ax^2+WP3C2az^2));
-
-WP3C1 = [WP3C2az*twp+WP3C2bx;0;-WP3C2ax*twp+WP3C2bz]
-theta0 = atan2(WP3C0(1)-WP3CC(1),WP3C0(3)-WP3CC(3));
-theta = atan2(WP3C1(1)-WP3CC(1),WP3C1(3)-WP3CC(3));
-thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
-turn = [WP3CC(1) + R_min*sin(theta0+thetat);zeros(1,N);(WP3CC(3)+R_min*cos(theta0+thetat))];
-%Rotated into place
-%TODO: Find a better solution
-for i=1:length(turn)
-    turn(:,i) = R*turn(:,i);
-end 
-Path = [Path turn];
 tt = length(Path)+1;
 Path(:,tt) = WPNED(:,2);
 tt = tt+1;
