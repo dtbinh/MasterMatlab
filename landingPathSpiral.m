@@ -14,13 +14,13 @@ a1 = 10;
 a2 = 300;
 a3 = 100;
 Rl = 40;
-nettH = 0*deg2rad;
+nettH = 66*deg2rad;
 DescentBoxW = 20;
 DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [400 200 40 0 0 0]';
+x0 = [400 200 -40 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -33,8 +33,8 @@ N = 16;
 %% Nett in net frame
 % TODO: Move the nett inbetween two waypoints.
 w1 = nett;
-w2 = nett + [a1 0 a1*tan(alpha*deg2rad)]';
-w3 = w2 + [a2 0 a2*tan(descent*deg2rad)]';
+w2 = nett + [a1 0 -a1*tan(alpha*deg2rad)]';
+w3 = w2 + [a2 0 -a2*tan(descent*deg2rad)]';
 w4 = w3 + [a3 0 0]';
 % Rotation matrix from nett to NED
 R = [cos(nettH) -sin(nettH) 0;sin(nettH) cos(nettH) 0;0 0 1];
@@ -191,8 +191,8 @@ if (abs(gamma(Inett)*rad2deg)>3)
     while(~gotoT)
        if (abs(atan2(Tmerk(3,Inett)-cExit(3),DcExit))*rad2deg<3)
            % Create path to cExit at the same height
-           theta0 = atan2(WPS1(2)-WPC(2),WPS1(1)-WPC(1))
-           theta = atan2(cExit(2)-WPC(2),cExit(1)-WPC(1))
+           theta0 = atan2(WPS1(2)-WPC(2),WPS1(1)-WPC(1));
+           theta = atan2(cExit(2)-WPC(2),cExit(1)-WPC(1));
            thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
            turn = [WPC(1) + R_min*cos(theta0+thetat);WPC(2)+R_min*sin(theta0+thetat);ones(1,N)*cExit(3)];
            Path = [Path turn];
@@ -243,9 +243,57 @@ theta = atan2(WPNED(2,4)-loiterNED(2),WPNED(1,4)-loiterNED(1));
 thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
 turn = [loiterNED(1) + Rl*cos(theta0+thetat);loiterNED(2)+Rl*sin(theta0+thetat);ones(1,N)*WPNED(3,4)];
 Path = [Path turn];
+%% Construct dubin landing path
+%b
+WP34bx = WP(1,3);
+WP34ax = WP(1,4)-WP34bx;
+WP34bz = WP(3,3);
+WP34az = WP(3,4)-WP34bz;
+b = sqrt(WP34ax^2+WP34az^2);
+%c
+WP32bx = WP(1,3);
+WP32ax = WP(1,2)-WP32bx;
+WP32bz = WP(3,3);
+WP32az = WP(3,2)-WP32bz;
+c = sqrt(WP32ax^2+WP32az^2);
+%a
+WP42bx = WP(1,4);
+WP42ax = WP(1,2)-WP42bx;
+WP42bz = WP(3,4);
+WP42az = WP(3,2)-WP42bz;
+a = sqrt(WP42ax^2+WP42az^2);
+
+
+R1 = 5;
+R_min = 1;
+twp = sqrt(R1/(WP34ax^2+WP34az^2));
+WP3C0 = [WP34ax*twp+WP34bx;0;WP34az*twp+WP34bz];
+if WP34ax>0
+    twpc = -sqrt(R_min^2/(WP34ax^2+WP34az^2));
+else
+    twpc = sqrt(R_min^2/(WP34ax^2+WP34az^2));
+end
+WP3CC = [WP34az*twpc+WP3C0(1);0;-WP34ax*twpc+WP3C0(3)];
+% R3 =  R2*tan(pi/2-alphaWP);
+WP3C2bx = WP3CC(1);
+WP3C2ax = WP(1,2)-WP3C2bx;
+WP3C2bz = WP3CC(3);
+WP3C2az = WP(3,2)-WP3C2bz;
+
+twp = -sqrt(R_min^2/(WP3C2ax^2+WP3C2az^2));
+
+WP3C1 = [WP3C2az*twp+WP3C2bx;0;-WP3C2ax*twp+WP3C2bz]
+theta0 = atan2(WP3C0(1)-WP3CC(1),WP3C0(3)-WP3CC(3));
+theta = atan2(WP3C1(1)-WP3CC(1),WP3C1(3)-WP3CC(3));
+thetat = 0:(pipi(theta-theta0))/(N-1):pipi(theta-theta0);
+turn = [WP3CC(1) + R_min*sin(theta0+thetat);zeros(1,N);(WP3CC(3)+R_min*cos(theta0+thetat))];
+%Rotated into place
+%TODO: Find a better solution
+for i=1:length(turn)
+    turn(:,i) = R*turn(:,i);
+end 
+Path = [Path turn];
 tt = length(Path)+1;
-Path(:,tt) = WPNED(:,3);
-tt = tt+1;
 Path(:,tt) = WPNED(:,2);
 tt = tt+1;
 Path(:,tt) = WPNED(:,1);
@@ -259,44 +307,10 @@ plot3(loiter2(2,:),loiter2(1,:),loiter2(3,:),'x');
 figure(2);
 plot(WPNED(2,:),WPNED(1,:));
 figure(3)
-% plot3(WPNED(2,:),WPNED(1,:),WPNED(3,:),'-x');
 hold on;
-% plot3(loiter1NED(2,:),loiter1NED(1,:),loiter1NED(3,:),'x');
-% plot3(loiter2NED(2,:),loiter2NED(1,:),loiter2NED(3,:),'x');
-plot3(x0(2),x0(1),x0(3),'o');
-plot3(cl1NED(2,:),cl1NED(1,:),cl1NED(3,:));
-plot3(cl2NED(2,:),cl2NED(1,:),cl2NED(3,:));
-% plot3(Tmerk1(2,:),Tmerk1(1,:),Tmerk1(3,:),'x');
-% plot3(Tmerk2(2,:),Tmerk2(1,:),Tmerk2(3,:),'x');
-% plot3(Tmerk3(2,:),Tmerk3(1,:),Tmerk3(3,:),'x');
-% plot3(Tmerk4(2,:),Tmerk4(1,:),Tmerk4(3,:),'x');
-% plot3(WPB1(2,:),WPB1(1,:),WPB1(3,:),'x');
-% plot3(WPB2(2,:),WPB2(1,:),WPB2(3,:),'x');
-% plot3(WPB3(2,:),WPB3(1,:),WPB3(3,:),'x');
-% plot3(WPB4(2,:),WPB4(1,:),WPB4(3,:),'x');
-% plot3(TPB1merk(2,:),TPB1merk(1,:),TPB1merk(3,:),'x');
-% plot3(TPB2merk(2,:),TPB2merk(1,:),TPB2merk(3,:),'x');
-plot3(Path(2,:),Path(1,:),Path(3,:),'-x');
-% figure(4)
-% plot(ys,xs,'x');
-% hold on;
-% 
-% quiver(p0(2),p0(1),p01(2),p01(1));
-% hold on;
-% plot(ycs,xcs,'x');
-% plot(yf,xf,'x');
-% plot(ycf,xcf,'x');
-% plot(cs(2,:),cs(1,:));
-% plot(cf(2,:),cf(1,:));
-% plot(csec(2,:),csec(1,:));
-% plot(cy,cx);
-% % plot(ychi,xchi,'o');
-% % plot(yn,xn,'o');
-% plot(PN(2),PN(1),'o');
-% plot(Tmerk(2),Tmerk(1),'o');
-% plot(OST(2,:),OST(1,:));
-% figure(5)
-% plot(cs(2,:),cs(1,:));
-% hold on;
-% plot(cf(2,:),cf(1,:));
-% plot(pf(2),pf(1),'x');
+plot3(x0(2),x0(1),-x0(3),'o');
+plot3(cl1NED(2,:),cl1NED(1,:),-cl1NED(3,:));
+plot3(cl2NED(2,:),cl2NED(1,:),-cl2NED(3,:));
+plot3(Path(2,:),Path(1,:),-Path(3,:),'-x');
+WP3CCNED = R*WP3CC;
+plot3(WP3CCNED(2),WP3CCNED(1),-WP3CCNED(3),'o');
