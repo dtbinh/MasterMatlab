@@ -20,7 +20,7 @@ DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [400 200 -40 0 0 0]';
+x0 = [400 200 -20 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -62,7 +62,7 @@ c1bx = loiter1NED(1);
 c1ax = x0(1)-c1bx;
 c1by = loiter1NED(2);
 c1ay = x0(2)-c1by;
-Tt = sqrt(Rl^2/(c1ax^2+c1ay^2));
+Tt = sqrt(RCsec^2/(c1ax^2+c1ay^2));
 Tmerk1 = [c1ay*Tt+c1bx;-c1ax*Tt+c1by;loiter1NED(3)];
 cT1bx = Tmerk1(1);
 cT1ax = x0(1)-cT1bx;
@@ -81,7 +81,7 @@ c2bx = loiter2NED(1);
 c2ax = x0(1)-c2bx;
 c2by = loiter2NED(2);
 c2ay = x0(2)-c2by;
-Tt = sqrt(Rl^2/(c2ax^2+c2ay^2));
+Tt = sqrt(RCsec^2/(c2ax^2+c2ay^2));
 Tmerk2 = [c2ay*Tt+c2bx;-c2ax*Tt+c2by;loiter2NED(3)];
 cT2bx = Tmerk2(1);
 cT2ax = x0(1)-cT2bx;
@@ -100,7 +100,7 @@ c3bx = loiter1NED(1);
 c3ax = x0(1)-c3bx;
 c3by = loiter1NED(2);
 c3ay = x0(2)-c3by;
-Tt = -sqrt(Rl^2/(c3ax^2+c3ay^2));
+Tt = -sqrt(RCsec^2/(c3ax^2+c3ay^2));
 Tmerk3 = [c3ay*Tt+c3bx;-c3ax*Tt+c3by;loiter1NED(3)];
 cT3bx = Tmerk3(1);
 cT3ax = x0(1)-cT3bx;
@@ -119,7 +119,7 @@ c4bx = loiter2NED(1);
 c4ax = x0(1)-c4bx;
 c4by = loiter2NED(2);
 c4ay = x0(2)-c4by;
-Tt = -sqrt(Rl^2/(c4ax^2+c4ay^2));
+Tt = -sqrt(RCsec^2/(c4ax^2+c4ay^2));
 Tmerk4 = [c4ay*Tt+c4bx;-c4ax*Tt+c4by;loiter2NED(3)];
 cT4bx = Tmerk4(1);
 cT4ax = x0(1)-cT4bx;
@@ -151,7 +151,9 @@ end
 XWP4ax = x0(1)-WPNED(1,4);
 XWP4ay = x0(2)-WPNED(2,4);
 dXWP4 = sqrt(XWP4ax^2+XWP4ay^2);
-
+tpn = sqrt(Rl^2/(c(1,Inett)^2+c(3,Inett)^2));
+PN = [c(1,Inett)*tpn+c(2,Inett);c(3,Inett)*tpn+c(4,Inett);x0(3)];
+%TODO Create TmerkOS ansPphi
 Path = x0(1:3);
 tt = 1;
 if (abs(gamma(Inett)*rad2deg)>3)
