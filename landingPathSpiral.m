@@ -14,13 +14,13 @@ a1 = 10;
 a2 = 300;
 a3 = 100;
 Rl = 40;
-nettH = 66*deg2rad;
+nettH = 0*deg2rad;
 DescentBoxW = 20;
 DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [-400 -200 -139 0 0 0]';
+x0 = [400 200 -40 0 0 0]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -56,6 +56,8 @@ d = loiter2NED(3)+zeros(1,length(psi));
 cl2NED = [n;e;d];
 
 %% Find Tmerk
+RCsec = abs(Rl-R_min);
+
 c1bx = loiter1NED(1);
 c1ax = x0(1)-c1bx;
 c1by = loiter1NED(2);
