@@ -20,7 +20,7 @@ DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [500 60 -40 0 0 -40*deg2rad]';
+x0 = [400 0 -40 0 0 0*deg2rad]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -44,10 +44,37 @@ WP = [w1 w2 w3 w4];
 WPNED = [R*w1 R*w2 R*w3 R*w4];
 XS = [x0(1) x0(2) x0(3) x0(6)];
 XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
-Path = dubinsPath(XS,XF,R_min,Rl,N);
-% plot(Path(2,:),Path(1,:));
-% hold on;
-% plot(WPNED(2,4),WPNED(1,4),'x');
-% plot(x0(2),x0(1),'o');
-% axis equal
-% plot(WPNED(2,:),WPNED(1,:));
+[Path,OF,RightF,success] = dubinsPath(XS,XF,R_min,Rl,N);
+if ~success
+    % Need an extra WP
+    XF = [WPNED(1,2) WPNED(2,2) WPNED(3,2) nettH];
+    [Path1,~,~,~] = dubinsPath(XS,XF,R_min,Rl,N);
+    XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
+    XS = [WPNED(1,2) WPNED(2,2) WPNED(3,2) nettH];
+    [Path2,OF,RightF,success] = dubinsPath(XS,XF,R_min,Rl,N);
+    Path = [Path1 Path2];
+end    
+    
+    [Path,correctHeight] = glideslope(Path,XS(3),WPNED(3,4),descent*deg2rad);
+%     Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
+    
+
+
+    % tt = length(Path)+1;
+    % Path(:,tt) = WPNED(:,3);
+    % tt = tt+1;
+    % Path(:,tt) = WPNED(:,2);
+    % tt = tt+1;
+    % Path(:,tt) = WPNED(:,1);
+    figure(2)
+    plot(-Path(3,:));
+    figure(3)
+    plot3(Path(2,:),Path(1,:),-Path(3,:));
+    hold on;
+    plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
+    % plot(Path(2,:),Path(1,:));
+    % hold on;
+    % plot(WPNED(2,4),WPNED(1,4),'x');
+    % plot(x0(2),x0(1),'o');
+    % axis equal
+    % plot(WPNED(2,:),WPNED(1,:));
