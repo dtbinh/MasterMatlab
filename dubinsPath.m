@@ -1,4 +1,4 @@
-function [Path] = dubinsPath(Xs,Xf,Rs,Rf,N)
+function [Path,OF,RightF,success] = dubinsPath(Xs,Xf,Rs,Rf,N)
 % Create dubins path between two positions.
 % Start pose
 % Xs(1) = north (m)
@@ -24,7 +24,7 @@ else
     Xsc = Xs(1)-Rs*cos(Xs(4)+pi/2);
     Ysc = Xs(2)-Rs*sin(Xs(4)+pi/2);
 end
-RightS
+
 %Define end turning circle. First find whitch side
 if atan2(Xs(2)-Xf(2),Xs(1)-Xf(2))<0
     RightF = false;
@@ -37,7 +37,7 @@ else
     Yfc = Xf(2)-Rf*sin(Xf(4)+pi/2);
 end
 % Radius of secound end circle
-Rsec = abs(Rs-Rf);
+Rsec = abs(Rf-Rs);
 
 % Define c
 cbx = Xsc;
@@ -46,6 +46,18 @@ cby = Ysc;
 cay = Yfc-cby;
 
 dc = sqrt(cax^2+cay^2);
+
+if abs(Rf-Rs)>abs(dc)
+    disp('Advarsel: Umulig Dubin');
+    success = false;
+    Path =0;
+    OF =0;
+    RightF =0;
+    return;
+end
+RightF = false;
+RightS = false;
+% TODO: Fix bug were Xs and Xf is very close to eachother
 
 % Tmerk is perpendicular to c form Of, and connect in Csec;
 ttmerk = sqrt(Rsec^2/(cax^2+cay^2));
@@ -111,11 +123,8 @@ PN = [Xfc+Rf*cos(thetaf);Yfc+Rf*sin(thetaf)];
 % 
 
 
-theta0 = atan2(Xs(2)-Ysc,Xs(1)-Xsc)
-theta1 = atan2(Pchi(2)-Ysc,Pchi(1)-Xsc)
-sign(theta1)
-sign(theta0)
-pipi(theta1-pi)*180/pi
+theta0 = atan2(Xs(2)-Ysc,Xs(1)-Xsc);
+theta1 = atan2(Pchi(2)-Ysc,Pchi(1)-Xsc);
 if RightS
     if ((pipi(theta1-pi)>=theta0 ) || (theta0>theta1 &&sign(theta1)==sign(theta0)))
         theta = 0:-(abs(pipi(theta1-theta0))/(N-1)):-abs(pipi(theta1-theta0));
@@ -154,10 +163,13 @@ end
 % theta1 = 0:(theta11-theta01)/(N-1):theta11-theta01;
 arc2 = [Xfc+Rf*cos(theta01+theta1);Yfc+Rf*sin(theta01+theta1)];
 Path = [Path arc2];
+OF = [Xfc;Yfc];
+success = true;
 
 % Debuging 
 s = 0:0.01:1;
 OST = [OSTmerkax*s+OSTmerkbx;OSTmerkay*s+OSTmerkby];
+figure(1);
 plot(Path(2,:),Path(1,:));
 hold on;
 plot(Xs(2),Xs(1),'yo');
