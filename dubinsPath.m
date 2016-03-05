@@ -55,9 +55,16 @@ if abs(Rf-Rs)>abs(dc)
     RightF =0;
     return;
 end
-RightF = false;
-RightS = false;
-% TODO: Fix bug were Xs and Xf is very close to eachother
+% Ensure that Xs is far enough away from Xf
+dXsXf = sqrt((Xs(1)-Xf(1))^2+(Xs(2)-Xf(2))^2);
+if dXsXf<2*Rf
+    disp('Warning: To close to finish waypoint');
+    success = false;
+    Path =0;
+    OF =0;
+    RightF =0;
+    return;
+end
 
 % Tmerk is perpendicular to c form Of, and connect in Csec;
 ttmerk = sqrt(Rsec^2/(cax^2+cay^2));
