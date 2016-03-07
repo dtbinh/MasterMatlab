@@ -67,18 +67,18 @@ if dXsXf<2*Rf
 end
 
 % Tmerk is perpendicular to c form Of, and connect in Csec;
-ttmerk = sqrt(Rsec^2/(cax^2+cay^2));
-Tmerk = [cay*ttmerk+Xfc;-cax*ttmerk+Yfc];
-ttPn = sqrt(Rf^2/(cax^2+cay^2));
-PN = [cay*ttPn+cbx;-cax*ttPn+cby];
-OSTmerkbx = Xsc;
-OSTmerkax = Tmerk(1)-OSTmerkbx;
-OSTmerkby = Ysc;
-OSTmerkay = Tmerk(2)-OSTmerkby;
-
-% Find the exit tangent point
-ttPchi = sqrt(Rs^2/(cax^2+cay^2));
-Pchi = [cay*ttPchi+cbx;-cax*ttPchi+cby];
+% ttmerk = sqrt(Rsec^2/(cax^2+cay^2));
+% Tmerk = [cay*ttmerk+Xfc;-cax*ttmerk+Yfc];
+% ttPn = sqrt(Rf^2/(cax^2+cay^2));
+% PN = [cay*ttPn+cbx;-cax*ttPn+cby];
+% OSTmerkbx = Xsc;
+% OSTmerkax = Tmerk(1)-OSTmerkbx;
+% OSTmerkby = Ysc;
+% OSTmerkay = Tmerk(2)-OSTmerkby;
+% 
+% % Find the exit tangent point
+% ttPchi = sqrt(Rs^2/(cax^2+cay^2));
+% Pchi = [cay*ttPchi+cbx;-cax*ttPchi+cby];
 
 alpha = asin((Rf-Rs)/abs(dc));
 
@@ -133,13 +133,15 @@ PN = [Xfc+Rf*cos(thetaf);Yfc+Rf*sin(thetaf)];
 theta0 = atan2(Xs(2)-Ysc,Xs(1)-Xsc);
 theta1 = atan2(Pchi(2)-Ysc,Pchi(1)-Xsc);
 if RightS
-    if ((pipi(theta1-pi)>=theta0 ) || (theta0>theta1 &&sign(theta1)==sign(theta0)))
+%     if ((pipi(theta1-pi)>=theta0 ) || (theta0>theta1 &&sign(theta1)==sign(theta0)))
+    if pipi(theta1-theta0)<=0
         theta = 0:-(abs(pipi(theta1-theta0))/(N-1)):-abs(pipi(theta1-theta0));
     else
         theta = 0:-((2*pi-abs(pipi(theta1-theta0)))/(N-1)):-(2*pi-abs(pipi(theta1-theta0)));
     end
 else
-    if ((pipi(theta1-pi)<=theta0 && sign(pipi(theta1-pi))==sign(theta0)) || (theta0<theta1 && (sign(theta1)==sign(theta0) || theta0==0)))
+%     if ((pipi(theta1-pi)<=theta0 && sign(pipi(theta1-pi))==sign(theta0)) || (theta0<theta1 && (sign(theta1)==sign(theta0) || theta0==0)))
+    if pipi(theta1-theta0)>=0
         theta = 0:abs((pipi(theta1-theta0))/(N-1)):abs(pipi(theta1-theta0));
     else
         theta = 0:(2*pi-abs((pipi(theta1-theta0))))/(N-1):2*pi-abs(pipi(theta1-theta0));
@@ -155,13 +157,15 @@ theta11 = atan2(Xf(2)-Yfc,Xf(1)-Xfc);
 
 if RightF
     %counter clock wise rotation
-    if ((pipi(theta11-pi)>=theta01 ) || (theta01>theta11 &&sign(theta11)==sign(theta01)))
+%     if ((pipi(theta11-pi)>=theta01 ) || (theta01>theta11 &&sign(theta11)==sign(theta01)))
+    if pipi(theta11-theta01)<=0
         theta1 = 0:-(abs(pipi(theta11-theta01))/(N-1)):-abs(pipi(theta11-theta01));
     else
         theta1 = 0:-((2*pi-abs(pipi(theta11-theta01)))/(N-1)):-(2*pi-abs(pipi(theta11-theta01)));
     end
 else
-    if ((pipi(theta11-pi)<=theta01 && sign(pipi(theta11-pi))==sign(theta01)) || (theta01<theta11 && sign(theta11)==sign(theta01)))
+%     if ((pipi(theta11-pi)<=theta01 && sign(pipi(theta11-pi))==sign(theta01)) || (theta01<theta11 && sign(theta11)==sign(theta01)))
+    if pipi(theta11-theta01)>=0
         theta1 = 0:abs((pipi(theta11-theta01))/(N-1)):abs(pipi(theta11-theta01));
     else
         theta1 = 0:(2*pi-abs((pipi(theta11-theta01))))/(N-1):2*pi-abs(pipi(theta11-theta01));
@@ -175,14 +179,14 @@ success = true;
 
 % Debuging 
 s = 0:0.01:1;
-OST = [OSTmerkax*s+OSTmerkbx;OSTmerkay*s+OSTmerkby];
+% OST = [OSTmerkax*s+OSTmerkbx;OSTmerkay*s+OSTmerkby];
 figure(1);
 plot(Path(2,:),Path(1,:));
 hold on;
 plot(Xs(2),Xs(1),'yo');
 plot(Xf(2),Xf(1),'yx');
 % plot(OST(2,:),OST(1,:),'b');
-plot(Tmerk(2),Tmerk(1),'bx');
+% plot(Tmerk(2),Tmerk(1),'bx');
 plot(Ysc,Xsc,'cx');
 plot(PN(2),PN(1),'ro')
 plot(Pchi(2),Pchi(1),'rx');
