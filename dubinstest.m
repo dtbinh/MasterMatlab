@@ -20,7 +20,7 @@ DescentBoxS = 40;
 DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [350 0 -40 0 0 0*deg2rad]';
+x0 = [500 100 -20 0 0 0*deg2rad]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -64,7 +64,7 @@ if ~success
 end
     
     [Path,correctHeight] = glideslope(Path,x0(3),WPNED(3,4),descent*deg2rad);
-%     Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
+    Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
     
 
 
@@ -74,12 +74,12 @@ end
     % Path(:,tt) = WPNED(:,2);
     % tt = tt+1;
     % Path(:,tt) = WPNED(:,1);
-    figure(2)
-    plot(-Path(3,:));
-    figure(3)
-    plot3(Path(2,:),Path(1,:),-Path(3,:));
-    hold on;
-    plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
+%     figure(2)
+%     plot(-Path(3,:));
+%     figure(3)
+%     plot3(Path(2,:),Path(1,:),-Path(3,:));
+%     hold on;
+%     plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
     % plot(Path(2,:),Path(1,:));
     % hold on;
     % plot(WPNED(2,4),WPNED(1,4),'x');
