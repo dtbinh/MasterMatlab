@@ -177,18 +177,36 @@ Path = [Path arc2];
 OF = [Xfc;Yfc];
 success = true;
 
-% Debuging 
+%% Creat tangential path
+
+tarc1 = [-Rs*sin(theta0+theta);Rs*cos(theta0+theta)];
+tPath = tarc1;
+straightL = [PN(1)-Pchi(1);PN(2)-Pchi(2)]*ones(1,N);
+tPath = [tPath straightL];
+tarc2 = [-Rf*sin(theta01+theta1);Rf*cos(theta01+theta1)];
+tPath = [tPath tarc2];
+
+%% Debuging 
 s = 0:0.01:1;
 % OST = [OSTmerkax*s+OSTmerkbx;OSTmerkay*s+OSTmerkby];
 figure(1);
 plot(Path(2,:),Path(1,:));
 hold on;
-plot(Xs(2),Xs(1),'yo');
-plot(Xf(2),Xf(1),'yx');
+plot(Xs(2),Xs(1),'co');
+plot(Xf(2),Xf(1),'cx');
 % plot(OST(2,:),OST(1,:),'b');
 % plot(Tmerk(2),Tmerk(1),'bx');
-plot(Ysc,Xsc,'cx');
-plot(PN(2),PN(1),'ro')
+% plot(Ysc,Xsc,'cx');
 plot(Pchi(2),Pchi(1),'rx');
+plot(PN(2),PN(1),'ro')
 axis equal
+title('Dubins path');
+xlabel('East [m]');
+ylabel('North [m]');
+grid on;
+legend('Path','Start pose','Finish pose','Exit tangent point on start circle','Entry tangent point on finish cricle');
+
+
+figure(2)
+plot(tPath(2,:),tPath(1,:));
 end
