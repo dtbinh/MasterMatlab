@@ -40,13 +40,13 @@ if (~correctHeight)
     theta11 = atan2(WP4(2,end)-OF(2),WP4(1,end)-OF(1));
     if RightF
         %counter clock wise rotation
-        if ((pipi(theta11-pi)>=thetaH0 && sign(pipi(theta11-pi))==sign(thetaH0)) || (thetaH0>theta11 &&sign(theta11)==sign(thetaH0)))
+        if pipi(theta11-thetaH0)<=0
             theta1 = 0:-(abs(pipi(theta11-thetaH0))/(N-1)):-abs(pipi(theta11-thetaH0));
         else
             theta1 = 0:-((2*pi-abs(pipi(theta11-thetaH0)))/(N-1)):-(2*pi-abs(pipi(theta11-thetaH0)));
         end
     else
-        if ((pipi(theta11-pi)<=thetaH0 && sign(pipi(theta11-pi))==sign(thetaH0)) || (thetaH0<theta11 && sign(theta11)==sign(thetaH0)))
+        if pipi(theta11-thetaH0)>=0
             theta1 = 0:abs((pipi(theta11-thetaH0))/(N-1)):abs(pipi(theta11-thetaH0));
         else
             theta1 = 0:(2*pi-abs((pipi(theta11-thetaH0))))/(N-1):2*pi-abs(pipi(theta11-thetaH0));
