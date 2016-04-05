@@ -15,56 +15,56 @@ function [Path,OF,RightF,success] = dubinsPath(Xs,Xf,Rs,Rf,N)
 % N Number of turing points
 
 % Define start turning circle
-if atan2(Xs(2)-Xf(2),Xs(1)-Xf(2))<0
-    RightS = false;
-    Xsc = Xs(1)-Rs*cos(Xs(4)-pi/2);
-    Ysc = Xs(2)-Rs*sin(Xs(4)-pi/2);
-else
-    RightS = true;
-    Xsc = Xs(1)-Rs*cos(Xs(4)+pi/2);
-    Ysc = Xs(2)-Rs*sin(Xs(4)+pi/2);
-end
-
-%Define end turning circle. First find whitch side
-if atan2(Xs(2)-Xf(2),Xs(1)-Xf(2))<0
-    RightF = false;
-    Xfc = Xf(1)-Rf*cos(Xf(4)-pi/2);
-    Yfc = Xf(2)-Rf*sin(Xf(4)-pi/2);
-     
-else
-    RightF = true;
-    Xfc = Xf(1)-Rf*cos(Xf(4)+pi/2);
-    Yfc = Xf(2)-Rf*sin(Xf(4)+pi/2);
-end
-% Radius of secound end circle
-Rsec = abs(Rf-Rs);
-
-% Define c
-cbx = Xsc;
-cax = Xfc-cbx;
-cby = Ysc;
-cay = Yfc-cby;
-
-dc = sqrt(cax^2+cay^2);
-
-if abs(Rf-Rs)>abs(dc)
-    disp('Advarsel: Umulig Dubin');
-    success = false;
-    Path =0;
-    OF =0;
-    RightF =0;
-    return;
-end
-% Ensure that Xs is far enough away from Xf
-dXsXf = sqrt((Xs(1)-Xf(1))^2+(Xs(2)-Xf(2))^2);
-if dXsXf<2*Rf
-    disp('Warning: To close to finish waypoint');
-    success = false;
-    Path =0;
-    OF =0;
-    RightF =0;
-    return;
-end
+% if atan2(Xs(2)-Xf(2),Xs(1)-Xf(2))<0
+%     RightS = false;
+%     Xsc = Xs(1)-Rs*cos(Xs(4)-pi/2);
+%     Ysc = Xs(2)-Rs*sin(Xs(4)-pi/2);
+% else
+%     RightS = true;
+%     Xsc = Xs(1)-Rs*cos(Xs(4)+pi/2);
+%     Ysc = Xs(2)-Rs*sin(Xs(4)+pi/2);
+% end
+% 
+% %Define end turning circle. First find whitch side
+% if atan2(Xs(2)-Xf(2),Xs(1)-Xf(2))<0
+%     RightF = false;
+%     Xfc = Xf(1)-Rf*cos(Xf(4)-pi/2);
+%     Yfc = Xf(2)-Rf*sin(Xf(4)-pi/2);
+%      
+% else
+%     RightF = true;
+%     Xfc = Xf(1)-Rf*cos(Xf(4)+pi/2);
+%     Yfc = Xf(2)-Rf*sin(Xf(4)+pi/2);
+% end
+% % Radius of secound end circle
+% Rsec = abs(Rf-Rs);
+% 
+% % Define c
+% cbx = Xsc;
+% cax = Xfc-cbx;
+% cby = Ysc;
+% cay = Yfc-cby;
+% 
+% dc = sqrt(cax^2+cay^2);
+% 
+% if abs(Rf-Rs)>abs(dc)
+%     disp('Advarsel: Umulig Dubin');
+%     success = false;
+%     Path =0;
+%     OF =0;
+%     RightF =0;
+%     return;
+% end
+% % Ensure that Xs is far enough away from Xf
+% dXsXf = sqrt((Xs(1)-Xf(1))^2+(Xs(2)-Xf(2))^2);
+% if dXsXf<2*Rf
+%     disp('Warning: To close to finish waypoint');
+%     success = false;
+%     Path =0;
+%     OF =0;
+%     RightF =0;
+%     return;
+% end
 
 % Tmerk is perpendicular to c form Of, and connect in Csec;
 % ttmerk = sqrt(Rsec^2/(cax^2+cay^2));
@@ -80,16 +80,185 @@ end
 % ttPchi = sqrt(Rs^2/(cax^2+cay^2));
 % Pchi = [cay*ttPchi+cbx;-cax*ttPchi+cby];
 
-alpha = asin((Rf-Rs)/abs(dc));
+% alpha = asin((Rf-Rs)/abs(dc));
+% 
+% beta = atan2(Yfc-Ysc,Xfc-Xsc);
+% 
+% thetas = turn(RightS,alpha,beta);
+% 
+% thetaf = turn(RightF,alpha,beta);
+% 
+% Pchi = [Xsc+Rs*cos(thetas);Ysc + Rs*sin(thetas)];
+% PN = [Xfc+Rf*cos(thetaf);Yfc+Rf*sin(thetaf)];
 
-beta = atan2(Yfc-Ysc,Xfc-Xsc);
+%% Find shortest Dubin
 
-thetas = turn(RightS,alpha,beta);
+%LL
+RightS1 = true;
+Xsc1 = Xs(1)-Rs*cos(Xs(4)+pi/2);
+Ysc1 = Xs(2)-Rs*sin(Xs(4)+pi/2);
 
-thetaf = turn(RightF,alpha,beta);
+RightF1 = true;
+Xfc1 = Xf(1)-Rf*cos(Xf(4)+pi/2);
+Yfc1 = Xf(2)-Rf*sin(Xf(4)+pi/2);
 
-Pchi = [Xsc+Rs*cos(thetas);Ysc + Rs*sin(thetas)];
-PN = [Xfc+Rf*cos(thetaf);Yfc+Rf*sin(thetaf)];
+Ocs = [Xsc1;Ysc1];
+Ocf = [Xfc1;Yfc1];
+TurnS = RightS1;
+TurnF = RightF1;
+
+[Pchi1,PN1] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+theta0 = atan2(Xs(2)-Ysc1,Xs(1)-Xsc1);
+theta1 = atan2(Pchi1(2)-Ysc1,Pchi1(1)-Xsc1);
+if pipi(theta1-theta0)<=0
+    sltheta1 = abs(theta1-theta0);
+else
+    sltheta1 = 2*pi-abs(theta1-theta0);
+end
+theta01 = atan2(PN1(2)-Yfc1,PN1(1)-Xfc1);
+theta11 = atan2(Xf(2)-Yfc1,Xf(1)-Xfc1);
+if pipi(theta11-theta01)<=0
+    fltheta1 = abs(theta11-theta01);
+else
+    fltheta1 = 2*pi-abs(theta11-theta01);
+end
+
+
+sDubin1 = Rs*sltheta1 + sqrt((Pchi1(1)-PN1(1))^2+(Pchi1(2)-PN1(2))^2)+Rf*fltheta1;
+
+%LR
+RightS2 = true;
+Xsc2 = Xs(1)-Rs*cos(Xs(4)+pi/2);
+Ysc2 = Xs(2)-Rs*sin(Xs(4)+pi/2);
+
+RightF2 = false;
+Xfc2 = Xf(1)-Rf*cos(Xf(4)-pi/2);
+Yfc2 = Xf(2)-Rf*sin(Xf(4)-pi/2);
+
+Ocs = [Xsc2;Ysc2];
+Ocf = [Xfc2;Yfc2];
+TurnS = RightS2;
+TurnF = RightF2;
+
+[Pchi2,PN2] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+
+theta0 = atan2(Xs(2)-Ysc2,Xs(1)-Xsc2);
+theta1 = atan2(Pchi2(2)-Ysc2,Pchi2(1)-Xsc2);
+if pipi(theta1-theta0)<=0
+    sltheta2 = abs(theta1-theta0);
+else
+    sltheta2 = 2*pi-abs(theta1-theta0);
+end
+theta01 = atan2(PN2(2)-Yfc2,PN2(1)-Xfc2);
+theta11 = atan2(Xf(2)-Yfc2,Xf(1)-Xfc2);
+if pipi(theta11-theta01)>=0
+    fltheta2 = abs(theta11-theta01);
+else
+    fltheta2 = 2*pi-abs(theta11-theta01);
+end
+
+sDubin2 = Rs*sltheta2 + sqrt((Pchi2(1)-PN2(1))^2+(Pchi2(2)-PN2(2))^2)+Rf*fltheta2;
+
+% RL
+RightS3 = false;
+Xsc3 = Xs(1)-Rs*cos(Xs(4)-pi/2);
+Ysc3 = Xs(2)-Rs*sin(Xs(4)-pi/2);
+
+RightF3 = true;
+Xfc3 = Xf(1)-Rf*cos(Xf(4)+pi/2);
+Yfc3 = Xf(2)-Rf*sin(Xf(4)+pi/2);
+
+Ocs = [Xsc3;Ysc3];
+Ocf = [Xfc3;Yfc3];
+TurnS = RightS3;
+TurnF = RightF3;
+
+[Pchi3,PN3] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+
+theta0 = atan2(Xs(2)-Ysc3,Xs(1)-Xsc3);
+theta1 = atan2(Pchi3(2)-Ysc3,Pchi3(1)-Xsc3);
+if pipi(theta1-theta0)>=0
+    sltheta3 = abs(theta1-theta0);
+else
+    sltheta3 = 2*pi-abs(theta1-theta0);
+end
+theta01 = atan2(PN3(2)-Yfc3,PN3(1)-Xfc3);
+theta11 = atan2(Xf(2)-Yfc3,Xf(1)-Xfc3);
+if pipi(theta11-theta01)<=0
+    fltheta3 = abs(theta11-theta01);
+else
+    fltheta3 = 2*pi-abs(theta11-theta01);
+end
+
+sDubin3 = Rs*sltheta3 + sqrt((Pchi3(1)-PN3(1))^2+(Pchi3(2)-PN3(2))^2)+Rf*fltheta3;
+
+% RR
+RightS4 = false;
+Xsc4 = Xs(1)-Rs*cos(Xs(4)-pi/2);
+Ysc4 = Xs(2)-Rs*sin(Xs(4)-pi/2);
+
+RightF4 = false;
+Xfc4 = Xf(1)-Rf*cos(Xf(4)-pi/2);
+Yfc4 = Xf(2)-Rf*sin(Xf(4)-pi/2);
+
+Ocs = [Xsc4;Ysc4];
+Ocf = [Xfc4;Yfc4];
+TurnS = RightS4;
+TurnF = RightF4;
+
+[Pchi4,PN4] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+
+theta0 = atan2(Xs(2)-Ysc4,Xs(1)-Xsc4);
+theta1 = atan2(Pchi4(2)-Ysc4,Pchi4(1)-Xsc4);
+if pipi(theta1-theta0)>=0
+    sltheta4 = abs(theta1-theta0);
+else
+    sltheta4 = 2*pi-abs(theta1-theta0);
+end
+theta01 = atan2(PN4(2)-Yfc4,PN4(1)-Xfc4);
+theta11 = atan2(Xf(2)-Yfc4,Xf(1)-Xfc4);
+if pipi(theta11-theta01)>=0
+    fltheta4 = abs(theta11-theta01);
+else
+    fltheta4 = 2*pi-abs(theta11-theta01);
+end
+
+sDubin4 = Rs*sltheta4 + sqrt((Pchi4(1)-PN4(1))^2+(Pchi4(2)-PN4(2))^2)+Rf*fltheta4;
+
+XscV = [Xsc1 Xsc2 Xsc3 Xsc4];
+YscV = [Ysc1 Ysc2 Ysc3 Ysc4];
+XfcV = [Xfc1 Xfc2 Xfc3 Xfc4];
+YfcV = [Yfc1 Yfc2 Yfc3 Yfc4];
+PchiV = [Pchi1 Pchi2 Pchi3 Pchi4];
+PNV = [PN1 PN2 PN3 PN4];
+
+RightSV = [RightS1 RightS2 RightS3 RightS4];
+RightFV = [RightF1 RightF2 RightF3 RightF4];
+
+sDubinV = [sDubin1 sDubin2 sDubin3 sDubin4]
+[Dub,Ind] = min(sDubinV);
+% Ind = 4;
+
+Xsc = XscV(Ind);
+Ysc = YscV(Ind);
+Xfc = XfcV(Ind);
+Yfc = YfcV(Ind);
+Pchi = PchiV(:,Ind);
+PN = PNV(:,Ind);
+RightS = RightSV(Ind)
+RightF = RightFV(Ind)
+
+%% Construct the path
+% Ocs = [Xsc;Ysc];
+% Ocf = [Xfc;Yfc];
+% TurnS = RightS
+% TurnF = RightF
+% 
+% [thetas,thetaf,Pchi,PN] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF);
+% 
+% sDubin = Rs*thetas + sqrt((Pchi(1)-PN(1))^2+(Pchi(2)-PN(2))^2)+Rf*thetaf
+
+
 
 % thetaf1 = turn(true,alpha,beta);
 % thetaf2 = turn(false,alpha,beta);
@@ -179,12 +348,12 @@ success = true;
 
 %% Creat tangential path
 
-tarc1 = [-Rs*sin(theta0+theta);Rs*cos(theta0+theta)];
-tPath = tarc1;
-straightL = [PN(1)-Pchi(1);PN(2)-Pchi(2)]*ones(1,N);
-tPath = [tPath straightL];
-tarc2 = [-Rf*sin(theta01+theta1);Rf*cos(theta01+theta1)];
-tPath = [tPath tarc2];
+% tarc1 = [-Rs*sin(theta0+theta);Rs*cos(theta0+theta)];
+% tPath = tarc1;
+% straightL = [PN(1)-Pchi(1);PN(2)-Pchi(2)]*ones(1,N);
+% tPath = [tPath straightL];
+% tarc2 = [-Rf*sin(theta01+theta1);Rf*cos(theta01+theta1)];
+% tPath = [tPath tarc2];
 
 %% Debuging 
 s = 0:0.01:1;
@@ -206,7 +375,4 @@ ylabel('North [m]');
 grid on;
 legend('Path','Start pose','Finish pose','Exit tangent point on start circle','Entry tangent point on finish cricle');
 
-
-figure(2)
-plot(tPath(2,:),tPath(1,:));
 end
