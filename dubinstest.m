@@ -74,12 +74,12 @@ end
     % Path(:,tt) = WPNED(:,2);
     % tt = tt+1;
     % Path(:,tt) = WPNED(:,1);
-%     figure(2)
-%     plot(-Path(3,:));
-%     figure(3)
-%     plot3(Path(2,:),Path(1,:),-Path(3,:));
-%     hold on;
-%     plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
+    figure(2)
+    plot(-Path(3,:));
+    figure(3)
+    plot3(Path(2,:),Path(1,:),-Path(3,:));
+    hold on;
+    plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
     % plot(Path(2,:),Path(1,:));
     % hold on;
     % plot(WPNED(2,4),WPNED(1,4),'x');
