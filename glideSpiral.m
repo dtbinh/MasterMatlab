@@ -15,9 +15,11 @@ if (~correctHeight)
     WPS1 = [xnn;ynn;znn];
     n = 3;
     tt = length(Path) +1;
-    Path(:,tt) = WPS0;
-    tt = tt + 1;
+    Path
+%     Path(:,tt) = WPS0;
+%     tt = tt + 1;
     Path(:,tt) = WPS1;
+    WP4(2,end)
     while(~correctHeight)
         if abs(atan2(h1-WPS1(3),D))<abs(glideangle)
             glideangle = atan2(h1-WPS1(3),D);
