@@ -1,0 +1,24 @@
+[2016/04/18 12:56:27] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop_height) -- OK
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop_height) -- OK
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop_height) -- OK
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:56:27] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop_height) -- OK
+[2016/04/18 12:56:27] - ERR [Control.Formation.Path] >> not active
+[2016/04/18 12:56:27] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:56:27] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 12:56:27] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/04/18 12:56:27] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 12:56:27] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/04/18 12:56:27] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:56:34] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 12:56:34] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 12:56:34] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 12:56:37] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/04/18 12:56:37] - MSG [Plan.Engine] >> reply -- Stop Plan (agdenes_refsim_sqL2_coop_height) -- OK
+[2016/04/18 12:56:37] - WRN [Plan.Engine] >> plan stopped
+[2016/04/18 12:56:37] - MSG [Transports.Logging] >> log stopped '20160418/125626_agdenes_refsim_sqL2_coop_height'
+[2016/04/18 12:56:37] - MSG [Transports.Logging] >> log started '20160418/125637'

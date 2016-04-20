@@ -1,0 +1,31 @@
+[2016/04/18 09:22:04] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> reply -- Get Plan (RTK-Test-Agdenes) -- OK
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> reply -- Get Plan (RTK-Test-Agdenes) -- OK
+[2016/04/18 09:22:04] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 09:22:04] - ERR [Control.Path.Velocity] >> not active
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> reply -- Get Plan (RTK-Test-Agdenes) -- OK
+[2016/04/18 09:22:04] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/04/18 09:22:04] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 09:22:04] - MSG [Plan.Engine] >> reply -- Get Plan (RTK-Test-Agdenes) -- OK
+[2016/04/18 09:22:04] - ERR [Control.NetCatch.Coordinator] >> updating entity parameters: invalid parameter: 'Desired collision radius'
+[2016/04/18 09:22:04] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 09:22:04] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/04/18 09:22:04] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 09:22:04] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 09:22:04] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 09:22:05] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 09:22:34] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 09:22:34] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 09:22:35] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 09:22:35] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 09:22:35] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 09:22:36] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 09:22:56] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/04/18 09:22:56] - MSG [Plan.Engine] >> reply -- Stop Plan (RTK-Test-Agdenes) -- OK
+[2016/04/18 09:22:56] - WRN [Plan.Engine] >> plan stopped
+[2016/04/18 09:22:56] - MSG [Transports.Logging] >> log stopped '20160418/092204_RTK-Test-Agdenes'
+[2016/04/18 09:22:56] - MSG [Transports.Logging] >> log started '20160418/092256'

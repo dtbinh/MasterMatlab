@@ -1,0 +1,50 @@
+[2016/04/18 12:22:24] - DBG [Control.Formation.Coordinator] >> Got plan from DB, checking if Formation Controller is activated...
+[2016/04/18 12:22:24] - DBG [Control.Formation.Coordinator] >> Plan started with Formation Controller active!
+[2016/04/18 12:22:24] - DBG [Control.Formation.Coordinator] >> Sent Formation Start
+[2016/04/18 12:22:24] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/04/18 12:22:24] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/04/18 12:22:24] - WRN [Control.Formation.Path] >> EstimatedLocalState not received yet, must wait for valid message
+[2016/04/18 12:22:24] - MSG [Control.Formation.Path] >> path (lat/lon): 0.00000 0.00000 to 63.62891 9.72714
+[2016/04/18 12:22:24] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:22:24] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/04/18 12:22:24] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:22:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/04/18 12:22:24] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/04/18 12:22:24] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 12:22:24] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/04/18 12:22:24] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322092.5 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/04/18 12:22:24] - DBG [Control.Formation.Coordinator] >> Sent Formation Abort
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322125.2 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322158.5 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322191.8 ms
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:22:24] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322225.2 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322258.5 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322291.8 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322325.2 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/04/18 12:22:24] - DBG [Control.Formation.Coordinator] >> Sent Formation Abort
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322358.5 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322391.9 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322425.2 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322458.5 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322491.8 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (14000.0): 1460981322525.2 ms
+[2016/04/18 12:22:24] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/04/18 12:22:24] - DBG [Control.Formation.Coordinator] >> Sent Formation Abort
+[2016/04/18 12:22:24] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/04/18 12:22:24] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/04/18 12:22:24] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/04/18 12:22:24] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/04/18 12:22:24] - ERR [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- got abort request
+[2016/04/18 12:22:24] - MSG [Transports.Logging] >> log stopped '20160418/122224_agdenes_refsim_sqL_coop'
+[2016/04/18 12:22:24] - MSG [Transports.Logging] >> log started '20160418/122224'

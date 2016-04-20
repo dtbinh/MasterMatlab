@@ -1,0 +1,66 @@
+[2016/04/18 12:49:23] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop) -- OK
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop) -- OK
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop) -- OK
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 12:49:23] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL2_coop) -- OK
+[2016/04/18 12:49:23] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/04/18 12:49:23] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62896 9.72712 to 63.62891 9.72714
+[2016/04/18 12:49:23] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:49:23] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 12:49:23] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/04/18 12:49:23] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 12:49:23] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/04/18 12:49:23] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:49:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/04/18 12:49:23] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.99 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.73 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.66 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.60 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.47 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.43 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.40 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.38 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.36 m and closing!
+[2016/04/18 12:49:25] - WRN [Control.Formation.Force] >> Proximity warning with 'ntnu-hexa-004': 4.36 m and closing!
+[2016/04/18 12:49:32] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/04/18 12:49:33] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62891 9.72714 to 63.62873 9.72726
+[2016/04/18 12:49:33] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:49:33] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:49:34] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 12:49:34] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 12:49:34] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 12:49:55] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/04/18 12:49:55] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62873 9.72726 to 63.62878 9.72766
+[2016/04/18 12:49:55] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:49:55] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:50:04] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 12:50:04] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 12:50:04] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 12:50:26] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/04/18 12:50:27] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62878 9.72766 to 63.62895 9.72754
+[2016/04/18 12:50:27] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:50:27] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:50:34] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 12:50:34] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 12:50:34] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 12:50:54] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/04/18 12:50:54] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62895 9.72754 to 63.62891 9.72714
+[2016/04/18 12:50:54] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:50:54] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:51:04] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 12:51:04] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 12:51:04] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 12:51:19] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/04/18 12:51:19] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62891 9.72714 to 63.62873 9.72726
+[2016/04/18 12:51:19] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 12:51:19] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 12:51:36] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/04/18 12:51:36] - MSG [Plan.Engine] >> reply -- Stop Plan (agdenes_refsim_sqL2_coop) -- OK
+[2016/04/18 12:51:36] - WRN [Plan.Engine] >> plan stopped
+[2016/04/18 12:51:36] - MSG [Transports.Logging] >> log stopped '20160418/124923_agdenes_refsim_sqL2_coop'
+[2016/04/18 12:51:36] - MSG [Transports.Logging] >> log started '20160418/125136'

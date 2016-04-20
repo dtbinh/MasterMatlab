@@ -1,0 +1,96 @@
+[2016/04/18 10:21:54] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_square_RTK) -- OK
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_square_RTK) -- OK
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_square_RTK) -- OK
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 10:21:54] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_square_RTK) -- OK
+[2016/04/18 10:21:54] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/04/18 10:21:54] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62902 9.72715 to 63.62891 9.72715
+[2016/04/18 10:21:54] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:21:54] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/04/18 10:21:54] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:21:54] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/04/18 10:21:54] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/04/18 10:21:54] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 10:21:54] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/04/18 10:21:54] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 10:22:04] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:22:04] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:22:05] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:22:05] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:22:05] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:22:05] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:22:10] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/04/18 10:22:10] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62891 9.72715 to 63.62882 9.72721
+[2016/04/18 10:22:10] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:22:10] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:22:20] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/04/18 10:22:20] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62882 9.72721 to 63.62885 9.72741
+[2016/04/18 10:22:20] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:22:20] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:22:21] - MSG [Navigation.UAV.Navigation] >> Disable RTK. No longer available.
+[2016/04/18 10:22:26] - MSG [Navigation.UAV.Navigation] >> GPS RTK Available. 
+[2016/04/18 10:22:26] - MSG [Navigation.UAV.Navigation] >> Enabled use of RTK.
+[2016/04/18 10:22:33] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/04/18 10:22:33] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62885 9.72741 to 63.62893 9.72735
+[2016/04/18 10:22:33] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:22:33] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:22:34] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:22:34] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:22:35] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:22:43] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/04/18 10:22:43] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62893 9.72735 to 63.62891 9.72715
+[2016/04/18 10:22:43] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:22:43] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:22:53] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/04/18 10:22:53] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62891 9.72715 to 63.62882 9.72721
+[2016/04/18 10:22:53] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:22:53] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:23:02] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/04/18 10:23:03] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62882 9.72721 to 63.62885 9.72741
+[2016/04/18 10:23:03] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:23:03] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:23:05] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:23:05] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:23:06] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:23:14] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/04/18 10:23:14] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62885 9.72741 to 63.62893 9.72735
+[2016/04/18 10:23:14] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:23:14] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:23:24] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/04/18 10:23:25] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62893 9.72735 to 63.62891 9.72715
+[2016/04/18 10:23:25] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:23:25] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:23:34] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/04/18 10:23:34] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:23:34] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:23:35] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62891 9.72715 to 63.62882 9.72721
+[2016/04/18 10:23:35] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:23:35] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:23:35] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:23:35] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:23:35] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:23:36] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:23:45] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/04/18 10:23:46] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62882 9.72721 to 63.62885 9.72741
+[2016/04/18 10:23:46] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:23:46] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:23:57] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/04/18 10:23:57] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62885 9.72741 to 63.62893 9.72735
+[2016/04/18 10:23:57] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:23:57] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:24:05] - ERR [Sensors.Piksi] >> error receiving data: Transport endpoint is not connected
+[2016/04/18 10:24:05] - WRN [Sensors.Piksi] >> Connection lost to Base, retrying...
+[2016/04/18 10:24:06] - MSG [Sensors.Piksi] >> Remote Base Piksi UDP interface initialized
+[2016/04/18 10:24:07] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/04/18 10:24:07] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62893 9.72735 to 63.62891 9.72715
+[2016/04/18 10:24:07] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 10:24:07] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 10:24:11] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/04/18 10:24:11] - MSG [Plan.Engine] >> reply -- Stop Plan (agdenes_refsim_square_RTK) -- OK
+[2016/04/18 10:24:11] - WRN [Plan.Engine] >> plan stopped
+[2016/04/18 10:24:11] - MSG [Transports.Logging] >> log stopped '20160418/102153_agdenes_refsim_square_RTK'
+[2016/04/18 10:24:11] - MSG [Transports.Logging] >> log started '20160418/102411'

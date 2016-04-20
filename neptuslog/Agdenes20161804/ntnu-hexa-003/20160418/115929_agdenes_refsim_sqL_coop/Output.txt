@@ -1,0 +1,45 @@
+[2016/04/18 11:59:30] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 11:59:30] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/04/18 11:59:30] - WRN [Control.Formation.Path] >> EstimatedLocalState not received yet, must wait for valid message
+[2016/04/18 11:59:30] - MSG [Control.Formation.Path] >> path (lat/lon): 0.00000 0.00000 to 63.62891 9.72714
+[2016/04/18 11:59:30] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/04/18 11:59:30] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/04/18 11:59:30] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/04/18 11:59:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/04/18 11:59:30] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526217.2 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/04/18 11:59:30] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- OK
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526248.2 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526281.5 ms
+[2016/04/18 11:59:30] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 11:59:30] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/04/18 11:59:30] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526314.8 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526348.2 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526381.3 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526416.2 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526448.2 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526481.4 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526514.7 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526548.1 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526581.6 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526614.7 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526648.2 ms
+[2016/04/18 11:59:30] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/04/18 11:59:30] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-004' above threshold (200.0): 1460978526681.4 ms
+[2016/04/18 11:59:30] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/04/18 11:59:30] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/04/18 11:59:30] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/04/18 11:59:30] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/04/18 11:59:30] - ERR [Plan.Engine] >> reply -- Get Plan (agdenes_refsim_sqL_coop) -- got abort request
+[2016/04/18 11:59:30] - MSG [Transports.Logging] >> log stopped '20160418/115929_agdenes_refsim_sqL_coop'
+[2016/04/18 11:59:30] - MSG [Transports.Logging] >> log started '20160418/115930'
