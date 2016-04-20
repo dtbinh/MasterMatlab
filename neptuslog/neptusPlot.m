@@ -14,7 +14,7 @@ end
 
 sizeOfRtk = length(find(GpsFixRtk.src_ent==src_ent));
 sizeOfExternal = length(ExternalNavData.state);
-
+diff = 0.2;
 
 %% Extract Rtk
 Rtk = struct;
@@ -159,19 +159,20 @@ plot(ExternalNed.y-2,ExternalNed.x-2);
 hold on;
 plot(Rtk.e(1,:),Rtk.n(1,:),'r');
 % plot(External.y,External.x,'g');
-plot(ExternalNed.y-mean(Error.y.Data(1,1,1:100)),ExternalNed.x-mean(Error.x.Data(1,1,1:100)),'c');
+plot(ExternalNed.y-diff*mean(Error.y.Data(1,1,98:100)),ExternalNed.x-diff*mean(Error.x.Data(1,1,98:100)),'c');
+legend('External','Rtk','ExternalDiff');
 y = squeeze(ExternalNed.timeY.Data)-squeeze(Error.y.Data);
 x = squeeze(ExternalNed.timeX.Data)-squeeze(Error.x.Data);
 % plot(y,x,'k');
-figure(3);
-subplot(2,1,1);
-plot(Error.x);
-subplot(2,1,2);
-plot(Error.y);
-figure(4)
-plot(ExternalNed.y-2,ExternalNed.x-2);
-hold on;
-plot(GpsNed.y,GpsNed.x,'r');
-figure(5)
-plot(Rtk.timestamp(:) - Rtk.timestamp(1), Rtk.type);
-% ExternalNavData.state{2,1}
+% figure(3);
+% subplot(2,1,1);
+% plot(Error.x);
+% subplot(2,1,2);
+% plot(Error.y);
+% figure(4)
+% plot(ExternalNed.y-2,ExternalNed.x-2);
+% hold on;
+% plot(GpsNed.y,GpsNed.x,'r');
+% figure(5)
+% plot(Rtk.timestamp(:) - Rtk.timestamp(1), Rtk.type);
+% % ExternalNavData.state{2,1}
