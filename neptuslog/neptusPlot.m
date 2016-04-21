@@ -1,7 +1,9 @@
 close all;
 clear;
 
-load 135749_gpsrtk_goto\mra\Data.mat;
+% load 135749_gpsrtk_goto\mra\Data.mat;
+% load Agdenes20161804\ntnu-hexa-003\20160418\092204_RTK-Test-Agdenes\mra\Data.mat
+load Agdenes20161804\ntnu-hexa-003\20160418\102153_agdenes_refsim_square_RTK\mra\Data.mat
 
 C = unique(GpsFixRtk.src_ent);
 
@@ -73,6 +75,22 @@ end
 External.timeX = timeseries(External.x,External.timestamp);
 External.timeY = timeseries(External.y,External.timestamp);
 External.timeZ = timeseries(External.z,External.timestamp);
+
+%% Extract Navsource used in system
+m_NavSources = struct;
+% m_NavSources.mask = zeros(length(NavSources.mask),1);
+m_NavSources.maskValue = zeros(length(NavSources.mask),1);
+for i=1:length(NavSources.mask)
+%     [m_NavSources.mask(i,:),~] = strsplit(NavSources.mask(i,:),{'GNSS_RTK','|'},'CollapseDelimiters',false,'DelimiterType','RegularExpression');
+      index = strfind(NavSources.mask(i,:),'GNSS_RTK');
+      m_NavSources.mask= NavSources.mask(1,index:index+7);
+    if (strcmp(m_NavSources.mask,'GNSS_RTK'))
+        m_NavSources.maskValue(i,1) = 1;
+    else
+        m_NavSources.maskValue(i,1) = 0;
+    end
+end
+
 
 %% Sync timeseries
 [External.timeX,Rtk.timeN] = synchronize(External.timeX,Rtk.timeN,'Union');
@@ -150,19 +168,34 @@ Error.z = ExternalNed.timeZ-GpsNed.timeD;
 
 %% Figures
 figure(1);
+subplot(2,1,1);
+plot(EstimatedState.y,EstimatedState.x,'b');
+hold on;
+subplot(2,1,2);
 plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
+grid on;
 hold on;
-plot(ExternalNed.timestamp(:)-ExternalNed.timestamp(1),External.base_height-External.z,'g')
-figure(2);
-% plot(EstimatedState.y,EstimatedState.x);
-plot(ExternalNed.y-2,ExternalNed.x-2);
-hold on;
-plot(Rtk.e(1,:),Rtk.n(1,:),'r');
-% plot(External.y,External.x,'g');
-plot(ExternalNed.y-diff*mean(Error.y.Data(1,1,98:100)),ExternalNed.x-diff*mean(Error.x.Data(1,1,98:100)),'c');
-legend('External','Rtk','ExternalDiff');
-y = squeeze(ExternalNed.timeY.Data)-squeeze(Error.y.Data);
-x = squeeze(ExternalNed.timeX.Data)-squeeze(Error.x.Data);
+plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
+plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.base_height(1)-Rtk.d,'-g');
+plot( External.timestamp(:)-External.timestamp(1),External.base_height(1)-External.z,'c');
+
+figure(2)
+subplot(2,1,1)
+plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.type);
+subplot(2,1,2);
+plot(NavSources.timestamp(:)-NavSources.timestamp(1),m_NavSources.maskValue);
+
+% plot(ExternalNed.timestamp(:)-ExternalNed.timestamp(1),External.base_height-External.z,'g')
+% figure(2);
+% % plot(EstimatedState.y,EstimatedState.x);
+% plot(ExternalNed.y-2,ExternalNed.x-2);
+% hold on;
+% plot(Rtk.e(1,:),Rtk.n(1,:),'r');
+% % plot(External.y,External.x,'g');
+% plot(ExternalNed.y-diff*mean(Error.y.Data(1,1,98:100)),ExternalNed.x-diff*mean(Error.x.Data(1,1,98:100)),'c');
+% legend('External','Rtk','ExternalDiff');
+% y = squeeze(ExternalNed.timeY.Data)-squeeze(Error.y.Data);
+% x = squeeze(ExternalNed.timeX.Data)-squeeze(Error.x.Data);
 % plot(y,x,'k');
 % figure(3);
 % subplot(2,1,1);
