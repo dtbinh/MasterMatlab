@@ -91,6 +91,29 @@ for i=1:length(NavSources.mask)
     end
 end
 
+%% Extract estimatedState
+Estimated = struct;
+
+Estimated.x = zeros(1,length(EstimatedState.timestamp));
+Estimated.y = zeros(1,length(EstimatedState.timestamp));
+Estimated.z = zeros(1,length(EstimatedState.timestamp));
+Estimated.base_lat = zeros(1,length(EstimatedState.timestamp));
+Estimated.base_lon = zeros(1,length(EstimatedState.timestamp));
+Estimated.base_height = zeros(1,length(EstimatedState.timestamp));
+Estimated.timestamp = EstimatedState.timestamp;
+Estimated.DisN = zeros(1,length(EstimatedState.timestamp));
+Estimated.DisE = zeros(1,length(EstimatedState.timestamp));
+Estimated.DisD = zeros(1,length(EstimatedState.timestamp));
+for i=1:length(EstimatedState.timestamp)
+    Estimated.x(i) = EstimatedState.x(i);
+    Estimated.y(i) = EstimatedState.y(i);
+    Estimated.z(i) = EstimatedState.z(i);
+    Estimated.base_lat(i) = EstimatedState.lat(i)*180/pi;
+    Estimated.base_lon(i) = EstimatedState.lon(i)*180/pi;
+    Estimated.base_height(i) = EstimatedState.height(i);
+    [Estimated.DisN(i),Estimated.DisE(i),Estimated.DisD(i)] = displacement(Estimated.base_lat(i),Estimated.base_lon(i),Estimated.base_height(i),Rtk.base_lat(1),Rtk.base_lon(1),Rtk.base_height(1),Estimated.x(i),Estimated.y(i),Estimated.z(i));
+end
+
 
 %% Sync timeseries
 [External.timeX,Rtk.timeN] = synchronize(External.timeX,Rtk.timeN,'Union');
@@ -168,22 +191,28 @@ Error.z = ExternalNed.timeZ-GpsNed.timeD;
 
 %% Figures
 figure(1);
-subplot(2,1,1);
-plot(EstimatedState.y,EstimatedState.x,'b');
+subplot(3,1,1);
+plot3(Estimated.DisE,Estimated.DisN,Rtk.base_height(1)-Estimated.DisD,'b');
+grid on;
 hold on;
-subplot(2,1,2);
+subplot(3,1,2)
+plot(Estimated.DisE,Estimated.DisN)
+subplot(3,1,3);
 plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
 grid on;
 hold on;
 plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
 plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.base_height(1)-Rtk.d,'-g');
 plot( External.timestamp(:)-External.timestamp(1),External.base_height(1)-External.z,'c');
+plot(Estimated.timestamp(:)-Estimated.timestamp(1),Rtk.base_height(1)-Estimated.DisD,'bl');
 
 figure(2)
 subplot(2,1,1)
 plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.type);
 subplot(2,1,2);
 plot(NavSources.timestamp(:)-NavSources.timestamp(1),m_NavSources.maskValue);
+figure(3)
+plot(EstimatedState.height-EstimatedState.z);
 
 % plot(ExternalNed.timestamp(:)-ExternalNed.timestamp(1),External.base_height-External.z,'g')
 % figure(2);
