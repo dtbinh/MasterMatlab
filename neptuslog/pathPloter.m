@@ -24,13 +24,13 @@ for i=1:length(PathDubins.points{1,1})
     [xDubinECEF(1,i), yDubinECEF(1,i), zDubinECEF(1,i)] = ned2ecef(xDubin(1,i),yDubin(1,i),-zDubin(1,i),PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
 end
 
-[WP3X, WP3Y, WP3Z] = ned2ecef(0,0,0,WP3.lat,WP3.lon,WP3.z,wgs84Ellipsoid);
-[WP2X, WP2Y, WP2Z] = ned2ecef(0,0,0,WP2.lat,WP2.lon,WP2.z,wgs84Ellipsoid);
-[WP1X, WP1Y, WP1Z] = ned2ecef(0,0,0,WP1.lat,WP1.lon,WP1.z,wgs84Ellipsoid);
+[WP3X, WP3Y, WP3Z] = geodetic2ned(WP3.lat,WP3.lon,WP3.z,WP1.lat,WP1.lon,WP1.z,wgs84Ellipsoid);
+[WP2X, WP2Y, WP2Z] = geodetic2ned(WP2.lat,WP2.lon,WP2.z,WP1.lat,WP1.lon,WP1.z,wgs84Ellipsoid);
+[WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat,WP1.lon,WP1.z,WP1.lat,WP1.lon,WP1.z,wgs84Ellipsoid);
 
-[WP3X, WP3Y, WP3Z] = ecef2ned(WP3X,WP3Y,WP3Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
-[WP2X, WP2Y, WP2Z] = ecef2ned(WP2X,WP2Y,WP2Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
-[WP1X, WP1Y, WP1Z] = ecef2ned(WP1X,WP1Y,WP1Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
+% [WP3X, WP3Y, WP3Z] = ecef2ned(WP3X,WP3Y,WP3Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
+% [WP2X, WP2Y, WP2Z] = ecef2ned(WP2X,WP2Y,WP2Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
+% [WP1X, WP1Y, WP1Z] = ecef2ned(WP1X,WP1Y,WP1Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
 
 WP = [WP3X WP3Y WP3Z;WP2X WP2Y WP2Z;WP1X WP1Y WP1Z];
 
