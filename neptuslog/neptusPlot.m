@@ -28,6 +28,7 @@ Rtk.base_lat = zeros(1,sizeOfRtk);
 Rtk.base_lon = zeros(1,sizeOfRtk);
 Rtk.base_height = zeros(1,sizeOfRtk);
 Rtk.timestamp = zeros(1,sizeOfRtk);
+Rtk.timediff = zeros(1,sizeOfRtk-1);
 j = 1;
 for i=1:length(GpsFixRtk.n)
     if (GpsFixRtk.src_ent(i)==src_ent)
@@ -47,6 +48,9 @@ for i=1:length(GpsFixRtk.n)
         end
         j = j+1;
     end
+end
+for i=1:sizeOfRtk-1
+    Rtk.timediff(i) = Rtk.timestamp(i+1)-Rtk.timestamp(i);
 end
 Rtk.timeN = timeseries(Rtk.n,Rtk.timestamp);
 Rtk.timeE = timeseries(Rtk.e,Rtk.timestamp);
@@ -213,6 +217,7 @@ subplot(2,1,2);
 plot(NavSources.timestamp(:)-NavSources.timestamp(1),m_NavSources.maskValue);
 figure(3)
 plot(EstimatedState.height-EstimatedState.z);
+plot(Rtk.timestamp(1:end-1)-Rtk.timestamp(1),Rtk.timediff)
 
 % plot(ExternalNed.timestamp(:)-ExternalNed.timestamp(1),External.base_height-External.z,'g')
 % figure(2);
