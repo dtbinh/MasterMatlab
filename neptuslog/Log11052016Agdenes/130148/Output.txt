@@ -1,0 +1,9 @@
+[2016/05/11 13:01:48] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:48] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:48] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/11 13:01:49] - MSG [Plan.Engine] >> request -- Start Plan (agdenes_roll_tuning)
+[2016/05/11 13:01:49] - WRN [Plan.Engine] >> plan initializing: agdenes_roll_tuning
+[2016/05/11 13:01:49] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/11 13:01:49] - MSG [Plan.Engine] >> reply -- Start Plan (agdenes_roll_tuning) -- Goto1: executing maneuver
+[2016/05/11 13:01:49] - MSG [Transports.Logging] >> log stopped '20160511/130148'
+[2016/05/11 13:01:49] - MSG [Transports.Logging] >> log started '20160511/130149_agdenes_roll_tuning'

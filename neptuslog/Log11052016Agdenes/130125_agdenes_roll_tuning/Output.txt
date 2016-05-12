@@ -1,0 +1,76 @@
+[2016/05/11 13:01:25] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/11 13:01:25] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_roll_tuning) -- OK
+[2016/05/11 13:01:25] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/11 13:01:25] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_roll_tuning) -- OK
+[2016/05/11 13:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - activating
+[2016/05/11 13:01:25] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:25] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:25] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62863 9.72729 to 63.62908 9.73001
+[2016/05/11 13:01:25] - MSG [Control.Path.LOSnSMC] >> path (lat/lon): 63.62863 9.72729 to 63.62908 9.73001
+[2016/05/11 13:01:25] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62863 9.72729 to 63.62908 9.73001
+[2016/05/11 13:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/11 13:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/11 13:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - deactivating
+[2016/05/11 13:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/11 13:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/11 13:01:26] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:26] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:27] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:27] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:28] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:29] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:30] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:30] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:30] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:30] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:32] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:32] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:32] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:32] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:33] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:33] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:34] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:34] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:36] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:36] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:36] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:36] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:38] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:38] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:38] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:38] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:39] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:39] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:39] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:39] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:40] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:40] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:40] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:40] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:41] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:41] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:42] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:42] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:43] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:43] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:43] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:43] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:44] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:44] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:44] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:44] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:45] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:45] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:45] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:45] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:46] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:46] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:46] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:46] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:47] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/11 13:01:47] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/11 13:01:48] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/05/11 13:01:48] - MSG [Plan.Engine] >> reply -- Stop Plan (agdenes_roll_tuning) -- OK
+[2016/05/11 13:01:48] - WRN [Plan.Engine] >> plan stopped
+[2016/05/11 13:01:48] - MSG [Transports.Logging] >> log stopped '20160511/130125_agdenes_roll_tuning'
+[2016/05/11 13:01:48] - MSG [Transports.Logging] >> log started '20160511/130148'
