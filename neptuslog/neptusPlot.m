@@ -3,7 +3,9 @@ clear;
 
 % load 135749_gpsrtk_goto\mra\Data.mat;
 % load Agdenes20161804\ntnu-hexa-003\20160418\092204_RTK-Test-Agdenes\mra\Data.mat
-load Agdenes20161804\ntnu-hexa-003\20160418\102153_agdenes_refsim_square_RTK\mra\Data.mat
+% TO be used in raport
+% load Agdenes20161804\ntnu-hexa-003\20160418\102153_agdenes_refsim_square_RTK\mra\Data.mat
+load Log11052016Agdenes\125025_agdenes_roll_tuning\mra\Data.mat
 
 C = unique(GpsFixRtk.src_ent);
 
@@ -67,7 +69,9 @@ External.base_lat = zeros(1,sizeOfExternal);
 External.base_lon = zeros(1,sizeOfExternal);
 External.base_height = zeros(1,sizeOfExternal);
 External.timestamp = ExternalNavData.timestamp;
-
+External.DisN = zeros(1,length(ExternalNavData.timestamp));
+External.DisE = zeros(1,length(ExternalNavData.timestamp));
+External.DisD = zeros(1,length(ExternalNavData.timestamp));
 for i=1:sizeOfExternal
     External.x(i) = ExternalNavData.state{i,1}.x;
     External.y(i) = ExternalNavData.state{i,1}.y;
@@ -75,6 +79,7 @@ for i=1:sizeOfExternal
     External.base_lat(i) = ExternalNavData.state{i,1}.lat*180/pi;
     External.base_lon(i) = ExternalNavData.state{i,1}.lon*180/pi;
     External.base_height(i) = ExternalNavData.state{i,1}.height;
+    [External.DisN(i),External.DisE(i),External.DisD(i)] = displacement(External.base_lat(i),External.base_lon(i),External.base_height(i),Rtk.base_lat(1),Rtk.base_lon(1),Rtk.base_height(1),External.x(i),External.y(i),External.z(i));
 end
 External.timeX = timeseries(External.x,External.timestamp);
 External.timeY = timeseries(External.y,External.timestamp);
@@ -195,20 +200,20 @@ Error.z = ExternalNed.timeZ-GpsNed.timeD;
 
 %% Figures
 figure(1);
-subplot(3,1,1);
-plot3(Estimated.DisE,Estimated.DisN,Rtk.base_height(1)-Estimated.DisD,'b');
-grid on;
-hold on;
-subplot(3,1,2)
+% subplot(2,1,1);
+% plot3(Estimated.DisE,Estimated.DisN,Rtk.base_height(1)-Estimated.DisD,'b');
+% grid on;
+% hold on;
+subplot(2,1,1)
 plot(Estimated.DisE,Estimated.DisN)
-subplot(3,1,3);
-plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
 grid on;
 hold on;
-plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
-plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.base_height(1)-Rtk.d,'-g');
-plot( External.timestamp(:)-External.timestamp(1),External.base_height(1)-External.z,'c');
-plot(Estimated.timestamp(:)-Estimated.timestamp(1),Rtk.base_height(1)-Estimated.DisD,'bl');
+plot(External.DisE,External.DisN,'r');
+subplot(2,1,2);
+plot(Estimated.DisE,Estimated.DisN);
+grid on;
+hold on;
+plot(External.DisE,External.DisN,'r');
 
 figure(2)
 subplot(2,1,1)
@@ -216,8 +221,30 @@ plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.type);
 subplot(2,1,2);
 plot(NavSources.timestamp(:)-NavSources.timestamp(1),m_NavSources.maskValue);
 figure(3)
-plot(EstimatedState.height-EstimatedState.z);
+% plot(EstimatedState.height-EstimatedState.z);
 plot(Rtk.timestamp(1:end-1)-Rtk.timestamp(1),Rtk.timediff)
+
+figure(3);
+% subplot(2,1,1);
+% plot3(Estimated.DisE,Estimated.DisN,Rtk.base_height(1)-Estimated.DisD,'b');
+% grid on;
+% hold on;
+subplot(2,1,1)
+plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
+grid on;
+hold on;
+plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
+plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.base_height(1)-Rtk.d,'-g');
+plot( External.timestamp(:)-External.timestamp(1),External.base_height(1)-External.z,'c');
+plot(Estimated.timestamp(:)-Estimated.timestamp(1),Rtk.base_height(1)-Estimated.DisD,'bl');
+subplot(2,1,2);
+plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
+grid on;
+hold on;
+plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
+plot(Rtk.timestamp(:)-Rtk.timestamp(1),Rtk.base_height(1)-Rtk.d,'-g');
+plot( External.timestamp(:)-External.timestamp(1),External.base_height(1)-External.z,'c');
+plot(Estimated.timestamp(:)-Estimated.timestamp(1),Rtk.base_height(1)-Estimated.DisD,'bl');
 
 % plot(ExternalNed.timestamp(:)-ExternalNed.timestamp(1),External.base_height-External.z,'g')
 % figure(2);
