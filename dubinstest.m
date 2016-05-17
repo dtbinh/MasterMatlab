@@ -63,28 +63,28 @@ if ~success
     return
 end
     
-    [Path,correctHeight] = glideslope(Path,x0(3),WPNED(3,4),descent*deg2rad);
-    Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
-    
+[Path,correctHeight] = glideslope(Path,x0(3),WPNED(3,4),descent*deg2rad);
+Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
 
 
-    % tt = length(Path)+1;
-    % Path(:,tt) = WPNED(:,3);
-    % tt = tt+1;
-    % Path(:,tt) = WPNED(:,2);
-    % tt = tt+1;
-    % Path(:,tt) = WPNED(:,1);
-    figure(2)
-    plot(-Path(3,:));
-    figure(3)
-    plot3(Path(2,:),Path(1,:),-Path(3,:));
-    grid on;
-    hold on;
-    plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
-    legend('Landing path','Virtual runway')
-    % plot(Path(2,:),Path(1,:));
-    % hold on;
-    % plot(WPNED(2,4),WPNED(1,4),'x');
-    % plot(x0(2),x0(1),'o');
-    % axis equal
-    % plot(WPNED(2,:),WPNED(1,:));
+
+% tt = length(Path)+1;
+% Path(:,tt) = WPNED(:,3);
+% tt = tt+1;
+% Path(:,tt) = WPNED(:,2);
+% tt = tt+1;
+% Path(:,tt) = WPNED(:,1);
+figure(2)
+plot(-Path(3,:));
+figure(3)
+plot3(Path(2,:),Path(1,:),-Path(3,:));
+grid on;
+hold on;
+plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
+legend('Landing path','Virtual runway')
+% plot(Path(2,:),Path(1,:));
+% hold on;
+% plot(WPNED(2,4),WPNED(1,4),'x');
+% plot(x0(2),x0(1),'o');
+% axis equal
+% plot(WPNED(2,:),WPNED(1,:));

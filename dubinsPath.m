@@ -1,4 +1,4 @@
-function [Path,OF,RightF,success] = dubinsPath(Xs,Xf,Rs,Rf,N)
+function [Path,OF,RightF,success,lenghtPath] = dubinsPath(Xs,Xf,Rs,Rf,N)
 % Create dubins path between two positions.
 % Start pose
 % Xs(1) = north (m)
@@ -107,7 +107,7 @@ Ocf = [Xfc1;Yfc1];
 TurnS = RightS1;
 TurnF = RightF1;
 
-[Pchi1,PN1] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+[Pchi1,PN1] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF);
 theta0 = atan2(Xs(2)-Ysc1,Xs(1)-Xsc1);
 theta1 = atan2(Pchi1(2)-Ysc1,Pchi1(1)-Xsc1);
 if pipi(theta1-theta0)<=0
@@ -140,7 +140,7 @@ Ocf = [Xfc2;Yfc2];
 TurnS = RightS2;
 TurnF = RightF2;
 
-[Pchi2,PN2] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+[Pchi2,PN2] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF);
 
 theta0 = atan2(Xs(2)-Ysc2,Xs(1)-Xsc2);
 theta1 = atan2(Pchi2(2)-Ysc2,Pchi2(1)-Xsc2);
@@ -206,7 +206,7 @@ Ocf = [Xfc4;Yfc4];
 TurnS = RightS4;
 TurnF = RightF4;
 
-[Pchi4,PN4] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+[Pchi4,PN4] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF);
 
 theta0 = atan2(Xs(2)-Ysc4,Xs(1)-Xsc4);
 theta1 = atan2(Pchi4(2)-Ysc4,Pchi4(1)-Xsc4);
@@ -235,8 +235,9 @@ PNV = [PN1 PN2 PN3 PN4];
 RightSV = [RightS1 RightS2 RightS3 RightS4];
 RightFV = [RightF1 RightF2 RightF3 RightF4];
 
-sDubinV = [sDubin1 sDubin2 sDubin3 sDubin4]
+sDubinV = [sDubin1 sDubin2 sDubin3 sDubin4];
 [Dub,Ind] = min(sDubinV);
+lenghtPath = Dub;
 % Ind = 4;
 
 Xsc = XscV(Ind);
@@ -245,8 +246,8 @@ Xfc = XfcV(Ind);
 Yfc = YfcV(Ind);
 Pchi = PchiV(:,Ind);
 PN = PNV(:,Ind);
-RightS = RightSV(Ind)
-RightF = RightFV(Ind)
+RightS = RightSV(Ind);
+RightF = RightFV(Ind);
 
 %% Construct the path
 % Ocs = [Xsc;Ysc];
