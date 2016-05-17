@@ -78,8 +78,10 @@ end
     plot(-Path(3,:));
     figure(3)
     plot3(Path(2,:),Path(1,:),-Path(3,:));
+    grid on;
     hold on;
     plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
+    legend('Landing path','Virtual runway')
     % plot(Path(2,:),Path(1,:));
     % hold on;
     % plot(WPNED(2,4),WPNED(1,4),'x');
