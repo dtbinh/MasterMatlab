@@ -1,4 +1,4 @@
-function [Path,OF,RightF,success,lenghtPath] = dubinsPath(Xs,Xf,Rs,Rf,N)
+function [Path,OF,RightF,success,lengthPath] = dubinsPath(Xs,Xf,Rs,Rf,N)
 % Create dubins path between two positions.
 % Start pose
 % Xs(1) = north (m)
@@ -173,7 +173,7 @@ Ocf = [Xfc3;Yfc3];
 TurnS = RightS3;
 TurnF = RightF3;
 
-[Pchi3,PN3] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF)
+[Pchi3,PN3] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF);
 
 theta0 = atan2(Xs(2)-Ysc3,Xs(1)-Xsc3);
 theta1 = atan2(Pchi3(2)-Ysc3,Pchi3(1)-Xsc3);
@@ -235,9 +235,8 @@ PNV = [PN1 PN2 PN3 PN4];
 RightSV = [RightS1 RightS2 RightS3 RightS4];
 RightFV = [RightF1 RightF2 RightF3 RightF4];
 
-sDubinV = [sDubin1 sDubin2 sDubin3 sDubin4];
-[Dub,Ind] = min(sDubinV);
-lenghtPath = Dub;
+sDubinV = [sDubin1 sDubin2 sDubin3 sDubin4]
+[Dub,Ind] = min(sDubinV)
 % Ind = 4;
 
 Xsc = XscV(Ind);
@@ -250,55 +249,6 @@ RightS = RightSV(Ind);
 RightF = RightFV(Ind);
 
 %% Construct the path
-% Ocs = [Xsc;Ysc];
-% Ocf = [Xfc;Yfc];
-% TurnS = RightS
-% TurnF = RightF
-% 
-% [thetas,thetaf,Pchi,PN] = dubinsParameters(Ocs,Ocf,Rs,Rf,TurnS,TurnF);
-% 
-% sDubin = Rs*thetas + sqrt((Pchi(1)-PN(1))^2+(Pchi(2)-PN(2))^2)+Rf*thetaf
-
-
-
-% thetaf1 = turn(true,alpha,beta);
-% thetaf2 = turn(false,alpha,beta);
-% PN1 = [Xfc+Rf*cos(thetaf1);Yfc+Rf*sin(thetaf1)];
-% PN2 = [Xfc+Rf*cos(thetaf2);Yfc+Rf*sin(thetaf2)];
-% 
-% theta011 = atan2(PN1(2)-Yfc,PN1(1)-Xfc);
-% theta012 = atan2(PN2(2)-Yfc,PN2(1)-Xfc);
-% theta11 = atan2(Xf(2)-Yfc,Xf(1)-Xfc);
-% difftheta1 = abs(pipi(theta011-theta11));
-% difftheta2 = abs(pipi(theta012-theta11));
-% diff = [difftheta1 difftheta2];
-% PNx = [PN1 PN2];
-% [~,it]=min(diff);
-% PN = PNx(:,it);
-
-
-% atan2(Xs(2)-Yfc,Xs(1)-Xfc)*180/pi
-% atan2(PN(2)-Yfc,PN(1)-Xfc)*180/pi
-% atan2(Xf(2)-Yfc,Xf(1)-Xfc)*180/pi
-% atan2(Pchi(2)-Xf(2),Pchi(1)-Xf(1))*180/pi
-% atan2(-Pchi(2)+PN(2),-Pchi(1)+PN(1))*180/pi
-% atan2(Xf(2)-Yfc,Xf(1)-Xfc)*180/pi-atan2(PN(2)-Yfc,PN(1)-Xfc)*180/pi
-% if abs(atan2(Xs(2)-Yfc,Xs(1)-Xfc))<pi && abs(atan2(Xf(2)-Yfc,Xf(1)-Xfc)-atan2(PN(2)-Yfc,PN(1)-Xfc))>pi
-%     changePN = true;
-% else
-%     changePN = false;
-% end
-% changePN
-% if changePN
-%     thetaf = turn(~RightF,alpha,beta);
-%     PN = [Xfc+Rf*cos(thetaf);Yfc+Rf*sin(thetaf)];
-% end
-% atan2(PN(2)-Yfc,PN(1)-Xfc)*180/pi
-% atan2(Xf(2)-Yfc,Xf(1)-Yfc)*180/pi
-% atan2(Xf(2)-Yfc,Xf(1)-Yfc)*180/pi-atan2(PN(2)-Yfc,PN(1)-Xfc)*180/pi
-
-% 
-
 
 theta0 = atan2(Xs(2)-Ysc,Xs(1)-Xsc);
 theta1 = atan2(Pchi(2)-Ysc,Pchi(1)-Xsc);
@@ -320,10 +270,14 @@ else
 end
 % theta = 0:((theta1-theta0))/(N-1):theta1-theta0;
 arc1 = [Xsc+Rs*cos(theta0+theta);Ysc+Rs*sin(theta0+theta)];
+lengthPath = Rs*abs(theta);
 Path = arc1;
 theta01 = atan2(PN(2)-Yfc,PN(1)-Xfc);
 theta11 = atan2(Xf(2)-Yfc,Xf(1)-Xfc);
 % && sign(pipi(theta11-pi))==sign(theta01)
+
+lengthPath = [lengthPath lengthPath(end)+sqrt((Pchi(1)-PN(1))^2+(Pchi(2)-PN(2))^2)];
+
 
 if RightF
     %counter clock wise rotation
@@ -344,6 +298,7 @@ end
 % theta1 = 0:(theta11-theta01)/(N-1):theta11-theta01;
 arc2 = [Xfc+Rf*cos(theta01+theta1);Yfc+Rf*sin(theta01+theta1)];
 Path = [Path arc2];
+lengthPath = [lengthPath(1:end-1) lengthPath(end)+Rf*abs(theta1)];
 OF = [Xfc;Yfc];
 success = true;
 

@@ -44,30 +44,35 @@ R = [cos(nettH) -sin(nettH) 0;sin(nettH) cos(nettH) 0;0 0 1];
 loiter1 = w4 + [0 Rl 0]';
 loiter2 = w4 + [0 -Rl 0]';
 WP = [w1 w2 w3 w4];
-WPNED = [R*w1 R*w2 R*w3 R*w4]
+WPNED = [R*w1 R*w2 R*w3 R*w4];
 wA = R*wA;
 XS = [x0(1) x0(2) x0(3) x0(6)];
 XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
-[Path,OF,RightF,success] = dubinsPath(XS,XF,R_min,Rl,N);
-if ~success
-    % Need an extra WP
-    XF = [wA' nettH];
-    [Path1,~,~,~] = dubinsPath(XS,XF,R_min,Rl,N);
-    XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
-    XS = [wA' nettH];
-    [Path2,OF,RightF,success] = dubinsPath(XS,XF,R_min,Rl,N);
-    Path = [Path1 Path2];
-end  
-if ~success
-    disp('Abort landing');
-    return
-end
+[Path,OF,RightF,success,lengthPath] = dubinsPath(XS,XF,R_min,Rl,N);
+% if ~success
+%     % Need an extra WP
+%     XF = [wA' nettH];
+%     [Path1,~,~,~] = dubinsPath(XS,XF,R_min,Rl,N);
+%     XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
+%     XS = [wA' nettH];
+%     [Path2,OF,RightF,success,lenghtPath] = dubinsPath(XS,XF,R_min,Rl,N);
+%     Path = [Path1 Path2];
+% end  
+% if ~success
+%     disp('Abort landing');
+%     return
+% end
     
 [Path,correctHeight] = glideslope(Path,x0(3),WPNED(3,4),descent*deg2rad);
-Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
+[Path,lengthSpiral] = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
 
-
-
+% lengthPath = zeros(1,length(Path(3,:)));
+% for i=1:length(Path)-1
+%     lengthPath(1,i+1) = lengthPath(1,i) + norm(Path(1:2,i+1)-Path(1:2,i));
+% end
+lengthPath = [lengthPath(1:end-1) lengthPath(end)+lengthSpiral];
+Path
+lengthPath
 % tt = length(Path)+1;
 % Path(:,tt) = WPNED(:,3);
 % tt = tt+1;
@@ -75,13 +80,20 @@ Path = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad)
 % tt = tt+1;
 % Path(:,tt) = WPNED(:,1);
 figure(2)
-plot(-Path(3,:));
+plot(lengthPath,-Path(3,1:end-1));
+grid on;
+xlabel('Path length [m]');
+ylabel('Height [m]');
+legend('Path height profile');
 figure(3)
 plot3(Path(2,:),Path(1,:),-Path(3,:));
 grid on;
 hold on;
 plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
-legend('Landing path','Virtual runway')
+legend('Landing path','Virtual runway');
+xlabel('East [m]');
+ylabel('North [m]');
+zlabel('Height [m]');
 % plot(Path(2,:),Path(1,:));
 % hold on;
 % plot(WPNED(2,4),WPNED(1,4),'x');

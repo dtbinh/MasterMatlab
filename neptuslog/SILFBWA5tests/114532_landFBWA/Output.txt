@@ -1,0 +1,180 @@
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> reply -- Get Plan (landFBWA) -- OK
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> reply -- Get Plan (landFBWA) -- OK
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> reply -- Get Plan (landFBWA) -- OK
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:32] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/18 11:45:32] - MSG [Plan.Engine] >> reply -- Get Plan (landFBWA) -- OK
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62776 9.73413 to 63.62821 9.73444
+[2016/05/18 11:45:33] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62776 9.73413 to 63.62821 9.73444
+[2016/05/18 11:45:33] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62776 9.73413 to 63.62821 9.73444
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> throttle control - activating
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> pitch control - activating
+[2016/05/18 11:45:33] - MSG [Control.UAV.Ardupilot/AP-SIL] >> bank control - activating
+[2016/05/18 11:45:35] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62804 9.73447 to 63.62843 9.73434
+[2016/05/18 11:45:35] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62821 9.73444 to 63.62843 9.73434
+[2016/05/18 11:45:35] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62821 9.73444 to 63.62843 9.73434
+[2016/05/18 11:45:35] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:35] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:35] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:35] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:36] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62843 9.73434 to 63.62862 9.73409
+[2016/05/18 11:45:36] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62828 9.73447 to 63.62862 9.73409
+[2016/05/18 11:45:36] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62843 9.73434 to 63.62862 9.73409
+[2016/05/18 11:45:36] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:36] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:36] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:36] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:37] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62850 9.73434 to 63.62877 9.73370
+[2016/05/18 11:45:37] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62862 9.73409 to 63.62877 9.73370
+[2016/05/18 11:45:37] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62862 9.73409 to 63.62877 9.73370
+[2016/05/18 11:45:38] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:38] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:38] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:38] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:39] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62877 9.73370 to 63.62885 9.73323
+[2016/05/18 11:45:39] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62877 9.73370 to 63.62885 9.73323
+[2016/05/18 11:45:39] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62877 9.73370 to 63.62885 9.73323
+[2016/05/18 11:45:39] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:39] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:39] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:39] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:41] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62885 9.73323 to 63.62886 9.73273
+[2016/05/18 11:45:41] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62885 9.73323 to 63.62886 9.73273
+[2016/05/18 11:45:41] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62885 9.73323 to 63.62886 9.73273
+[2016/05/18 11:45:41] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:41] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:41] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:41] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:43] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62885 9.73300 to 63.62883 9.73249
+[2016/05/18 11:45:43] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62886 9.73273 to 63.62883 9.73249
+[2016/05/18 11:45:43] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62886 9.73273 to 63.62883 9.73249
+[2016/05/18 11:45:43] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:43] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:43] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:43] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:44] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62883 9.73249 to 63.62611 9.72274
+[2016/05/18 11:45:44] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62883 9.73249 to 63.62611 9.72274
+[2016/05/18 11:45:44] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62883 9.73249 to 63.62611 9.72274
+[2016/05/18 11:45:44] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:45:44] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:44] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:45:44] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:15] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62620 9.72304 to 63.62608 9.72224
+[2016/05/18 11:46:15] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62611 9.72274 to 63.62608 9.72224
+[2016/05/18 11:46:15] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62611 9.72274 to 63.62608 9.72224
+[2016/05/18 11:46:15] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:15] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:15] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:15] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:16] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62608 9.72224 to 63.62613 9.72175
+[2016/05/18 11:46:16] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62609 9.72258 to 63.62613 9.72175
+[2016/05/18 11:46:16] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62608 9.72224 to 63.62613 9.72175
+[2016/05/18 11:46:16] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:16] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:16] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:16] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:18] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62613 9.72175 to 63.62624 9.72132
+[2016/05/18 11:46:18] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62606 9.72207 to 63.62624 9.72132
+[2016/05/18 11:46:18] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62613 9.72175 to 63.62624 9.72132
+[2016/05/18 11:46:18] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:18] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:18] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:18] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:19] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62624 9.72132 to 63.62641 9.72100
+[2016/05/18 11:46:19] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62624 9.72132 to 63.62641 9.72100
+[2016/05/18 11:46:19] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62613 9.72154 to 63.62641 9.72100
+[2016/05/18 11:46:19] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:19] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:19] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:19] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:21] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62641 9.72100 to 63.62662 9.72082
+[2016/05/18 11:46:21] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62641 9.72100 to 63.62662 9.72082
+[2016/05/18 11:46:21] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62641 9.72100 to 63.62662 9.72082
+[2016/05/18 11:46:21] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:21] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:21] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:21] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:22] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62648 9.72087 to 63.62685 9.72080
+[2016/05/18 11:46:22] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62662 9.72082 to 63.62685 9.72080
+[2016/05/18 11:46:22] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62662 9.72082 to 63.62685 9.72080
+[2016/05/18 11:46:22] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:22] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:22] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:22] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:24] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62685 9.72080 to 63.62706 9.72095
+[2016/05/18 11:46:24] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62685 9.72080 to 63.62706 9.72095
+[2016/05/18 11:46:24] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62685 9.72080 to 63.62706 9.72095
+[2016/05/18 11:46:24] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:24] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:24] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:24] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:26] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62706 9.72095 to 63.62724 9.72125
+[2016/05/18 11:46:26] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62706 9.72095 to 63.62724 9.72125
+[2016/05/18 11:46:26] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62706 9.72095 to 63.62724 9.72125
+[2016/05/18 11:46:26] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:26] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:26] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:26] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:27] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62724 9.72125 to 63.62737 9.72166
+[2016/05/18 11:46:27] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62724 9.72125 to 63.62737 9.72166
+[2016/05/18 11:46:27] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62724 9.72125 to 63.62737 9.72166
+[2016/05/18 11:46:27] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:27] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:27] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:27] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:28] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62737 9.72166 to 63.62737 9.72167
+[2016/05/18 11:46:28] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62737 9.72166 to 63.62737 9.72167
+[2016/05/18 11:46:28] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62737 9.72166 to 63.62737 9.72167
+[2016/05/18 11:46:28] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:28] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:28] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:28] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:29] - WRN [Plan.Engine] >> 2: executing maneuver
+[2016/05/18 11:46:29] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62737 9.72167 to 63.62755 9.72259
+[2016/05/18 11:46:29] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62737 9.72167 to 63.62755 9.72259
+[2016/05/18 11:46:29] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62737 9.72167 to 63.62755 9.72259
+[2016/05/18 11:46:29] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:29] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:29] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:29] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:30] - WRN [Plan.Engine] >> 3: executing maneuver
+[2016/05/18 11:46:30] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62755 9.72259 to 63.62867 9.72810
+[2016/05/18 11:46:30] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62755 9.72259 to 63.62867 9.72810
+[2016/05/18 11:46:30] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62755 9.72259 to 63.62867 9.72810
+[2016/05/18 11:46:30] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:30] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:30] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:30] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:46] - WRN [Plan.Engine] >> 4: executing maneuver
+[2016/05/18 11:46:46] - MSG [Control.Path.LOSnSMCuser] >> path (lat/lon): 63.62867 9.72810 to 63.62900 9.72975
+[2016/05/18 11:46:46] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62867 9.72810 to 63.62900 9.72975
+[2016/05/18 11:46:46] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62867 9.72810 to 63.62900 9.72975
+[2016/05/18 11:46:46] - MSG [Control.UAV.Ardupilot/AP-SIL] >> path control is NOT active
+[2016/05/18 11:46:46] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:46] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:46] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control is NOT active
+[2016/05/18 11:46:51] - WRN [Plan.Engine] >> plan completed
+[2016/05/18 11:46:51] - MSG [Transports.Logging] >> log stopped '20160518/114532_landFBWA'
+[2016/05/18 11:46:51] - MSG [Transports.Logging] >> log started '20160518/114651'
