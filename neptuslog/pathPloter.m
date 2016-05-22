@@ -161,6 +161,12 @@ for i=1:length(EstimatedState.timestamp)
                                                                                 Estimated.x(i),Estimated.y(i),Estimated.z(i));
 end
 
+%% Extract path state
+
+PathState = struct;
+
+PathState.crossTrack = PathControlState.y;
+PathState.timestamp = PathControlState.timestamp;
 %% Find cross track error and along track distance in the lateral plane
 
 alpha_k = atan2(PathY(2)-PathY(1),PathX(2)-PathX(1));
@@ -209,3 +215,5 @@ plot(crossTrack(1:j))
 grid on;
 figure(9)
 plot(-PathZ)
+figure(10)
+plot(PathState.timestamp-PathState.timestamp(1),PathState.crossTrack)
