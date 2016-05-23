@@ -2,7 +2,7 @@ close all;
 clear;
 % old = digits(20);
 % load SILTestLog/143651_landFBWA/mra/Data;
-load SILFBWA5tests/113623_landFBWA/mra/Data;
+load SILFBWA11Teste/160541_landFBWA/mra/Data;
 
 rad2deg = 180/pi;
 deg2rad = pi/180;
@@ -11,7 +11,7 @@ Hardware = false;
 
 %% Defining the net position
 NetPos = struct;
-NetPos.lat = 63.62881880654979
+NetPos.lat = 63.62881880654979;
 NetPos.lon = 9.72883113772907;
 NetPos.height = 150;
 NetPos.z = -3;
@@ -23,16 +23,16 @@ WP3 = PlanSpecification.maneuvers{1,1}{2,1}.data{1,1};
 WP2 = PlanSpecification.maneuvers{1,1}{3,1}.data{1,1};
 WP1 = PlanSpecification.maneuvers{1,1}{4,1}.data{1,1};
 
-[WP3X, WP3Y, WP3Z] = geodetic2ned(WP3.lat*rad2deg,WP3.lon*rad2deg,WP3.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid)
-[WP2X, WP2Y, WP2Z] = geodetic2ned(WP2.lat*rad2deg,WP2.lon*rad2deg,WP2.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid)
-[WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat*rad2deg,WP1.lon*rad2deg,WP1.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid)
+[WP3X, WP3Y, WP3Z] = geodetic2ned(WP3.lat*rad2deg,WP3.lon*rad2deg,WP3.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
+[WP2X, WP2Y, WP2Z] = geodetic2ned(WP2.lat*rad2deg,WP2.lon*rad2deg,WP2.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
+[WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat*rad2deg,WP1.lon*rad2deg,WP1.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
 
 xDubin = zeros(1,length(PathDubins.points{1,1}));
 yDubin = zeros(1,length(PathDubins.points{1,1}));
 zDubin = zeros(1,length(PathDubins.points{1,1}));
-DubinsLat = PathDubins.lat*rad2deg
-DubinsLon = PathDubins.lon*rad2deg
-DubinsHeight = PathDubins.z
+DubinsLat = PathDubins.lat*rad2deg;
+DubinsLon = PathDubins.lon*rad2deg;
+DubinsHeight = PathDubins.z;
 [DubinsX0,DubinsY0,DubinsZ0] = geodetic2ned(DubinsLat,DubinsLon,DubinsHeight,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
 xDubinECEF = zeros(1,length(PathDubins.points{1,1}));
 yDubinECEF = zeros(1,length(PathDubins.points{1,1}));
@@ -217,3 +217,7 @@ figure(9)
 plot(-PathZ)
 figure(10)
 plot(PathState.timestamp-PathState.timestamp(1),PathState.crossTrack)
+figure(11)
+plot(Estimated.timestamp-Estimated.timestamp(1),Estimated.base_height-Estimated.z);
+hold on;
+plot(DesiredZ.timestamp-DesiredZ.timestamp(1),DesiredZ.value,'r');
