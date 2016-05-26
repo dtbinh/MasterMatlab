@@ -1,0 +1,17 @@
+[2016/05/25 13:54:00] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/25 13:54:00] - MSG [Plan.DB] >> set plan (formationPlan) -- OK (updated)
+[2016/05/25 13:54:00] - WRN [Plan.DB] >> storing plan 'formationPlan' issued through a PlanControl request
+[2016/05/25 13:54:00] - MSG [Plan.DB] >> set plan (formationPlan) -- OK (updated)
+[2016/05/25 13:54:00] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/25 13:54:01] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/25 13:54:01] - MSG [Maneuver.SlaveManeuver] >> SlaveManeuver maneuver received
+[2016/05/25 13:54:01] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/05/25 13:54:03] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/25 13:54:03] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/05/25 13:54:04] - WRN [Control.Formation.Force] >> Age of pos.data for 'ntnu-hexa-003' above threshold (200.0): 201.3 ms
+[2016/05/25 13:54:04] - WRN [Control.Formation.Coordinator] >> Received Abort!
+[2016/05/25 13:54:04] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/05/25 13:54:04] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/05/25 13:54:04] - ERR [Plan.Engine] >> reply -- Start Plan (formationPlan) -- got abort request
+[2016/05/25 13:54:04] - MSG [Transports.Logging] >> log stopped '20160525/135400_formationPlan'
+[2016/05/25 13:54:04] - MSG [Transports.Logging] >> log started '20160525/135404'

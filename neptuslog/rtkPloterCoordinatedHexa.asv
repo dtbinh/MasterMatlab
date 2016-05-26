@@ -1,0 +1,268 @@
+clear all;
+close all;
+
+load ag20160525logs_hexaRTK/2hw/ntnu-hexa-003;
+
+C = unique(GpsFixRtk.src_ent);
+
+for i=1:length(C)
+    row = find(EntityInfo.id==C(i));
+    if strcmp(EntityInfo.component(row,1:9),'Sensors.R')
+        src_ent = C(i);
+    end
+end
+
+sizeOfRtk = length(find(GpsFixRtk.src_ent==src_ent));
+sizeOfExternal = length(ExternalNavData.state);
+diff = 0.2;
+
+%% Extract Rtk
+RtkHexa3 = struct;
+RtkHexa3.n = zeros(1,sizeOfRtk);
+RtkHexa3.e = zeros(1,sizeOfRtk);
+RtkHexa3.d = zeros(1,sizeOfRtk);
+RtkHexa3.type = zeros(1,sizeOfRtk);
+RtkHexa3.base_lat = zeros(1,sizeOfRtk);
+RtkHexa3.base_lon = zeros(1,sizeOfRtk);
+RtkHexa3.base_height = zeros(1,sizeOfRtk);
+RtkHexa3.timestamp = zeros(1,sizeOfRtk);
+RtkHexa3.timediff = zeros(1,sizeOfRtk-1);
+j = 1;
+for i=1:length(GpsFixRtk.n)
+    if (GpsFixRtk.src_ent(i)==src_ent)
+        RtkHexa3.n(1,j) = GpsFixRtk.n(i);
+        RtkHexa3.e(1,j) = GpsFixRtk.e(i);
+        RtkHexa3.d(1,j) = GpsFixRtk.d(i);
+        RtkHexa3.timestamp(1,j) = GpsFixRtk.timestamp(i);
+        RtkHexa3.base_lon(1,j) = GpsFixRtk.base_lon(i)*180/pi;
+        RtkHexa3.base_lat(1,j) = GpsFixRtk.base_lat(i)*180/pi;
+        RtkHexa3.base_height(1,j) = GpsFixRtk.base_height(i);
+        if strcmp(GpsFixRtk.type(i,1:2),'FI')
+            RtkHexa3.type(j) = 3;
+        elseif strcmp(GpsFixRtk.type(i,1:2),'FI')
+            RtkHexa3.type(j) = 2;
+        else
+            RtkHexa3.type(j) = 0;
+        end
+        j = j+1;
+    end
+end
+for i=1:sizeOfRtk-1
+    RtkHexa3.timediff(i) = RtkHexa3.timestamp(i+1)-RtkHexa3.timestamp(i);
+end
+RtkHexa3.timeN = timeseries(RtkHexa3.n,RtkHexa3.timestamp);
+RtkHexa3.timeE = timeseries(RtkHexa3.e,RtkHexa3.timestamp);
+RtkHexa3.timeD = timeseries(RtkHexa3.d,RtkHexa3.timestamp);
+
+%% Extract External
+
+ExternalHexa3 = struct;
+
+ExternalHexa3.x = zeros(1,sizeOfExternal);
+ExternalHexa3.y = zeros(1,sizeOfExternal);
+ExternalHexa3.z = zeros(1,sizeOfExternal);
+ExternalHexa3.base_lat = zeros(1,sizeOfExternal);
+ExternalHexa3.base_lon = zeros(1,sizeOfExternal);
+ExternalHexa3.base_height = zeros(1,sizeOfExternal);
+ExternalHexa3.timestamp = ExternalNavData.timestamp;
+ExternalHexa3.DisN = zeros(1,length(ExternalNavData.timestamp));
+ExternalHexa3.DisE = zeros(1,length(ExternalNavData.timestamp));
+ExternalHexa3.DisD = zeros(1,length(ExternalNavData.timestamp));
+for i=1:sizeOfExternal
+    ExternalHexa3.x(i) = ExternalNavData.state{i,1}.x;
+    ExternalHexa3.y(i) = ExternalNavData.state{i,1}.y;
+    ExternalHexa3.z(i) = ExternalNavData.state{i,1}.z;
+    ExternalHexa3.base_lat(i) = ExternalNavData.state{i,1}.lat*180/pi;
+    ExternalHexa3.base_lon(i) = ExternalNavData.state{i,1}.lon*180/pi;
+    ExternalHexa3.base_height(i) = ExternalNavData.state{i,1}.height;
+    [ExternalHexa3.DisN(i),ExternalHexa3.DisE(i),ExternalHexa3.DisD(i)] = displacement(ExternalHexa3.base_lat(i),ExternalHexa3.base_lon(i),ExternalHexa3.base_height(i),RtkHexa3.base_lat(1),RtkHexa3.base_lon(1),RtkHexa3.base_height(1),ExternalHexa3.x(i),ExternalHexa3.y(i),ExternalHexa3.z(i));
+end
+ExternalHexa3.timeX = timeseries(ExternalHexa3.x,ExternalHexa3.timestamp);
+ExternalHexa3.timeY = timeseries(ExternalHexa3.y,ExternalHexa3.timestamp);
+ExternalHexa3.timeZ = timeseries(ExternalHexa3.z,ExternalHexa3.timestamp);
+
+%% Extract Navsource used in system
+m_NavSourcesHexa3 = struct;
+% m_NavSources.mask = zeros(length(NavSources.mask),1);
+m_NavSourcesHexa3.maskValue = zeros(length(NavSources.mask),1);
+for i=1:length(NavSources.mask)
+%     [m_NavSources.mask(i,:),~] = strsplit(NavSources.mask(i,:),{'GNSS_RTK','|'},'CollapseDelimiters',false,'DelimiterType','RegularExpression');
+      index = strfind(NavSources.mask(i,:),'GNSS_RTK');
+      m_NavSourcesHexa3.mask= NavSources.mask(1,index:index+7);
+    if (strcmp(m_NavSourcesHexa3.mask,'GNSS_RTK'))
+        m_NavSourcesHexa3.maskValue(i,1) = 1;
+    else
+        m_NavSourcesHexa3.maskValue(i,1) = 0;
+    end
+end
+
+%% Extract estimatedState
+EstimatedHexa3 = struct;
+
+EstimatedHexa3.x = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.y = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.z = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.base_lat = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.base_lon = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.base_height = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.timestamp = EstimatedState.timestamp;
+EstimatedHexa3.DisN = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.DisE = zeros(1,length(EstimatedState.timestamp));
+EstimatedHexa3.DisD = zeros(1,length(EstimatedState.timestamp));
+for i=1:length(EstimatedState.timestamp)
+    EstimatedHexa3.x(i) = EstimatedState.x(i);
+    EstimatedHexa3.y(i) = EstimatedState.y(i);
+    EstimatedHexa3.z(i) = EstimatedState.z(i);
+    EstimatedHexa3.base_lat(i) = EstimatedState.lat(i)*180/pi;
+    EstimatedHexa3.base_lon(i) = EstimatedState.lon(i)*180/pi;
+    EstimatedHexa3.base_height(i) = EstimatedState.height(i);
+    [EstimatedHexa3.DisN(i),EstimatedHexa3.DisE(i),EstimatedHexa3.DisD(i)] = displacement(EstimatedHexa3.base_lat(i),EstimatedHexa3.base_lon(i),EstimatedHexa3.base_height(i),RtkHexa3.base_lat(1),RtkHexa3.base_lon(1),RtkHexa3.base_height(1),EstimatedHexa3.x(i),EstimatedHexa3.y(i),EstimatedHexa3.z(i));
+end
+
+
+%% Sync timeseries
+[ExternalHexa3.timeX,RtkHexa3.timeN] = synchronize(ExternalHexa3.timeX,RtkHexa3.timeN,'Union');
+[ExternalHexa3.timeY,RtkHexa3.timeE] = synchronize(ExternalHexa3.timeY,RtkHexa3.timeE,'Union');
+[ExternalHexa3.timeZ,RtkHexa3.timeD] = synchronize(ExternalHexa3.timeZ,RtkHexa3.timeD,'Union');
+
+%% Find error
+ErrorHexa3 = struct;
+
+ErrorHexa3.x = ExternalHexa3.timeX-RtkHexa3.timeN;
+ErrorHexa3.y = ExternalHexa3.timeY-RtkHexa3.timeE;
+ErrorHexa3.z = ExternalHexa3.timeZ-RtkHexa3.timeD;
+
+%%
+GpsEcef = struct;
+
+GpsEcef.x = zeros(1,sizeOfRtk);
+GpsEcef.y = zeros(1,sizeOfRtk);
+GpsEcef.z = zeros(1,sizeOfRtk);
+GpsEcef.timestamp = RtkHexa3.timestamp;
+
+[GpsEcef.x,GpsEcef.y,GpsEcef.z] = ned2ecef(RtkHexa3.n,RtkHexa3.e,RtkHexa3.d,RtkHexa3.base_lat,RtkHexa3.base_lon,RtkHexa3.base_height,wgs84Ellipsoid);
+
+ExternalEcef = struct;
+
+ExternalEcef.x = zeros(1,sizeOfExternal);
+ExternalEcef.y = zeros(1,sizeOfExternal);
+ExternalEcef.z = zeros(1,sizeOfExternal);
+ExternalEcef.timestamp = ExternalHexa3.timestamp;
+
+[ExternalEcef.x,ExternalEcef.y,ExternalEcef.z] = ned2ecef(ExternalHexa3.x,ExternalHexa3.y,ExternalHexa3.z,ExternalHexa3.base_lat,ExternalHexa3.base_lon,ExternalHexa3.base_height,wgs84Ellipsoid);
+
+%% Ned frame with rtk base as ref frame
+GpsNed = struct;
+
+GpsNed.n = zeros(1,sizeOfRtk);
+GpsNed.e = zeros(1,sizeOfRtk);
+GpsNed.d = zeros(1,sizeOfRtk);
+GpsNed.timeN = zeros(1,sizeOfRtk);
+GpsNed.timeE = zeros(1,sizeOfRtk);
+GpsNed.timeD = zeros(1,sizeOfRtk);
+GpsNed.timestamp = RtkHexa3.timestamp;
+
+[GpsNed.x,GpsNed.y,GpsNed.z] = ecef2ned(GpsEcef.x,GpsEcef.y,GpsEcef.z,RtkHexa3.base_lat,RtkHexa3.base_lon,RtkHexa3.base_height,wgs84Ellipsoid);
+
+GpsNed.timeN = timeseries(GpsNed.x,GpsNed.timestamp);
+GpsNed.timeE = timeseries(GpsNed.y,GpsNed.timestamp);
+GpsNed.timeD = timeseries(GpsNed.z,GpsNed.timestamp);
+
+ExternalNed = struct;
+
+ExternalNed.x = zeros(1,sizeOfExternal);
+ExternalNed.y = zeros(1,sizeOfExternal);
+ExternalNed.z = zeros(1,sizeOfExternal);
+ExternalNed.timeX = zeros(1,sizeOfExternal);
+ExternalNed.timeY = zeros(1,sizeOfExternal);
+ExternalNed.timeZ = zeros(1,sizeOfExternal);
+ExternalNed.timestamp = ExternalHexa3.timestamp;
+
+[ExternalNed.x,ExternalNed.y,ExternalNed.z] = ecef2ned(ExternalEcef.x,ExternalEcef.y,ExternalEcef.z,RtkHexa3.base_lat(1),RtkHexa3.base_lon(1),RtkHexa3.base_height(1),wgs84Ellipsoid);
+
+ExternalNed.timeX = timeseries(ExternalNed.x,ExternalNed.timestamp);
+ExternalNed.timeY = timeseries(ExternalNed.y,ExternalNed.timestamp);
+ExternalNed.timeZ = timeseries(ExternalNed.z,ExternalNed.timestamp);
+
+[ExternalNed.timeX,GpsNed.timeN] = synchronize(ExternalNed.timeX,GpsNed.timeN,'Union');
+[ExternalNed.timeY,GpsNed.timeE] = synchronize(ExternalNed.timeY,GpsNed.timeE,'Union');
+[ExternalNed.timeZ,GpsNed.timeD] = synchronize(ExternalNed.timeZ,GpsNed.timeD,'Union');
+
+ErrorHexa3 = struct;
+
+ErrorHexa3.x = ExternalNed.timeX-GpsNed.timeN;
+ErrorHexa3.y = ExternalNed.timeY-GpsNed.timeE;
+ErrorHexa3.z = ExternalNed.timeZ-GpsNed.timeD;
+
+%% Figures
+figure(1);
+% subplot(2,1,1);
+% plot3(Estimated.DisE,Estimated.DisN,Rtk.base_height(1)-Estimated.DisD,'b');
+% grid on;
+% hold on;
+subplot(2,1,1)
+plot(EstimatedHexa3.DisE,EstimatedHexa3.DisN)
+grid on;
+hold on;
+plot(ExternalHexa3.DisE,ExternalHexa3.DisN,'r');
+subplot(2,1,2);
+plot(EstimatedHexa3.DisE,EstimatedHexa3.DisN);
+grid on;
+hold on;
+plot(ExternalHexa3.DisE,ExternalHexa3.DisN,'r');
+
+figure(2)
+subplot(2,1,1)
+plot(RtkHexa3.timestamp(:)-RtkHexa3.timestamp(1),RtkHexa3.type);
+subplot(2,1,2);
+plot(NavSources.timestamp(:)-NavSources.timestamp(1),m_NavSourcesHexa3.maskValue);
+figure(3)
+% plot(EstimatedState.height-EstimatedState.z);
+plot(RtkHexa3.timestamp(1:end-1)-RtkHexa3.timestamp(1),RtkHexa3.timediff)
+
+figure(3);
+% subplot(2,1,1);
+% plot3(Estimated.DisE,Estimated.DisN,Rtk.base_height(1)-Estimated.DisD,'b');
+% grid on;
+% hold on;
+subplot(2,1,1)
+plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
+grid on;
+hold on;
+plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
+plot(RtkHexa3.timestamp(:)-RtkHexa3.timestamp(1),RtkHexa3.base_height(1)-RtkHexa3.d,'-g');
+plot( ExternalHexa3.timestamp(:)-ExternalHexa3.timestamp(1),ExternalHexa3.base_height(1)-ExternalHexa3.z,'c');
+plot(EstimatedHexa3.timestamp(:)-EstimatedHexa3.timestamp(1),RtkHexa3.base_height(1)-EstimatedHexa3.DisD,'bl');
+subplot(2,1,2);
+plot(EstimatedState.timestamp(:)-EstimatedState.timestamp(1),EstimatedState.height-EstimatedState.z);
+grid on;
+hold on;
+plot(DesiredZ.timestamp(:)-DesiredZ.timestamp(1),DesiredZ.value,'r');
+plot(RtkHexa3.timestamp(:)-RtkHexa3.timestamp(1),RtkHexa3.base_height(1)-RtkHexa3.d,'-g');
+plot( ExternalHexa3.timestamp(:)-ExternalHexa3.timestamp(1),ExternalHexa3.base_height(1)-ExternalHexa3.z,'c');
+plot(EstimatedHexa3.timestamp(:)-EstimatedHexa3.timestamp(1),RtkHexa3.base_height(1)-EstimatedHexa3.DisD,'bl');
+
+% plot(ExternalNed.timestamp(:)-ExternalNed.timestamp(1),External.base_height-External.z,'g')
+% figure(2);
+% % plot(EstimatedState.y,EstimatedState.x);
+% plot(ExternalNed.y-2,ExternalNed.x-2);
+% hold on;
+% plot(Rtk.e(1,:),Rtk.n(1,:),'r');
+% % plot(External.y,External.x,'g');
+% plot(ExternalNed.y-diff*mean(Error.y.Data(1,1,98:100)),ExternalNed.x-diff*mean(Error.x.Data(1,1,98:100)),'c');
+% legend('External','Rtk','ExternalDiff');
+% y = squeeze(ExternalNed.timeY.Data)-squeeze(Error.y.Data);
+% x = squeeze(ExternalNed.timeX.Data)-squeeze(Error.x.Data);
+% plot(y,x,'k');
+% figure(3);
+% subplot(2,1,1);
+% plot(Error.x);
+% subplot(2,1,2);
+% plot(Error.y);
+% figure(4)
+% plot(ExternalNed.y-2,ExternalNed.x-2);
+% hold on;
+% plot(GpsNed.y,GpsNed.x,'r');
+% figure(5)
+% plot(Rtk.timestamp(:) - Rtk.timestamp(1), Rtk.type);
+% % ExternalNavData.state{2,1}

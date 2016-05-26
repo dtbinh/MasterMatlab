@@ -1,0 +1,15 @@
+[2016/05/25 13:14:23] - MSG [Plan.DB] >> set plan (formationPlan) -- OK (updated)
+[2016/05/25 13:14:23] - WRN [Plan.DB] >> storing plan 'formationPlan' issued through a PlanControl request
+[2016/05/25 13:14:23] - MSG [Plan.DB] >> set plan (formationPlan) -- OK (updated)
+[2016/05/25 13:14:24] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/25 13:14:24] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:14:24] - MSG [Plan.Engine] >> reply -- Get Plan (formationPlan) -- OK
+[2016/05/25 13:14:24] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:14:24] - MSG [Plan.Engine] >> reply -- Get Plan (formationPlan) -- OK
+[2016/05/25 13:14:24] - MSG [Maneuver.SlaveManeuver] >> SlaveManeuver maneuver received
+[2016/05/25 13:14:24] - MSG [Control.UAV.Ardupilot/AP-SIL] >> speed control - activating
+[2016/05/25 13:16:10] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/05/25 13:16:10] - MSG [Plan.Engine] >> reply -- Stop Plan (formationPlan) -- OK
+[2016/05/25 13:16:10] - WRN [Plan.Engine] >> plan stopped
+[2016/05/25 13:16:10] - MSG [Transports.Logging] >> log stopped '20160525/131423_formationPlan'
+[2016/05/25 13:16:10] - MSG [Transports.Logging] >> log started '20160525/131610'

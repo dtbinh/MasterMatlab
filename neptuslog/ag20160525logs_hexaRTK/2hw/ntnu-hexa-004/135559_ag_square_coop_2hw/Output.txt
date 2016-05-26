@@ -1,0 +1,36 @@
+[2016/05/25 13:56:00] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/25 13:56:00] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:56:00] - MSG [Plan.Engine] >> reply -- Get Plan (ag_square_coop_2hw) -- OK
+[2016/05/25 13:56:00] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:56:00] - MSG [Plan.Engine] >> reply -- Get Plan (ag_square_coop_2hw) -- OK
+[2016/05/25 13:56:00] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:56:00] - MSG [Plan.Engine] >> reply -- Get Plan (ag_square_coop_2hw) -- OK
+[2016/05/25 13:56:00] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/05/25 13:56:00] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62895 9.72721 to 63.62876 9.72718
+[2016/05/25 13:56:00] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/05/25 13:56:00] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/05/25 13:56:00] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/25 13:56:00] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/05/25 13:56:00] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/25 13:56:00] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/05/25 13:56:00] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/05/25 13:56:00] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/05/25 13:56:11] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/05/25 13:56:12] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62876 9.72718 to 63.62882 9.72756
+[2016/05/25 13:56:12] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/05/25 13:56:12] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/25 13:56:25] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:56:25] - MSG [Plan.Engine] >> reply -- Get Plan (ag_square_coop_2hw) -- OK
+[2016/05/25 13:56:40] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/05/25 13:56:41] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62882 9.72756 to 63.62896 9.72743
+[2016/05/25 13:56:41] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/05/25 13:56:41] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/25 13:57:11] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/25 13:57:11] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62891 9.72744 to 63.62891 9.72707
+[2016/05/25 13:57:11] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/05/25 13:57:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/25 13:57:16] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/05/25 13:57:16] - MSG [Plan.Engine] >> reply -- Stop Plan (ag_square_coop_2hw) -- OK
+[2016/05/25 13:57:16] - WRN [Plan.Engine] >> plan stopped
+[2016/05/25 13:57:16] - MSG [Transports.Logging] >> log stopped '20160525/135559_ag_square_coop_2hw'
+[2016/05/25 13:57:16] - MSG [Transports.Logging] >> log started '20160525/135716'

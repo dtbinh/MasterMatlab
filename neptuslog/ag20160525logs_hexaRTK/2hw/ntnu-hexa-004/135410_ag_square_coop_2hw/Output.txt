@@ -1,0 +1,19 @@
+[2016/05/25 13:54:10] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/25 13:54:10] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/25 13:54:10] - MSG [Plan.Engine] >> reply -- Get Plan (ag_square_coop_2hw) -- OK
+[2016/05/25 13:54:11] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/05/25 13:54:11] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62894 9.72714 to 63.62876 9.72718
+[2016/05/25 13:54:11] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/05/25 13:54:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/05/25 13:54:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/25 13:54:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/05/25 13:54:11] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/25 13:54:11] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/05/25 13:54:11] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/05/25 13:54:11] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/05/25 13:54:13] - WRN [Control.Formation.Coordinator] >> Formation Abort!
+[2016/05/25 13:54:13] - ERR [Supervisors.Vehicle] >> got abort request
+[2016/05/25 13:54:13] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/05/25 13:54:13] - ERR [Plan.Engine] >> reply -- Get Plan (ag_square_coop_2hw) -- got abort request
+[2016/05/25 13:54:13] - MSG [Transports.Logging] >> log stopped '20160525/135410_ag_square_coop_2hw'
+[2016/05/25 13:54:13] - MSG [Transports.Logging] >> log started '20160525/135413'

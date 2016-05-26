@@ -3,9 +3,13 @@ clear;
 
 % load 135749_gpsrtk_goto\mra\Data.mat;
 % load Agdenes20161804\ntnu-hexa-003\20160418\092204_RTK-Test-Agdenes\mra\Data.mat
+
+
 % TO be used in raport
 % load Agdenes20161804\ntnu-hexa-003\20160418\102153_agdenes_refsim_square_RTK\mra\Data.mat
-load Log11052016Agdenes\125025_agdenes_roll_tuning\mra\Data.mat
+% load Log11052016Agdenes\125025_agdenes_roll_tuning\mra\Data.mat
+% Current log in use
+load ag20160525logs_hexaRTK/2hw/
 
 C = unique(GpsFixRtk.src_ent);
 
