@@ -85,6 +85,7 @@ ExternalHexa3.timeZ = timeseries(ExternalHexa3.z,ExternalHexa3.timestamp);
 m_NavSourcesHexa3 = struct;
 % m_NavSources.mask = zeros(length(NavSources.mask),1);
 m_NavSourcesHexa3.maskValue = zeros(length(NavSources.mask),1);
+m_NavSourcesHexa3.timestamp = NavSources.timestamp;
 for i=1:length(NavSources.mask)
 %     [m_NavSources.mask(i,:),~] = strsplit(NavSources.mask(i,:),{'GNSS_RTK','|'},'CollapseDelimiters',false,'DelimiterType','RegularExpression');
       index = strfind(NavSources.mask(i,:),'GNSS_RTK');
@@ -127,7 +128,7 @@ end
 
 %% Hexa 004 
 
-load ag20160525logs_hexaRTK/2hw/ntnu-hexa-004/135600_formationPlan/mra/data;
+load ag20160525logs_hexaRTK/2hw/ntnu-hexa-004/135559_ag_square_coop_2hw/mra/data;
 
 C = unique(GpsFixRtk.src_ent);
 
@@ -273,7 +274,7 @@ figure(2)
 subplot(2,1,1)
 plot(RtkHexa3.timestamp(:)-RtkHexa3.timestamp(1),RtkHexa3.type);
 subplot(2,1,2);
-plot(NavSources.timestamp(:)-NavSources.timestamp(1),m_NavSourcesHexa3.maskValue);
+plot(m_NavSourcesHexa3.timestamp(:)-m_NavSourcesHexa3.timestamp(1),m_NavSourcesHexa3.maskValue);
 figure(3)
 % plot(EstimatedState.height-EstimatedState.z);
 plot(RtkHexa3.timestamp(1:end-1)-RtkHexa3.timestamp(1),RtkHexa3.timediff)
@@ -299,3 +300,10 @@ hold on;
 plot(RtkHexa3.timestamp(:)-RtkHexa3.timestamp(1),RtkHexa3.base_height(1)-RtkHexa3.d,'-g');
 plot( ExternalHexa3.timestamp(:)-ExternalHexa3.timestamp(1),ExternalHexa3.base_height(1)-ExternalHexa3.z,'c');
 plot(EstimatedHexa3.timestamp(:)-EstimatedHexa3.timestamp(1),RtkHexa3.base_height(1)-EstimatedHexa3.DisD,'bl');
+figure(4)
+subplot(2,1,1)
+plot(EstimatedHexa3.timestamp-EstimatedHexa3.timestamp(1),EstimatedHexa3.DisN);
+grid on;
+subplot(2,1,2)
+plot(EstimatedHexa3.timestamp-EstimatedHexa3.timestamp(1),EstimatedHexa3.DisE);
+grid on;
