@@ -1,4 +1,9 @@
+function [state] = stateExtract(Hardware,Path,filename)
+state = struct;
 %% Extract state information
+load(filename)
+rad2deg = 180/pi;
+deg2rad = pi/180;
 if (Hardware)
     C = unique(GpsFixRtk.src_ent);
 
@@ -10,8 +15,6 @@ if (Hardware)
     end
 
     sizeOfRtk = length(find(GpsFixRtk.src_ent==src_ent));
-    sizeOfExternal = length(ExternalNavData.state);
-    diff = 0.2;
 
     %% Extract Rtk
     Rtk = struct;
@@ -36,7 +39,7 @@ if (Hardware)
             Rtk.base_height(1,j) = GpsFixRtk.base_height(i);
             if strcmp(GpsFixRtk.type(i,1:2),'FI')
                 Rtk.type(j) = 3;
-            elseif strcmp(GpsFixRtk.type(i,1:2),'FI')
+            elseif strcmp(GpsFixRtk.type(i,1:2),'FL')
                 Rtk.type(j) = 2;
             else
                 Rtk.type(j) = 0;
@@ -50,23 +53,25 @@ if (Hardware)
     Rtk.timeN = timeseries(Rtk.n,Rtk.timestamp);
     Rtk.timeE = timeseries(Rtk.e,Rtk.timestamp);
     Rtk.timeD = timeseries(Rtk.d,Rtk.timestamp);
+    
+    state.Rtk = Rtk;
 
     %% Extract Navsource used in system
-    m_NavSources = struct;
+    NavSources = struct;
     % m_NavSources.mask = zeros(length(NavSources.mask),1);
-    m_NavSources.maskValue = zeros(length(NavSources.mask),1);
+    NavSources.maskValue = zeros(length(NavSources.mask),1);
     for i=1:length(NavSources.mask)
     %     [m_NavSources.mask(i,:),~] = strsplit(NavSources.mask(i,:),{'GNSS_RTK','|'},'CollapseDelimiters',false,'DelimiterType','RegularExpression');
           index = strfind(NavSources.mask(i,:),'GNSS_RTK');
-          m_NavSources.mask= NavSources.mask(1,index:index+7);
-        if (strcmp(m_NavSources.mask,'GNSS_RTK'))
-            m_NavSources.maskValue(i,1) = 1;
+          NavSources.mask= NavSources.mask(1,index:index+7);
+        if (strcmp(NavSources.mask,'GNSS_RTK'))
+            NavSources.maskValue(i,1) = 1;
         else
-            m_NavSources.maskValue(i,1) = 0;
+            NavSources.maskValue(i,1) = 0;
         end
     end
 end
-
+state.Navsources = NavSources;
 %% Extract estimatedState
 Estimated = struct;
 
@@ -96,33 +101,57 @@ for i=1:length(EstimatedState.timestamp)
                                                                                 Estimated.x(i),Estimated.y(i),Estimated.z(i));
     end
     [Estimated.PathN(i),Estimated.PathE(i),Estimated.PathD(i)] = displacement(Estimated.base_lat(i),Estimated.base_lon(i),Estimated.base_height(i),...
-                                                                                NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,...
+                                                                                Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,...
                                                                                 Estimated.x(i),Estimated.y(i),Estimated.z(i));
 end
-
+state.Estimated = Estimated;
 %% Extract path state
 
 PathState = struct;
 
-PathState.crossTrack = PathControlState.y;
-PathState.timestamp = PathControlState.timestamp;
-%% Find cross track error and along track distance in the lateral plane
+C = unique(PathControlState.src_ent);
 
-alpha_k = atan2(PathY(2)-PathY(1),PathX(2)-PathX(1));
+for i=1:length(C)
+row = find(EntityInfo.id==C(i));
+EntityInfo.component(row(1,:),1:21)
+    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.LOSnSMCu')
+        src_ent = C(i);
+    end
+end
+
+sizeOfPathState = length(find(PathControlState.src_ent==src_ent));
+
+
+PathState.crossTrack = zeros(1,sizeOfPathState);
+PathState.timestamp = zeros(1,sizeOfPathState);
+j = 1;
+for (i=1:length(PathControlState.timestamp))
+    if (PathControlState.src_ent(i)==src_ent)
+        PathState.crossTrack(j) = PathControlState.y(i);
+        PathState.timestamp(j) = PathControlState.timestamp(i);
+        j = j+1;
+    end
+end
+state.PathState = PathState;
+% %% Find cross track error and along track distance in the lateral plane
+% 
+alpha_k = atan2(Path.PathY(2)-Path.PathY(1),Path.PathX(2)-Path.PathX(1));
 i = 1;
 j = 1;
-lengthPath = length(PathY);
+lengthPath = length(Path.PathY);
 lengthState = length(EstimatedState.timestamp);
 alongTrack = zeros(1,length(EstimatedState.timestamp));
 crossTrack = zeros(1,length(EstimatedState.timestamp));
 first = true;
 
 while (i<(lengthPath-1) && j<lengthState)
-    alongTrack(j) = (Estimated.PathN(j)-PathX(i))*cos(alpha_k) + (Estimated.PathE(j)-PathY(i))*sin(alpha_k);
-    crossTrack(j) = -(Estimated.PathN(j)-PathX(i))*sin(alpha_k) + (Estimated.PathE(j)-PathY(i))*cos(alpha_k);
-    if (alongTrack(j) >= sqrt((PathX(i+1)-PathX(i))^2+(PathY(i+1)-PathY(i))^2))
+    alongTrack(j) = (Estimated.PathN(j)-Path.PathX(i))*cos(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*sin(alpha_k);
+    crossTrack(j) = -(Estimated.PathN(j)-Path.PathX(i))*sin(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*cos(alpha_k);
+    if (alongTrack(j) >= sqrt((Path.PathX(i+1)-Path.PathX(i))^2+(Path.PathY(i+1)-Path.PathY(i))^2))
         i = i+1;
-        alpha_k = atan2(PathY(i+1)-PathY(i),PathX(i+1)-PathX(i));
+        alpha_k = atan2(Path.PathY(i+1)-Path.PathY(i),Path.PathX(i+1)-Path.PathX(i));
     end
     j = j+1;
+end
+state.crossTrack = crossTrack;
 end

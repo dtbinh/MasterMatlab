@@ -1,5 +1,7 @@
 close all;
 clear;
+
+%% SIL simuleringer
 % old = digits(20);
 % load SILTestLog/143651_landFBWA/mra/Data;
 load SILFBWA11Teste/160541_landFBWA/mra/Data;
