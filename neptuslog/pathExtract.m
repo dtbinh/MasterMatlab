@@ -3,18 +3,19 @@ function [Path] = pathExtract(filename)
 
 load(filename)
 Path = struct;
-NetPos = struct;
-NetPos.lat = 63.62848193735199;
-NetPos.lon = 9.726324254172361;
-NetPos.height = 150;
-NetPos.z = -3;
-NetPos.heading = 66.5;
+%% Net pos
+load NetPosSIL2205
+
 
 C = unique(DesiredZ.src_ent);
 
 for i=1:length(C)
 row = find(EntityInfo.id==C(i));
-    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.UAV.Ardupilot')
+%     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.UAV.Ardupilot')
+%         src_ent = C(i);
+%     end
+EntityInfo.component(row(1,:),1:21)
+    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.HeightGl')
         src_ent = C(i);
     end
 end
@@ -44,9 +45,9 @@ WP3 = PlanSpecification.maneuvers{1,1}{2,1}.data{1,1};
 WP2 = PlanSpecification.maneuvers{1,1}{3,1}.data{1,1};
 WP1 = PlanSpecification.maneuvers{1,1}{4,1}.data{1,1};
 
-[WP3X, WP3Y, WP3Z] = geodetic2ned(WP3.lat*rad2deg,WP3.lon*rad2deg,WP3.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
-[WP2X, WP2Y, WP2Z] = geodetic2ned(WP2.lat*rad2deg,WP2.lon*rad2deg,WP2.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
-[WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat*rad2deg,WP1.lon*rad2deg,WP1.z,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
+[WP3X, WP3Y, WP3Z] = geodetic2ned(WP3.lat*rad2deg,WP3.lon*rad2deg,WP3.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
+[WP2X, WP2Y, WP2Z] = geodetic2ned(WP2.lat*rad2deg,WP2.lon*rad2deg,WP2.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
+[WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat*rad2deg,WP1.lon*rad2deg,WP1.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
 
 xDubin = zeros(1,length(PathDubins.points{1,1}));
 yDubin = zeros(1,length(PathDubins.points{1,1}));
@@ -54,7 +55,7 @@ zDubin = zeros(1,length(PathDubins.points{1,1}));
 DubinsLat = PathDubins.lat*rad2deg;
 DubinsLon = PathDubins.lon*rad2deg;
 DubinsHeight = PathDubins.z;
-[DubinsX0,DubinsY0,DubinsZ0] = geodetic2ned(DubinsLat,DubinsLon,DubinsHeight,NetPos.lat,NetPos.lon,NetPos.height-NetPos.z,wgs84Ellipsoid);
+[DubinsX0,DubinsY0,DubinsZ0] = geodetic2ned(DubinsLat,DubinsLon,DubinsHeight,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
 for i=1:length(PathDubins.points{1,1})
     xDubin(1,i) = PathDubins.points{1,1}{i,1}.x + DubinsX0;
     yDubin(1,i) = PathDubins.points{1,1}{i,1}.y + DubinsY0;
