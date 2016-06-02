@@ -4,8 +4,8 @@ function [Path] = pathExtract(filename)
 load(filename)
 Path = struct;
 %% Net pos
-load NetPosSIL2205
-
+% load NetPosSIL2205
+NetPos = NetposSaver();
 
 C = unique(DesiredZ.src_ent);
 
@@ -19,7 +19,6 @@ EntityInfo.component(row(1,:),1:21)
         src_ent = C(i);
     end
 end
-
 sizeOfArdupilot = length(find(DesiredZ.src_ent==src_ent));
 
 DesiredHeight = struct;

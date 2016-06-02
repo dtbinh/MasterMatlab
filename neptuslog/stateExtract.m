@@ -9,7 +9,7 @@ if (Hardware)
 
     for i=1:length(C)
         row = find(EntityInfo.id==C(i));
-        if strcmp(EntityInfo.component(row,1:9),'Sensors.R')
+        if strcmp(EntityInfo.component(row(1,:),1:9),'Sensors.R')
             src_ent = C(i);
         end
     end
@@ -57,21 +57,21 @@ if (Hardware)
     state.Rtk = Rtk;
 
     %% Extract Navsource used in system
-    NavSources = struct;
+    NavSources1 = struct;
     % m_NavSources.mask = zeros(length(NavSources.mask),1);
-    NavSources.maskValue = zeros(length(NavSources.mask),1);
+    NavSources1.maskValue = zeros(length(NavSources.mask),1);
     for i=1:length(NavSources.mask)
     %     [m_NavSources.mask(i,:),~] = strsplit(NavSources.mask(i,:),{'GNSS_RTK','|'},'CollapseDelimiters',false,'DelimiterType','RegularExpression');
           index = strfind(NavSources.mask(i,:),'GNSS_RTK');
-          NavSources.mask= NavSources.mask(1,index:index+7);
+          NavSources1.mask= NavSources.mask(1,index:index+7);
         if (strcmp(NavSources.mask,'GNSS_RTK'))
-            NavSources.maskValue(i,1) = 1;
+            NavSources1.maskValue(i,1) = 1;
         else
-            NavSources.maskValue(i,1) = 0;
+            NavSources1.maskValue(i,1) = 0;
         end
     end
 end
-state.Navsources = NavSources;
+state.Navsources = NavSources1;
 %% Extract estimatedState
 Estimated = struct;
 
@@ -113,7 +113,6 @@ C = unique(PathControlState.src_ent);
 
 for i=1:length(C)
 row = find(EntityInfo.id==C(i));
-EntityInfo.component(row(1,:),1:21)
     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.LOSnSMCu')
         src_ent = C(i);
     end
@@ -123,35 +122,50 @@ sizeOfPathState = length(find(PathControlState.src_ent==src_ent));
 
 
 PathState.crossTrack = zeros(1,sizeOfPathState);
+PathState.alongtrack = zeros(1,sizeOfPathState);
 PathState.timestamp = zeros(1,sizeOfPathState);
 j = 1;
 for (i=1:length(PathControlState.timestamp))
     if (PathControlState.src_ent(i)==src_ent)
         PathState.crossTrack(j) = PathControlState.y(i);
+        PathState.alongtrack(j) = PathControlState.x(i);
         PathState.timestamp(j) = PathControlState.timestamp(i);
         j = j+1;
     end
 end
+%% Find height error
+height = timeseries(state.Estimated.base_height-state.Estimated.z,state.Estimated.timestamp);
+desired = timeseries(Path.DesiredHeight.value,Path.DesiredHeight.timestamp);
+[heightSync,desiredSync] = synchronize(height,desired,'Union');
+heightError = heightSync-desiredSync;
+state.heightError = heightError;
+
 state.PathState = PathState;
+disp('Mean cross track error');
+mean(state.PathState.crossTrack)
+disp('Var cross track error');
+var(state.PathState.crossTrack)
+disp('Mean height error');
+mean(state.heightError)
 % %% Find cross track error and along track distance in the lateral plane
 % 
-alpha_k = atan2(Path.PathY(2)-Path.PathY(1),Path.PathX(2)-Path.PathX(1));
-i = 1;
-j = 1;
-lengthPath = length(Path.PathY);
-lengthState = length(EstimatedState.timestamp);
-alongTrack = zeros(1,length(EstimatedState.timestamp));
-crossTrack = zeros(1,length(EstimatedState.timestamp));
-first = true;
-
-while (i<(lengthPath-1) && j<lengthState)
-    alongTrack(j) = (Estimated.PathN(j)-Path.PathX(i))*cos(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*sin(alpha_k);
-    crossTrack(j) = -(Estimated.PathN(j)-Path.PathX(i))*sin(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*cos(alpha_k);
-    if (alongTrack(j) >= sqrt((Path.PathX(i+1)-Path.PathX(i))^2+(Path.PathY(i+1)-Path.PathY(i))^2))
-        i = i+1;
-        alpha_k = atan2(Path.PathY(i+1)-Path.PathY(i),Path.PathX(i+1)-Path.PathX(i));
-    end
-    j = j+1;
-end
-state.crossTrack = crossTrack;
+% alpha_k = atan2(Path.PathY(2)-Path.PathY(1),Path.PathX(2)-Path.PathX(1));
+% i = 1;
+% j = 1;
+% lengthPath = length(Path.PathY);
+% lengthState = length(EstimatedState.timestamp);
+% alongTrack = zeros(1,length(EstimatedState.timestamp));
+% crossTrack = zeros(1,length(EstimatedState.timestamp));
+% first = true;
+% 
+% while (i<(lengthPath-1) && j<lengthState)
+%     alongTrack(j) = (Estimated.PathN(j)-Path.PathX(i))*cos(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*sin(alpha_k);
+%     crossTrack(j) = -(Estimated.PathN(j)-Path.PathX(i))*sin(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*cos(alpha_k);
+%     if (alongTrack(j) >= sqrt((Path.PathX(i+1)-Path.PathX(i))^2+(Path.PathY(i+1)-Path.PathY(i))^2))
+%         i = i+1;
+%         alpha_k = atan2(Path.PathY(i+1)-Path.PathY(i),Path.PathX(i+1)-Path.PathX(i));
+%     end
+%     j = j+1;
+% end
+% state.crossTrack = crossTrack;
 end
