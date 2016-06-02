@@ -1,0 +1,69 @@
+[2016/05/31 10:21:14] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/31 10:21:14] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 10:21:14] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 10:21:14] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62874 9.72323 to 63.62831 9.72423
+[2016/05/31 10:21:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62874 9.72323 to 63.62831 9.72423
+[2016/05/31 10:21:14] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62874 9.72323 to 63.62831 9.72423
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 10:21:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 10:22:09] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/05/31 10:22:09] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 87.57
+[2016/05/31 10:22:10] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 87.41
+[2016/05/31 10:22:14] - MSG [Control.Path.HeightGlideslope] >> now loitering
+[2016/05/31 10:22:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/05/31 10:22:14] - MSG [Control.Path.Longitudinal] >> now loitering
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/05/31 10:22:39] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/05/31 10:22:39] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/05/31 10:22:39] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/05/31 10:22:39] - MSG [Plan.DB] >> set plan (land) -- OK (new entry)
+[2016/05/31 10:22:39] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/05/31 10:22:39] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/05/31 10:23:31] - MSG [Plan.DB] >> delete plan (land) -- OK
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/05/31 10:23:46] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/05/31 10:23:46] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/05/31 10:23:46] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/05/31 10:23:46] - MSG [Plan.DB] >> set plan (land) -- OK (new entry)
+[2016/05/31 10:23:46] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/05/31 10:23:46] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/05/31 10:26:57] - MSG [Plan.DB] >> set plan (landFBWA) -- OK (new entry)
+[2016/05/31 10:27:26] - MSG [Plan.Engine] >> request -- Start Plan (landFBWA)
+[2016/05/31 10:27:26] - WRN [Plan.Engine] >> plan initializing: landFBWA
+[2016/05/31 10:27:26] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/05/31 10:27:26] - MSG [Plan.Engine] >> reply -- Start Plan (landFBWA) -- 1: executing maneuver
+[2016/05/31 10:27:26] - MSG [Transports.Logging] >> log stopped '20160531/102114_LoiterLand'
+[2016/05/31 10:27:26] - MSG [Transports.Logging] >> log started '20160531/102726_landFBWA'

@@ -1,0 +1,93 @@
+[2016/05/31 09:13:28] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - activating
+[2016/05/31 09:13:28] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/31 09:13:28] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 09:13:28] - MSG [Plan.Engine] >> reply -- Get Plan (agdenes_roll_tuning) -- OK
+[2016/05/31 09:13:29] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62934 9.72456 to 63.62764 9.72216
+[2016/05/31 09:13:29] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62934 9.72456 to 63.62764 9.72216
+[2016/05/31 09:13:29] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62934 9.72456 to 63.62764 9.72216
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - deactivating
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> bank control - activating
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 109.72
+[2016/05/31 09:13:29] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - activating
+[2016/05/31 09:13:39] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/05/31 09:13:39] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:13:39] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:13:39] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:13:39] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:13:39] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/05/31 09:13:46] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/05/31 09:13:47] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:13:47] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:13:47] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:13:47] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:13:47] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:14:06] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/05/31 09:14:07] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:14:07] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:14:07] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:14:07] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:14:07] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/05/31 09:14:13] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/31 09:14:13] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:14:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:14:13] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:14:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:14:13] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:14:40] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/05/31 09:14:40] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:14:40] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:14:40] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:14:40] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:14:40] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/05/31 09:14:46] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/05/31 09:14:47] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:14:47] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:14:47] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:14:47] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:14:47] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:15:06] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/05/31 09:15:07] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:15:07] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:15:07] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:15:07] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:15:07] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/05/31 09:15:13] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/31 09:15:13] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:15:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:15:13] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:15:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:15:13] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:15:40] - WRN [Plan.Engine] >> Goto2: executing maneuver
+[2016/05/31 09:15:40] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:15:40] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:15:40] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62764 9.72216 to 63.62656 9.72306
+[2016/05/31 09:15:40] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:15:40] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/05/31 09:15:46] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/05/31 09:15:47] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:15:47] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:15:47] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62656 9.72306 to 63.62806 9.73111
+[2016/05/31 09:15:47] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:15:47] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:16:07] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/05/31 09:16:07] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:16:07] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:16:07] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62806 9.73111 to 63.62907 9.73009
+[2016/05/31 09:16:07] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:16:07] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/05/31 09:16:13] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/31 09:16:14] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:16:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:16:14] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62907 9.73009 to 63.62764 9.72216
+[2016/05/31 09:16:14] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/05/31 09:16:14] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/05/31 09:16:23] - MSG [Plan.Engine] >> request -- Start Plan (agdenes_FBWA_tuning_line)
+[2016/05/31 09:16:23] - WRN [Plan.Engine] >> plan initializing: agdenes_FBWA_tuning_line
+[2016/05/31 09:16:23] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/31 09:16:23] - MSG [Plan.Engine] >> reply -- Start Plan (agdenes_FBWA_tuning_line) -- Goto1: executing maneuver
+[2016/05/31 09:16:23] - MSG [Transports.Logging] >> log stopped '20160531/091328_agdenes_roll_tuning'
+[2016/05/31 09:16:23] - MSG [Transports.Logging] >> log started '20160531/091623_agdenes_FBWA_tuning_line'

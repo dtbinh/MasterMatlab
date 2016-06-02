@@ -1,0 +1,27 @@
+[2016/05/31 13:15:07] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:15:07] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:15:08] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62894 9.72368 to 63.62831 9.72423
+[2016/05/31 13:15:08] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62894 9.72368 to 63.62831 9.72423
+[2016/05/31 13:15:08] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62894 9.72368 to 63.62831 9.72423
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:15:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 13:15:33] - MSG [Plan.Engine] >> request -- Start Plan (LoiterLand)
+[2016/05/31 13:15:33] - WRN [Plan.Engine] >> plan initializing: LoiterLand
+[2016/05/31 13:15:33] - WRN [Plan.Engine] >> Loiter1: executing maneuver
+[2016/05/31 13:15:33] - MSG [Plan.Engine] >> reply -- Start Plan (LoiterLand) -- Loiter1: executing maneuver
+[2016/05/31 13:15:33] - MSG [Transports.Logging] >> log stopped '20160531/131507_LoiterLand'
+[2016/05/31 13:15:33] - MSG [Transports.Logging] >> log started '20160531/131533_LoiterLand'

@@ -1,0 +1,88 @@
+[2016/06/01 11:14:19] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/06/01 11:14:19] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 11:14:19] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 11:14:19] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 11:14:19] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 11:14:19] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62823 9.73247 to 63.62831 9.72423
+[2016/06/01 11:14:19] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62823 9.73247 to 63.62831 9.72423
+[2016/06/01 11:14:19] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62823 9.73247 to 63.62831 9.72423
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 11:14:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 11:14:28] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:14:28] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 11:14:33] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/06/01 11:14:33] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 116.26
+[2016/06/01 11:14:34] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 114.57
+[2016/06/01 11:14:40] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:14:40] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 11:14:48] - MSG [Control.Path.HeightGlideslope/Hardware] >> now loitering
+[2016/06/01 11:14:48] - MSG [Control.Path.Longitudinal/Hardware] >> now loitering
+[2016/06/01 11:14:48] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 11:15:04] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 11:15:04] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 11:15:04] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 11:15:04] - MSG [Plan.Engine] >> request -- Load Plan (land_fixedwing)
+[2016/06/01 11:15:04] - ERR [Plan.Engine] >> reply -- Load Plan (land_fixedwing) -- cannot load plan now
+[2016/06/01 11:15:04] - MSG [Plan.DB] >> set plan (land) -- OK (new entry)
+[2016/06/01 11:15:04] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 11:15:04] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 11:15:04] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (new entry)
+[2016/06/01 11:15:04] - WRN [Plan.DB] >> storing plan 'land_fixedwing' issued through a PlanControl request
+[2016/06/01 11:15:04] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 11:15:36] - MSG [Plan.DB] >> set plan (land_fixedwing_run2) -- OK (new entry)
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 11:16:48] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 11:16:48] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 11:16:48] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 11:16:48] - MSG [Plan.Engine] >> request -- Load Plan (land_fixedwing)
+[2016/06/01 11:16:48] - ERR [Plan.Engine] >> reply -- Load Plan (land_fixedwing) -- cannot load plan now
+[2016/06/01 11:16:48] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 11:16:48] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 11:16:48] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 11:16:48] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 11:16:48] - WRN [Plan.DB] >> storing plan 'land_fixedwing' issued through a PlanControl request
+[2016/06/01 11:16:48] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 11:16:48] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:16:48] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 11:17:29] - MSG [Plan.DB] >> set plan (land_fixedwing_run2) -- OK (updated)
+[2016/06/01 11:17:53] - MSG [Plan.DB] >> set plan (land_fixedwing_run2) -- OK (updated)
+[2016/06/01 11:17:59] - MSG [Plan.Engine] >> request -- Start Plan (land_fixedwing_run2)
+[2016/06/01 11:17:59] - WRN [Plan.Engine] >> plan initializing: land_fixedwing_run2
+[2016/06/01 11:17:59] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/06/01 11:17:59] - MSG [Plan.Engine] >> reply -- Start Plan (land_fixedwing_run2) -- 1: executing maneuver
+[2016/06/01 11:17:59] - MSG [Transports.Logging] >> log stopped '20160601/111419_LoiterLand'
+[2016/06/01 11:17:59] - MSG [Transports.Logging] >> log started '20160601/111759_land_fixedwing_run2'

@@ -1,0 +1,8 @@
+[2016/05/31 15:51:27] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 15:52:18] - MSG [Plan.DB] >> set plan (LoiterLand) -- OK (updated)
+[2016/05/31 15:52:18] - MSG [Plan.Engine] >> request -- Start Plan (LoiterLand)
+[2016/05/31 15:52:18] - WRN [Plan.Engine] >> plan initializing: LoiterLand
+[2016/05/31 15:52:18] - WRN [Plan.Engine] >> Loiter1: executing maneuver
+[2016/05/31 15:52:18] - MSG [Plan.Engine] >> reply -- Start Plan (LoiterLand) -- Loiter1: executing maneuver
+[2016/05/31 15:52:18] - MSG [Transports.Logging] >> log stopped '20160531/155127'
+[2016/05/31 15:52:18] - MSG [Transports.Logging] >> log started '20160531/155218_LoiterLand'

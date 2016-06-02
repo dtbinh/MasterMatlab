@@ -1,0 +1,1174 @@
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 12:37:41] - MSG [Plan.Engine] >> reply -- Get Plan (land_fixedwing_run3) -- OK
+[2016/06/01 12:37:41] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 12:37:41] - MSG [Plan.Engine] >> reply -- Get Plan (land_fixedwing_run3) -- OK
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62769 9.72253 to 63.62741 9.72288
+[2016/06/01 12:37:41] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62769 9.72253 to 63.62741 9.72288
+[2016/06/01 12:37:41] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62769 9.72253 to 63.62741 9.72288
+[2016/06/01 12:37:41] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62741 9.72288 to 63.62736 9.72306
+[2016/06/01 12:37:41] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62741 9.72288 to 63.62736 9.72306
+[2016/06/01 12:37:41] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62741 9.72288 to 63.62736 9.72306
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - activating
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> bank control - activating
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control - activating
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control - activating
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62736 9.72306 to 63.62733 9.72324
+[2016/06/01 12:37:41] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62736 9.72306 to 63.62733 9.72324
+[2016/06/01 12:37:41] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62736 9.72306 to 63.62733 9.72324
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62733 9.72324 to 63.62730 9.72343
+[2016/06/01 12:37:42] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62762 9.72268 to 63.62730 9.72343
+[2016/06/01 12:37:42] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62733 9.72324 to 63.62730 9.72343
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62730 9.72343 to 63.62729 9.72363
+[2016/06/01 12:37:42] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62730 9.72343 to 63.62729 9.72363
+[2016/06/01 12:37:42] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62730 9.72343 to 63.62729 9.72363
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62729 9.72363 to 63.62729 9.72383
+[2016/06/01 12:37:42] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62754 9.72288 to 63.62729 9.72383
+[2016/06/01 12:37:42] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62729 9.72363 to 63.62729 9.72383
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62729 9.72383 to 63.62730 9.72403
+[2016/06/01 12:37:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62729 9.72383 to 63.62730 9.72403
+[2016/06/01 12:37:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62729 9.72383 to 63.62730 9.72403
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62730 9.72403 to 63.62732 9.72421
+[2016/06/01 12:37:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62730 9.72403 to 63.62732 9.72421
+[2016/06/01 12:37:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62730 9.72403 to 63.62732 9.72421
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62732 9.72421 to 63.62878 9.73500
+[2016/06/01 12:37:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62732 9.72421 to 63.62878 9.73500
+[2016/06/01 12:37:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62732 9.72421 to 63.62878 9.73500
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:37:46] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 12:37:47] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 12:38:10] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62878 9.73500 to 63.62882 9.73519
+[2016/06/01 12:38:10] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62878 9.73500 to 63.62882 9.73519
+[2016/06/01 12:38:10] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62878 9.73500 to 63.62882 9.73519
+[2016/06/01 12:38:10] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62882 9.73519 to 63.62886 9.73537
+[2016/06/01 12:38:11] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62882 9.73519 to 63.62886 9.73537
+[2016/06/01 12:38:11] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62882 9.73519 to 63.62886 9.73537
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62886 9.73537 to 63.62891 9.73553
+[2016/06/01 12:38:11] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62886 9.73537 to 63.62891 9.73553
+[2016/06/01 12:38:11] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62886 9.73537 to 63.62891 9.73553
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62891 9.73553 to 63.62897 9.73568
+[2016/06/01 12:38:12] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62891 9.73553 to 63.62897 9.73568
+[2016/06/01 12:38:12] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62891 9.73553 to 63.62897 9.73568
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62897 9.73568 to 63.62904 9.73580
+[2016/06/01 12:38:12] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62897 9.73568 to 63.62904 9.73580
+[2016/06/01 12:38:12] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62897 9.73568 to 63.62904 9.73580
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62904 9.73580 to 63.62912 9.73591
+[2016/06/01 12:38:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62904 9.73580 to 63.62912 9.73591
+[2016/06/01 12:38:13] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62904 9.73580 to 63.62912 9.73591
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62912 9.73591 to 63.62920 9.73599
+[2016/06/01 12:38:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62912 9.73591 to 63.62920 9.73599
+[2016/06/01 12:38:13] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62912 9.73591 to 63.62920 9.73599
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62920 9.73599 to 63.62929 9.73604
+[2016/06/01 12:38:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62889 9.73546 to 63.62929 9.73604
+[2016/06/01 12:38:13] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62920 9.73599 to 63.62929 9.73604
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62929 9.73604 to 63.62938 9.73607
+[2016/06/01 12:38:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62929 9.73604 to 63.62938 9.73607
+[2016/06/01 12:38:14] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62929 9.73604 to 63.62938 9.73607
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62938 9.73607 to 63.62947 9.73607
+[2016/06/01 12:38:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62938 9.73607 to 63.62947 9.73607
+[2016/06/01 12:38:14] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62938 9.73607 to 63.62947 9.73607
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:15] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:15] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62947 9.73607 to 63.62956 9.73605
+[2016/06/01 12:38:15] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62947 9.73607 to 63.62956 9.73605
+[2016/06/01 12:38:15] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62947 9.73607 to 63.62956 9.73605
+[2016/06/01 12:38:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62956 9.73605 to 63.62964 9.73599
+[2016/06/01 12:38:16] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62921 9.73609 to 63.62964 9.73599
+[2016/06/01 12:38:16] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62956 9.73605 to 63.62964 9.73599
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62964 9.73599 to 63.62973 9.73592
+[2016/06/01 12:38:16] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62964 9.73599 to 63.62973 9.73592
+[2016/06/01 12:38:16] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62964 9.73599 to 63.62973 9.73592
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:17] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62973 9.73592 to 63.62980 9.73582
+[2016/06/01 12:38:17] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62945 9.73619 to 63.62980 9.73582
+[2016/06/01 12:38:17] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62973 9.73592 to 63.62980 9.73582
+[2016/06/01 12:38:17] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:17] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:17] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:17] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:18] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62980 9.73582 to 63.62987 9.73569
+[2016/06/01 12:38:18] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62957 9.73617 to 63.62987 9.73569
+[2016/06/01 12:38:18] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62980 9.73582 to 63.62987 9.73569
+[2016/06/01 12:38:18] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:19] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62987 9.73569 to 63.62994 9.73555
+[2016/06/01 12:38:19] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62968 9.73612 to 63.62994 9.73555
+[2016/06/01 12:38:19] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62987 9.73569 to 63.62994 9.73555
+[2016/06/01 12:38:19] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:20] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62994 9.73555 to 63.62999 9.73539
+[2016/06/01 12:38:20] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62994 9.73555 to 63.62999 9.73539
+[2016/06/01 12:38:20] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62994 9.73555 to 63.62999 9.73539
+[2016/06/01 12:38:20] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:21] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62999 9.73539 to 63.63004 9.73521
+[2016/06/01 12:38:21] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62999 9.73539 to 63.63004 9.73521
+[2016/06/01 12:38:21] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62999 9.73539 to 63.63004 9.73521
+[2016/06/01 12:38:21] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:21] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:21] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:21] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:22] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63004 9.73521 to 63.63007 9.73503
+[2016/06/01 12:38:22] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63004 9.73521 to 63.63007 9.73503
+[2016/06/01 12:38:22] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63004 9.73521 to 63.63007 9.73503
+[2016/06/01 12:38:22] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:22] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:22] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:22] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:23] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63007 9.73503 to 63.63009 9.73483
+[2016/06/01 12:38:23] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63010 9.73557 to 63.63009 9.73483
+[2016/06/01 12:38:23] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63007 9.73503 to 63.63009 9.73483
+[2016/06/01 12:38:23] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:24] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63009 9.73483 to 63.63010 9.73463
+[2016/06/01 12:38:24] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63009 9.73483 to 63.63010 9.73463
+[2016/06/01 12:38:24] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63009 9.73483 to 63.63010 9.73463
+[2016/06/01 12:38:24] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:25] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63010 9.73463 to 63.63010 9.73443
+[2016/06/01 12:38:25] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63025 9.73506 to 63.63010 9.73443
+[2016/06/01 12:38:25] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63010 9.73463 to 63.63010 9.73443
+[2016/06/01 12:38:25] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:26] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:26] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63010 9.73443 to 63.63008 9.73423
+[2016/06/01 12:38:26] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63029 9.73483 to 63.63008 9.73423
+[2016/06/01 12:38:26] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63010 9.73443 to 63.63008 9.73423
+[2016/06/01 12:38:26] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:26] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:26] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:27] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63008 9.73423 to 63.63006 9.73404
+[2016/06/01 12:38:27] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63030 9.73457 to 63.63006 9.73404
+[2016/06/01 12:38:27] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63008 9.73423 to 63.63006 9.73404
+[2016/06/01 12:38:27] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:27] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:27] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:27] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:28] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63006 9.73404 to 63.63004 9.73392
+[2016/06/01 12:38:28] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63028 9.73429 to 63.63004 9.73392
+[2016/06/01 12:38:28] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63006 9.73404 to 63.63004 9.73392
+[2016/06/01 12:38:28] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63004 9.73392 to 63.62999 9.73375
+[2016/06/01 12:38:29] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63004 9.73392 to 63.62999 9.73375
+[2016/06/01 12:38:29] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63004 9.73392 to 63.62999 9.73375
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:38:29] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:38:29] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:30] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:30] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:38:30] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63017 9.73376 to 63.62988 9.73344
+[2016/06/01 12:38:30] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:38:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:38:31] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:38:31] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:38:31] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63005 9.73346 to 63.62973 9.73321
+[2016/06/01 12:38:31] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:32] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:38:32] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62998 9.73333 to 63.62965 9.73313
+[2016/06/01 12:38:32] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:38:32] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:32] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:32] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:32] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:33] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:38:33] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:38:33] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:38:33] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62956 9.73308 to 63.62947 9.73305
+[2016/06/01 12:38:34] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62956 9.73308 to 63.62947 9.73305
+[2016/06/01 12:38:34] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62956 9.73308 to 63.62947 9.73305
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62947 9.73305 to 63.62938 9.73305
+[2016/06/01 12:38:34] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62947 9.73305 to 63.62938 9.73305
+[2016/06/01 12:38:34] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62947 9.73305 to 63.62938 9.73305
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62938 9.73305 to 63.62930 9.73308
+[2016/06/01 12:38:35] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62966 9.73294 to 63.62930 9.73308
+[2016/06/01 12:38:35] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62938 9.73305 to 63.62930 9.73308
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62930 9.73308 to 63.62921 9.73313
+[2016/06/01 12:38:35] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62930 9.73308 to 63.62921 9.73313
+[2016/06/01 12:38:35] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62930 9.73308 to 63.62921 9.73313
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:35] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:36] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62921 9.73313 to 63.62913 9.73321
+[2016/06/01 12:38:36] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62921 9.73313 to 63.62913 9.73321
+[2016/06/01 12:38:36] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62921 9.73313 to 63.62913 9.73321
+[2016/06/01 12:38:36] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:36] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:36] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:36] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62913 9.73321 to 63.62905 9.73331
+[2016/06/01 12:38:37] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62940 9.73287 to 63.62905 9.73331
+[2016/06/01 12:38:37] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62913 9.73321 to 63.62905 9.73331
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62905 9.73331 to 63.62898 9.73344
+[2016/06/01 12:38:37] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62905 9.73331 to 63.62898 9.73344
+[2016/06/01 12:38:37] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62905 9.73331 to 63.62898 9.73344
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:37] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62898 9.73344 to 63.62892 9.73358
+[2016/06/01 12:38:38] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62922 9.73294 to 63.62892 9.73358
+[2016/06/01 12:38:38] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62898 9.73344 to 63.62892 9.73358
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62892 9.73358 to 63.62886 9.73374
+[2016/06/01 12:38:38] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62892 9.73358 to 63.62886 9.73374
+[2016/06/01 12:38:38] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62892 9.73358 to 63.62886 9.73374
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:38] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62886 9.73374 to 63.62882 9.73392
+[2016/06/01 12:38:39] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62886 9.73374 to 63.62882 9.73392
+[2016/06/01 12:38:39] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62886 9.73374 to 63.62882 9.73392
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62882 9.73392 to 63.62879 9.73410
+[2016/06/01 12:38:39] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62899 9.73322 to 63.62879 9.73410
+[2016/06/01 12:38:39] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62882 9.73392 to 63.62879 9.73410
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:39] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62879 9.73410 to 63.62877 9.73430
+[2016/06/01 12:38:40] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62879 9.73410 to 63.62877 9.73430
+[2016/06/01 12:38:40] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62879 9.73410 to 63.62877 9.73430
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62877 9.73430 to 63.62876 9.73450
+[2016/06/01 12:38:40] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62877 9.73430 to 63.62876 9.73450
+[2016/06/01 12:38:40] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62877 9.73430 to 63.62876 9.73450
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62876 9.73450 to 63.62876 9.73470
+[2016/06/01 12:38:40] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62876 9.73450 to 63.62876 9.73470
+[2016/06/01 12:38:40] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62876 9.73450 to 63.62876 9.73470
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:40] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62876 9.73470 to 63.62877 9.73490
+[2016/06/01 12:38:41] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62878 9.73384 to 63.62877 9.73490
+[2016/06/01 12:38:41] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62876 9.73470 to 63.62877 9.73490
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62877 9.73490 to 63.62880 9.73509
+[2016/06/01 12:38:41] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62877 9.73490 to 63.62880 9.73509
+[2016/06/01 12:38:41] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62877 9.73490 to 63.62880 9.73509
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:41] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62880 9.73509 to 63.62884 9.73528
+[2016/06/01 12:38:42] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62873 9.73423 to 63.62884 9.73528
+[2016/06/01 12:38:42] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62880 9.73509 to 63.62884 9.73528
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62884 9.73528 to 63.62888 9.73545
+[2016/06/01 12:38:42] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62884 9.73528 to 63.62888 9.73545
+[2016/06/01 12:38:42] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62884 9.73528 to 63.62888 9.73545
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62888 9.73545 to 63.62894 9.73560
+[2016/06/01 12:38:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62873 9.73464 to 63.62894 9.73560
+[2016/06/01 12:38:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62888 9.73545 to 63.62894 9.73560
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62894 9.73560 to 63.62901 9.73574
+[2016/06/01 12:38:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62894 9.73560 to 63.62901 9.73574
+[2016/06/01 12:38:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62894 9.73560 to 63.62901 9.73574
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62901 9.73574 to 63.62908 9.73586
+[2016/06/01 12:38:44] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62877 9.73504 to 63.62908 9.73586
+[2016/06/01 12:38:44] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62901 9.73574 to 63.62908 9.73586
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62908 9.73586 to 63.62916 9.73595
+[2016/06/01 12:38:44] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62908 9.73586 to 63.62916 9.73595
+[2016/06/01 12:38:44] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62908 9.73586 to 63.62916 9.73595
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62916 9.73595 to 63.62924 9.73602
+[2016/06/01 12:38:45] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62916 9.73595 to 63.62924 9.73602
+[2016/06/01 12:38:45] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62916 9.73595 to 63.62924 9.73602
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62924 9.73602 to 63.62933 9.73606
+[2016/06/01 12:38:45] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62924 9.73602 to 63.62933 9.73606
+[2016/06/01 12:38:45] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62924 9.73602 to 63.62933 9.73606
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:45] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62933 9.73606 to 63.62942 9.73607
+[2016/06/01 12:38:46] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62933 9.73606 to 63.62942 9.73607
+[2016/06/01 12:38:46] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62933 9.73606 to 63.62942 9.73607
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62942 9.73607 to 63.62951 9.73606
+[2016/06/01 12:38:46] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62908 9.73592 to 63.62951 9.73606
+[2016/06/01 12:38:46] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62942 9.73607 to 63.62951 9.73606
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:46] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:47] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62951 9.73606 to 63.62960 9.73603
+[2016/06/01 12:38:47] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62951 9.73606 to 63.62960 9.73603
+[2016/06/01 12:38:47] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62951 9.73606 to 63.62960 9.73603
+[2016/06/01 12:38:47] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:47] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:47] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:47] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62960 9.73603 to 63.62968 9.73596
+[2016/06/01 12:38:48] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62960 9.73603 to 63.62968 9.73596
+[2016/06/01 12:38:48] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62960 9.73603 to 63.62968 9.73596
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62968 9.73596 to 63.62976 9.73587
+[2016/06/01 12:38:48] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62968 9.73596 to 63.62976 9.73587
+[2016/06/01 12:38:48] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62968 9.73596 to 63.62976 9.73587
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:48] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:49] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62976 9.73587 to 63.62984 9.73576
+[2016/06/01 12:38:49] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62949 9.73622 to 63.62984 9.73576
+[2016/06/01 12:38:49] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62976 9.73587 to 63.62984 9.73576
+[2016/06/01 12:38:49] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:49] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:49] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:49] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:50] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62984 9.73576 to 63.62991 9.73563
+[2016/06/01 12:38:50] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62984 9.73576 to 63.62991 9.73563
+[2016/06/01 12:38:50] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62984 9.73576 to 63.62991 9.73563
+[2016/06/01 12:38:50] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:50] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:50] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:50] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:51] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:51] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62991 9.73563 to 63.62996 9.73548
+[2016/06/01 12:38:51] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62974 9.73613 to 63.62996 9.73548
+[2016/06/01 12:38:51] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62991 9.73563 to 63.62996 9.73548
+[2016/06/01 12:38:51] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:51] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:51] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62996 9.73548 to 63.63001 9.73531
+[2016/06/01 12:38:52] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62996 9.73548 to 63.63001 9.73531
+[2016/06/01 12:38:52] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62996 9.73548 to 63.63001 9.73531
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63001 9.73531 to 63.63005 9.73512
+[2016/06/01 12:38:52] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63001 9.73531 to 63.63005 9.73512
+[2016/06/01 12:38:52] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63001 9.73531 to 63.63005 9.73512
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:52] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:54] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63005 9.73512 to 63.63008 9.73493
+[2016/06/01 12:38:54] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63009 9.73568 to 63.63008 9.73493
+[2016/06/01 12:38:54] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63005 9.73512 to 63.63008 9.73493
+[2016/06/01 12:38:54] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:54] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:54] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:54] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:54] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 12:38:55] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63008 9.73493 to 63.63010 9.73474
+[2016/06/01 12:38:55] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63008 9.73493 to 63.63010 9.73474
+[2016/06/01 12:38:55] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63008 9.73493 to 63.63010 9.73474
+[2016/06/01 12:38:55] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:55] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:55] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:55] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:56] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 12:38:56] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63010 9.73474 to 63.63010 9.73453
+[2016/06/01 12:38:56] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63010 9.73474 to 63.63010 9.73453
+[2016/06/01 12:38:56] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63010 9.73474 to 63.63010 9.73453
+[2016/06/01 12:38:56] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:56] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:56] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:56] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:57] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63010 9.73453 to 63.63009 9.73433
+[2016/06/01 12:38:57] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63029 9.73498 to 63.63009 9.73433
+[2016/06/01 12:38:57] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63010 9.73453 to 63.63009 9.73433
+[2016/06/01 12:38:57] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:57] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:57] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:57] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:57] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63009 9.73433 to 63.63007 9.73414
+[2016/06/01 12:38:58] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63032 9.73475 to 63.63007 9.73414
+[2016/06/01 12:38:58] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63009 9.73433 to 63.63007 9.73414
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63007 9.73414 to 63.63004 9.73395
+[2016/06/01 12:38:58] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63033 9.73450 to 63.63004 9.73395
+[2016/06/01 12:38:58] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63007 9.73414 to 63.63004 9.73395
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:58] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:59] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63004 9.73395 to 63.62999 9.73375
+[2016/06/01 12:38:59] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63032 9.73422 to 63.62999 9.73375
+[2016/06/01 12:38:59] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63004 9.73395 to 63.62999 9.73375
+[2016/06/01 12:38:59] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:38:59] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:59] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:38:59] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:00] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:39:00] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63026 9.73392 to 63.62994 9.73359
+[2016/06/01 12:39:00] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:39:00] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:00] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:00] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:00] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:01] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:39:01] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:39:01] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:39:01] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:01] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:01] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:01] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:39:02] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:39:02] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:39:02] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:39:02] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:03] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:39:03] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:39:03] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:39:03] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:03] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:03] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:03] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:39:04] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:39:04] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62956 9.73308 to 63.62947 9.73305
+[2016/06/01 12:39:04] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62956 9.73308 to 63.62947 9.73305
+[2016/06/01 12:39:04] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62956 9.73308 to 63.62947 9.73305
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:04] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62947 9.73305 to 63.62938 9.73305
+[2016/06/01 12:39:05] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62947 9.73305 to 63.62938 9.73305
+[2016/06/01 12:39:05] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62947 9.73305 to 63.62938 9.73305
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62938 9.73305 to 63.62930 9.73308
+[2016/06/01 12:39:05] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62968 9.73298 to 63.62930 9.73308
+[2016/06/01 12:39:05] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62938 9.73305 to 63.62930 9.73308
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:05] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:06] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62930 9.73308 to 63.62921 9.73313
+[2016/06/01 12:39:06] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62930 9.73308 to 63.62921 9.73313
+[2016/06/01 12:39:06] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62930 9.73308 to 63.62921 9.73313
+[2016/06/01 12:39:06] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:06] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:06] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:06] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62921 9.73313 to 63.62913 9.73321
+[2016/06/01 12:39:07] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62921 9.73313 to 63.62913 9.73321
+[2016/06/01 12:39:07] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62921 9.73313 to 63.62913 9.73321
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62913 9.73321 to 63.62905 9.73331
+[2016/06/01 12:39:07] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62913 9.73321 to 63.62905 9.73331
+[2016/06/01 12:39:07] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62913 9.73321 to 63.62905 9.73331
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:07] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62905 9.73331 to 63.62898 9.73344
+[2016/06/01 12:39:08] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62905 9.73331 to 63.62898 9.73344
+[2016/06/01 12:39:08] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62905 9.73331 to 63.62898 9.73344
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62898 9.73344 to 63.62892 9.73358
+[2016/06/01 12:39:08] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62898 9.73344 to 63.62892 9.73358
+[2016/06/01 12:39:08] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62898 9.73344 to 63.62892 9.73358
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:08] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62892 9.73358 to 63.62886 9.73374
+[2016/06/01 12:39:09] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62892 9.73358 to 63.62886 9.73374
+[2016/06/01 12:39:09] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62892 9.73358 to 63.62886 9.73374
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62886 9.73374 to 63.62882 9.73392
+[2016/06/01 12:39:09] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62886 9.73374 to 63.62882 9.73392
+[2016/06/01 12:39:09] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62886 9.73374 to 63.62882 9.73392
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:09] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62882 9.73392 to 63.62879 9.73410
+[2016/06/01 12:39:10] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62882 9.73392 to 63.62879 9.73410
+[2016/06/01 12:39:10] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62882 9.73392 to 63.62879 9.73410
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62879 9.73410 to 63.62877 9.73430
+[2016/06/01 12:39:10] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62879 9.73410 to 63.62877 9.73430
+[2016/06/01 12:39:10] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62879 9.73410 to 63.62877 9.73430
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:10] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62877 9.73430 to 63.62876 9.73450
+[2016/06/01 12:39:11] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62886 9.73348 to 63.62876 9.73450
+[2016/06/01 12:39:11] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62877 9.73430 to 63.62876 9.73450
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62876 9.73450 to 63.62876 9.73470
+[2016/06/01 12:39:11] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62882 9.73363 to 63.62876 9.73470
+[2016/06/01 12:39:11] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62876 9.73450 to 63.62876 9.73470
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:11] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62876 9.73470 to 63.62877 9.73490
+[2016/06/01 12:39:12] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62878 9.73384 to 63.62877 9.73490
+[2016/06/01 12:39:12] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62876 9.73470 to 63.62877 9.73490
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62877 9.73490 to 63.62880 9.73509
+[2016/06/01 12:39:12] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62877 9.73490 to 63.62880 9.73509
+[2016/06/01 12:39:12] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62877 9.73490 to 63.62880 9.73509
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:12] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62880 9.73509 to 63.62884 9.73528
+[2016/06/01 12:39:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62874 9.73426 to 63.62884 9.73528
+[2016/06/01 12:39:13] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62880 9.73509 to 63.62884 9.73528
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62884 9.73528 to 63.62888 9.73545
+[2016/06/01 12:39:13] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62884 9.73528 to 63.62888 9.73545
+[2016/06/01 12:39:13] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62884 9.73528 to 63.62888 9.73545
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:13] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62888 9.73545 to 63.62894 9.73560
+[2016/06/01 12:39:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62888 9.73545 to 63.62894 9.73560
+[2016/06/01 12:39:14] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62888 9.73545 to 63.62894 9.73560
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62894 9.73560 to 63.62901 9.73574
+[2016/06/01 12:39:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62894 9.73560 to 63.62901 9.73574
+[2016/06/01 12:39:14] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62894 9.73560 to 63.62901 9.73574
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62901 9.73574 to 63.62908 9.73586
+[2016/06/01 12:39:15] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62901 9.73574 to 63.62908 9.73586
+[2016/06/01 12:39:15] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62901 9.73574 to 63.62908 9.73586
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62908 9.73586 to 63.62916 9.73595
+[2016/06/01 12:39:15] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62908 9.73586 to 63.62916 9.73595
+[2016/06/01 12:39:15] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62908 9.73586 to 63.62916 9.73595
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:15] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62916 9.73595 to 63.62924 9.73602
+[2016/06/01 12:39:16] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62916 9.73595 to 63.62924 9.73602
+[2016/06/01 12:39:16] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62916 9.73595 to 63.62924 9.73602
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62924 9.73602 to 63.62933 9.73606
+[2016/06/01 12:39:16] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62924 9.73602 to 63.62933 9.73606
+[2016/06/01 12:39:16] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62924 9.73602 to 63.62933 9.73606
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:16] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:17] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:17] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62933 9.73606 to 63.62942 9.73607
+[2016/06/01 12:39:17] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62933 9.73606 to 63.62942 9.73607
+[2016/06/01 12:39:17] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62933 9.73606 to 63.62942 9.73607
+[2016/06/01 12:39:17] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:17] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:17] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62942 9.73607 to 63.62951 9.73606
+[2016/06/01 12:39:18] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62910 9.73593 to 63.62951 9.73606
+[2016/06/01 12:39:18] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62942 9.73607 to 63.62951 9.73606
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62951 9.73606 to 63.62960 9.73603
+[2016/06/01 12:39:18] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62920 9.73604 to 63.62960 9.73603
+[2016/06/01 12:39:18] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62951 9.73606 to 63.62960 9.73603
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:18] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:19] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62960 9.73603 to 63.62968 9.73596
+[2016/06/01 12:39:19] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62960 9.73603 to 63.62968 9.73596
+[2016/06/01 12:39:19] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62960 9.73603 to 63.62968 9.73596
+[2016/06/01 12:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62968 9.73596 to 63.62976 9.73587
+[2016/06/01 12:39:20] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62968 9.73596 to 63.62976 9.73587
+[2016/06/01 12:39:20] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62968 9.73596 to 63.62976 9.73587
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62976 9.73587 to 63.62984 9.73576
+[2016/06/01 12:39:20] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62976 9.73587 to 63.62984 9.73576
+[2016/06/01 12:39:20] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62976 9.73587 to 63.62984 9.73576
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:20] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:21] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62984 9.73576 to 63.62991 9.73563
+[2016/06/01 12:39:21] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62984 9.73576 to 63.62991 9.73563
+[2016/06/01 12:39:21] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62984 9.73576 to 63.62991 9.73563
+[2016/06/01 12:39:21] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:21] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:21] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:21] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:22] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62991 9.73563 to 63.62996 9.73548
+[2016/06/01 12:39:22] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62991 9.73563 to 63.62996 9.73548
+[2016/06/01 12:39:22] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62991 9.73563 to 63.62996 9.73548
+[2016/06/01 12:39:22] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:22] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:22] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:22] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:23] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62996 9.73548 to 63.63001 9.73531
+[2016/06/01 12:39:23] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62986 9.73599 to 63.63001 9.73531
+[2016/06/01 12:39:23] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62996 9.73548 to 63.63001 9.73531
+[2016/06/01 12:39:23] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:23] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:24] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63001 9.73531 to 63.63005 9.73512
+[2016/06/01 12:39:24] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62997 9.73585 to 63.63005 9.73512
+[2016/06/01 12:39:24] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63001 9.73531 to 63.63005 9.73512
+[2016/06/01 12:39:24] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:24] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:25] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:25] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63005 9.73512 to 63.63008 9.73493
+[2016/06/01 12:39:25] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63005 9.73512 to 63.63008 9.73493
+[2016/06/01 12:39:25] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63005 9.73512 to 63.63008 9.73493
+[2016/06/01 12:39:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:25] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:25] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 12:39:25] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 12:39:26] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63008 9.73493 to 63.63010 9.73474
+[2016/06/01 12:39:26] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63015 9.73549 to 63.63010 9.73474
+[2016/06/01 12:39:26] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63008 9.73493 to 63.63010 9.73474
+[2016/06/01 12:39:26] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:26] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:26] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:26] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63010 9.73474 to 63.63010 9.73453
+[2016/06/01 12:39:27] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63010 9.73474 to 63.63010 9.73453
+[2016/06/01 12:39:27] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63010 9.73474 to 63.63010 9.73453
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control - deactivating
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - deactivating
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> bank control - deactivating
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control - deactivating
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:27] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63010 9.73453 to 63.63009 9.73433
+[2016/06/01 12:39:28] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63010 9.73453 to 63.63009 9.73433
+[2016/06/01 12:39:28] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63010 9.73453 to 63.63009 9.73433
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63009 9.73433 to 63.63007 9.73414
+[2016/06/01 12:39:28] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63009 9.73433 to 63.63007 9.73414
+[2016/06/01 12:39:28] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63009 9.73433 to 63.63007 9.73414
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:28] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63007 9.73414 to 63.63004 9.73395
+[2016/06/01 12:39:29] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63032 9.73455 to 63.63004 9.73395
+[2016/06/01 12:39:29] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63007 9.73414 to 63.63004 9.73395
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:29] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.63004 9.73395 to 63.62999 9.73375
+[2016/06/01 12:39:30] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.63004 9.73395 to 63.62999 9.73375
+[2016/06/01 12:39:30] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63033 9.73433 to 63.62999 9.73375
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:30] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:39:31] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63032 9.73395 to 63.62994 9.73359
+[2016/06/01 12:39:31] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62999 9.73375 to 63.62994 9.73359
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:39:31] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63029 9.73369 to 63.62988 9.73344
+[2016/06/01 12:39:31] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62994 9.73359 to 63.62988 9.73344
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:31] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:39:32] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63024 9.73344 to 63.62981 9.73332
+[2016/06/01 12:39:32] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62988 9.73344 to 63.62981 9.73332
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:32] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:39:33] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63018 9.73320 to 63.62973 9.73321
+[2016/06/01 12:39:33] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62981 9.73332 to 63.62973 9.73321
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:39:33] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63013 9.73295 to 63.62965 9.73313
+[2016/06/01 12:39:33] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62973 9.73321 to 63.62965 9.73313
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:33] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 12:39:34] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:39:34] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.63008 9.73267 to 63.62956 9.73308
+[2016/06/01 12:39:34] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62965 9.73313 to 63.62956 9.73308
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:34] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Plan.DB] >> set plan (LoiterLand) -- OK (updated)
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:35] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:36] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:37] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control is NOT active
+[2016/06/01 12:39:37] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control is NOT active
+[2016/06/01 12:39:37] - MSG [Plan.Engine] >> request -- Start Plan (LoiterLand)
+[2016/06/01 12:39:37] - WRN [Plan.Engine] >> plan initializing: LoiterLand
+[2016/06/01 12:39:37] - WRN [Plan.Engine] >> Loiter1: executing maneuver
+[2016/06/01 12:39:37] - MSG [Plan.Engine] >> reply -- Start Plan (LoiterLand) -- Loiter1: executing maneuver
+[2016/06/01 12:39:37] - MSG [Transports.Logging] >> log stopped '20160601/123740_land_fixedwing_run3'
+[2016/06/01 12:39:37] - MSG [Transports.Logging] >> log started '20160601/123937_LoiterLand'

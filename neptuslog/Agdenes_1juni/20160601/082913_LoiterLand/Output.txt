@@ -1,0 +1,27 @@
+[2016/06/01 08:29:13] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/06/01 08:29:13] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 08:29:13] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 08:29:14] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62850 9.72570 to 63.62831 9.72423
+[2016/06/01 08:29:14] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62850 9.72570 to 63.62831 9.72423
+[2016/06/01 08:29:14] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62850 9.72570 to 63.62831 9.72423
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:29:14] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 08:29:41] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/06/01 08:29:41] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 94.71
+[2016/06/01 08:29:41] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 92.80
+[2016/06/01 08:29:46] - MSG [Control.Path.HeightGlideslope/Hardware] >> now loitering
+[2016/06/01 08:29:46] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/06/01 08:29:46] - MSG [Control.Path.Longitudinal/Hardware] >> now loitering
+[2016/06/01 08:31:07] - MSG [Plan.Engine] >> request -- Start Plan (landFBWASegDistance10)
+[2016/06/01 08:31:07] - WRN [Plan.Engine] >> plan initializing: landFBWASegDistance10
+[2016/06/01 08:31:07] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/06/01 08:31:07] - MSG [Plan.Engine] >> reply -- Start Plan (landFBWASegDistance10) -- 1: executing maneuver
+[2016/06/01 08:31:07] - MSG [Transports.Logging] >> log stopped '20160601/082913_LoiterLand'
+[2016/06/01 08:31:07] - MSG [Transports.Logging] >> log started '20160601/083107_landFBWASegDistance10'

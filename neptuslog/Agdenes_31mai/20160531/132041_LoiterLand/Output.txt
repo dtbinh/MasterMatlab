@@ -1,0 +1,33 @@
+[2016/05/31 13:20:41] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/05/31 13:20:41] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:20:41] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:20:41] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:20:41] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:20:41] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:20:41] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:20:42] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/05/31 13:20:42] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/05/31 13:20:42] - MSG [Control.Path.HeightGlideslope] >> path (lat/lon): 63.62904 9.72940 to 63.62831 9.72423
+[2016/05/31 13:20:42] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62904 9.72940 to 63.62831 9.72423
+[2016/05/31 13:20:42] - MSG [Control.Path.Longitudinal] >> path (lat/lon): 63.62904 9.72940 to 63.62831 9.72423
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/05/31 13:20:42] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/05/31 13:21:16] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/05/31 13:21:16] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 68.56
+[2016/05/31 13:21:17] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 68.50
+[2016/05/31 13:21:29] - MSG [Control.Path.HeightGlideslope] >> now loitering
+[2016/05/31 13:21:29] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/05/31 13:21:29] - MSG [Control.Path.Longitudinal] >> now loitering
+[2016/05/31 13:21:37] - MSG [Plan.Engine] >> request -- Start Plan (landFBWA)
+[2016/05/31 13:21:37] - WRN [Plan.Engine] >> plan initializing: landFBWA
+[2016/05/31 13:21:37] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/05/31 13:21:37] - MSG [Plan.Engine] >> reply -- Start Plan (landFBWA) -- 1: executing maneuver
+[2016/05/31 13:21:37] - MSG [Transports.Logging] >> log stopped '20160531/132041_LoiterLand'
+[2016/05/31 13:21:37] - MSG [Transports.Logging] >> log started '20160531/132137_landFBWA'

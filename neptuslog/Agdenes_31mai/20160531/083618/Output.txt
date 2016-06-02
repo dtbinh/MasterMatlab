@@ -1,0 +1,670 @@
+[2016/05/31 08:36:18] - MSG [Transports.UDP] >> starting
+[2016/05/31 08:36:18] - MSG [Transports.UDP/BaseFixInput] >> starting
+[2016/05/31 08:36:18] - MSG [Transports.UDP] >> listening on 0.0.0.0:6002
+[2016/05/31 08:36:18] - MSG [Transports.UDP/InterVehicleCommon] >> starting
+[2016/05/31 08:36:18] - MSG [Transports.UDP/BaseFixInput] >> listening on 0.0.0.0:6025
+[2016/05/31 08:36:18] - MSG [Transports.UDP/InterVehicleCommon] >> listening on 0.0.0.0:6020
+[2016/05/31 08:36:18] - MSG [Control.UAV.Ardupilot/Hardware] >> Ardupilot interface initialized
+[2016/05/31 08:36:18] - MSG [Transports.SerialOverTCP] >> accepting connection request
+[2016/05/31 08:36:18] - MSG [Navigation.UAV.Navigation] >> Switching from Init to UsingExernal. 
+[2016/05/31 08:36:18] - WRN [Transports.LocalStateTransport] >> Ignored EstimatedState, valid LLH reference is not set!
+[2016/05/31 08:36:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:19] - MSG [Control.UAV.Ardupilot/Hardware] >> Controlling a fixed-wing vehicle.
+[2016/05/31 08:36:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:20] - WRN [Monitors.Entities] >> CPU : Boot -> Normal | active
+[2016/05/31 08:36:20] - WRN [Supervisors.Vehicle] >> entity errors cleared
+[2016/05/31 08:36:20] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 08:36:20] - WRN [Plan.Engine] >> vehicle ready
+[2016/05/31 08:36:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:21] - MSG [Transports.Discovery] >> new node within range 'ccu-uavlab-60-62' / 23614 / 10.0.60.62
+[2016/05/31 08:36:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:22] - MSG [Transports.Discovery] >> new node within range 'ccu-uav-100-56' / 17464 / 10.0.60.11
+[2016/05/31 08:36:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:23] - MSG [Transports.UDP/BaseFixInput] >> activating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:36:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:24] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-003' / 6020 / 10.0.60.210
+[2016/05/31 08:36:24] - WRN [Transports.LocalStateTransport] >> Valid LLH reference is set, starting producing EstimatedLocalState
+[2016/05/31 08:36:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:26] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/05/31 08:36:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:28] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:36:28] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uavlab-60-62'
+[2016/05/31 08:36:28] - MSG [Transports.UDP/InterVehicleCommon] >> activating transmission to node 'ntnu-hexa-003'
+[2016/05/31 08:36:28] - MSG [Transports.UDP/InterVehicleCommon] >> activating transmission to node 'ntnu-hexa-004'
+[2016/05/31 08:36:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:36:48] - WRN [Monitors.Clock] >> adjusting CPU clock by 36.7768 s
+[2016/05/31 08:37:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:26] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/05/31 08:37:26] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-003' / 6020 / 10.0.60.210
+[2016/05/31 08:37:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:31] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-003' / 6020 / 10.0.60.210
+[2016/05/31 08:37:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:33] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/05/31 08:37:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:50] - MSG [Navigation.UAV.Navigation] >> Switching from UsingExernal to RtkReady. 
+[2016/05/31 08:37:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:37:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:09] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:38:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:09] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:39:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:09] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:10] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uavlab-60-62'
+[2016/05/31 08:40:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:40:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:09] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:41:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:42:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:09] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:19] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:43:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:09] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:21] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:22] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:23] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:24] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:25] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:26] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:27] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:28] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:29] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:30] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:31] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:32] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:33] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:34] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:35] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:36] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:37] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:38] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:39] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:40] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:41] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:42] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:43] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:44] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:45] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:46] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:47] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:48] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:49] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:50] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:51] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:52] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:53] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:54] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:55] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:56] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:57] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:58] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:44:59] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:00] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:01] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:02] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:03] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:04] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:05] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:06] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:07] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:08] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:10] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:11] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:12] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:13] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:14] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:15] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:16] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:17] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:18] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:20] - WRN [Control.UAV.Ardupilot/Hardware] >> APM failsafe active
+[2016/05/31 08:45:22] - MSG [Navigation.UAV.Navigation] >> Switching from RtkReady to UsingExernal. 
+[2016/05/31 08:45:30] - WRN [Monitors.Entities] >> Autopilot : Normal -> Error | missing data
+[2016/05/31 08:45:31] - WRN [Supervisors.Vehicle] >> vehicle errors: Autopilot
+[2016/05/31 08:45:31] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/05/31 08:45:49] - MSG [Transports.UDP/BaseFixInput] >> deactivating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:45:53] - MSG [Transports.UDP/InterVehicleCommon] >> deactivating transmission to node 'ntnu-hexa-003'
+[2016/05/31 08:45:53] - MSG [Transports.UDP/InterVehicleCommon] >> deactivating transmission to node 'ntnu-hexa-004'
+[2016/05/31 08:45:55] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:47:44] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:47:44] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:47:44] - WRN [Monitors.Entities] >> Autopilot : Error -> Normal | External Control
+[2016/05/31 08:47:44] - WRN [Supervisors.Vehicle] >> entity errors cleared
+[2016/05/31 08:47:44] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 08:47:44] - WRN [Plan.Engine] >> vehicle ready
+[2016/05/31 08:47:45] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Beginning INS calibration. Do not move plane
+[2016/05/31 08:47:49] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:47:49] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:47:51] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Barometer calibration complete
+[2016/05/31 08:47:52] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:47:53] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:47:54] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:47:54] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:47:54] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Ready to fly
+[2016/05/31 08:47:55] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Init HOME
+[2016/05/31 08:47:55] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: GPS alt: 8219
+[2016/05/31 08:48:25] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/05/31 08:48:25] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-003' / 6020 / 10.0.60.210
+[2016/05/31 08:48:29] - MSG [Transports.UDP/BaseFixInput] >> activating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:48:30] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:48:32] - MSG [Navigation.UAV.Navigation] >> Switching from UsingExernal to RtkReady. 
+[2016/05/31 08:49:08] - MSG [Plan.DB] >> set plan (agdenes_FBWA_tuning_line) -- OK (new entry)
+[2016/05/31 08:49:13] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Mission Planner 1.3.38
+[2016/05/31 08:49:36] - MSG [Plan.DB] >> set plan (agdenes_FBWA_tuning_line) -- OK (updated)
+[2016/05/31 08:50:05] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Calibrating barometer
+[2016/05/31 08:50:05] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:50:07] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Barometer calibration complete
+[2016/05/31 08:50:07] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Zero airspeed calibrated
+[2016/05/31 08:50:49] - MSG [Navigation.UAV.Navigation] >> Switching from RtkReady to UsingRtk. 
+[2016/05/31 08:52:20] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/31 08:52:20] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingExernal. 
+[2016/05/31 08:52:28] - WRN [Monitors.Entities] >> Autopilot : Normal -> Error | missing data
+[2016/05/31 08:52:29] - WRN [Supervisors.Vehicle] >> vehicle errors: Autopilot
+[2016/05/31 08:52:29] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/05/31 08:52:49] - MSG [Transports.UDP/BaseFixInput] >> deactivating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:52:50] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:54:56] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:54:56] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:54:56] - WRN [Monitors.Entities] >> Autopilot : Error -> Normal | External Control
+[2016/05/31 08:54:57] - WRN [Supervisors.Vehicle] >> entity errors cleared
+[2016/05/31 08:54:57] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 08:54:57] - WRN [Plan.Engine] >> vehicle ready
+[2016/05/31 08:54:57] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Beginning INS calibration. Do not move plane
+[2016/05/31 08:54:58] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Calibrating barometer
+[2016/05/31 08:55:00] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Barometer calibration complete
+[2016/05/31 08:55:01] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:55:01] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:55:02] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:55:03] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:55:04] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Ready to fly
+[2016/05/31 08:55:11] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Init HOME
+[2016/05/31 08:55:11] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: GPS alt: 7234
+[2016/05/31 08:55:40] - MSG [Transports.UDP/BaseFixInput] >> activating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:55:40] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:56:11] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Mission Planner 1.3.38
+[2016/05/31 08:56:46] - WRN [Monitors.Entities] >> Autopilot : Normal -> Error | missing data
+[2016/05/31 08:56:46] - WRN [Supervisors.Vehicle] >> vehicle errors: Autopilot
+[2016/05/31 08:56:46] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/05/31 08:57:05] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:57:09] - MSG [Transports.UDP/BaseFixInput] >> deactivating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:58:51] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:58:51] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:58:51] - WRN [Monitors.Entities] >> Autopilot : Error -> Normal | External Control
+[2016/05/31 08:58:51] - WRN [Supervisors.Vehicle] >> entity errors cleared
+[2016/05/31 08:58:51] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 08:58:51] - WRN [Plan.Engine] >> vehicle ready
+[2016/05/31 08:58:52] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Beginning INS calibration. Do not move plane
+[2016/05/31 08:58:53] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Calibrating barometer
+[2016/05/31 08:58:55] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Barometer calibration complete
+[2016/05/31 08:58:56] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:58:56] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 08:58:57] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:58:58] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 08:58:58] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Ready to fly
+[2016/05/31 08:59:35] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uav-100-56'
+[2016/05/31 08:59:39] - MSG [Transports.UDP/BaseFixInput] >> activating transmission to node 'ntnu-nest-02'
+[2016/05/31 08:59:54] - MSG [Navigation.UAV.Navigation] >> Switching from UsingExernal to RtkReady. 
+[2016/05/31 08:59:54] - MSG [Navigation.UAV.Navigation] >> Switching from RtkReady to UsingRtk. 
+[2016/05/31 09:00:07] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Init HOME
+[2016/05/31 09:00:07] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: GPS alt: 7727
+[2016/05/31 09:00:38] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Mission Planner 1.3.38
+[2016/05/31 09:02:52] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/05/31 09:02:54] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingExernal. 
+[2016/05/31 09:03:01] - WRN [Monitors.Entities] >> Autopilot : Normal -> Error | missing data
+[2016/05/31 09:03:01] - WRN [Supervisors.Vehicle] >> vehicle errors: Autopilot
+[2016/05/31 09:03:01] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2016/05/31 09:03:20] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uav-100-56'
+[2016/05/31 09:03:26] - MSG [Transports.UDP/BaseFixInput] >> deactivating transmission to node 'ntnu-nest-02'
+[2016/05/31 09:04:51] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 09:04:51] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 09:04:51] - WRN [Monitors.Entities] >> Autopilot : Error -> Normal | External Control
+[2016/05/31 09:04:52] - WRN [Supervisors.Vehicle] >> entity errors cleared
+[2016/05/31 09:04:52] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 09:04:52] - WRN [Plan.Engine] >> vehicle ready
+[2016/05/31 09:04:52] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Beginning INS calibration. Do not move plane
+[2016/05/31 09:04:53] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Calibrating barometer
+[2016/05/31 09:04:55] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Barometer calibration complete
+[2016/05/31 09:04:56] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 09:04:56] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 09:04:57] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 09:04:58] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Demo servos
+[2016/05/31 09:04:59] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Ready to fly
+[2016/05/31 09:05:00] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Init HOME
+[2016/05/31 09:05:00] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: GPS alt: 7380
+[2016/05/31 09:05:35] - MSG [Transports.UDP/BaseFixInput] >> activating transmission to node 'ntnu-nest-02'
+[2016/05/31 09:05:35] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uav-100-56'
+[2016/05/31 09:06:04] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Mission Planner 1.3.38
+[2016/05/31 09:06:47] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Calibrating barometer
+[2016/05/31 09:06:47] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Initialising APM
+[2016/05/31 09:06:49] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Barometer calibration complete
+[2016/05/31 09:06:49] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Zero airspeed calibrated
+[2016/05/31 09:09:08] - MSG [Navigation.UAV.Navigation] >> Switching from UsingExernal to RtkReady. 
+[2016/05/31 09:09:08] - MSG [Navigation.UAV.Navigation] >> Switching from RtkReady to UsingRtk. 
+[2016/05/31 09:09:22] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle armed
+[2016/05/31 09:12:31] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/05/31 09:12:31] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 109.74
+[2016/05/31 09:12:31] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Command received: 
+[2016/05/31 09:12:31] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 109.78
+[2016/05/31 09:13:28] - MSG [Plan.Engine] >> request -- Start Plan (agdenes_roll_tuning)
+[2016/05/31 09:13:28] - WRN [Plan.Engine] >> plan initializing: agdenes_roll_tuning
+[2016/05/31 09:13:28] - WRN [Plan.Engine] >> Goto1: executing maneuver
+[2016/05/31 09:13:28] - MSG [Plan.Engine] >> reply -- Start Plan (agdenes_roll_tuning) -- Goto1: executing maneuver
+[2016/05/31 09:13:28] - MSG [Transports.Logging] >> log stopped '20160531/083618'
+[2016/05/31 09:13:28] - MSG [Transports.Logging] >> log started '20160531/091328_agdenes_roll_tuning'

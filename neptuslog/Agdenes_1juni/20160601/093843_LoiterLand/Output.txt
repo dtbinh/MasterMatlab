@@ -1,0 +1,136 @@
+[2016/06/01 09:38:43] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/06/01 09:38:43] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:38:43] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:38:43] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:38:43] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:38:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62741 9.72331 to 63.62831 9.72423
+[2016/06/01 09:38:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62741 9.72331 to 63.62831 9.72423
+[2016/06/01 09:38:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62741 9.72331 to 63.62831 9.72423
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:38:43] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 09:38:50] - MSG [Control.Path.HeightGlideslope/Hardware] >> now loitering
+[2016/06/01 09:38:50] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/06/01 09:38:50] - MSG [Control.Path.Longitudinal/Hardware] >> now loitering
+[2016/06/01 09:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/06/01 09:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 97.92
+[2016/06/01 09:39:19] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 95.83
+[2016/06/01 09:39:33] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/06/01 09:39:37] - MSG [Transports.UDP/InterVehicleCommon] >> deactivating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:41:50] - MSG [Plan.DB] >> set plan (land_fixedwing_4) -- OK (new entry)
+[2016/06/01 09:43:47] - MSG [Plan.DB] >> set plan (land_fixedwing_4) -- OK (updated)
+[2016/06/01 09:44:56] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:44:56] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:44:56] - MSG [Control.Path.HeightGlideslope/Hardware] >> now loitering
+[2016/06/01 09:46:26] - MSG [Transports.UDP/InterVehicleCommon] >> activating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:46:57] - MSG [Transports.UDP/InterVehicleCommon] >> deactivating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:48:06] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:48:06] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:48:38] - MSG [Transports.UDP/InterVehicleCommon] >> activating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:48:41] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 09:48:43] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 09:48:43] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 09:48:43] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 09:48:43] - MSG [Plan.Engine] >> request -- Load Plan (land_fixedwing)
+[2016/06/01 09:48:43] - ERR [Plan.Engine] >> reply -- Load Plan (land_fixedwing) -- cannot load plan now
+[2016/06/01 09:48:43] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:48:43] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 09:48:43] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:48:43] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:48:43] - WRN [Plan.DB] >> storing plan 'land_fixedwing' issued through a PlanControl request
+[2016/06/01 09:48:43] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:48:55] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:48:55] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:49:42] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:49:42] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:52:41] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 09:52:43] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingExernal. 
+[2016/06/01 09:53:09] - MSG [Transports.UDP/BaseFixInput] >> deactivating transmission to node 'ntnu-nest-02'
+[2016/06/01 09:53:10] - MSG [Transports.UDP/InterVehicleCommon] >> deactivating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:53:13] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uav-100-56'
+[2016/06/01 09:53:13] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-uavlab-60-60'
+[2016/06/01 09:54:08] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/06/01 09:54:08] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uav-100-56'
+[2016/06/01 09:54:08] - MSG [Transports.UDP] >> activating transmission to node 'ccu-uavlab-60-60'
+[2016/06/01 09:54:11] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/06/01 09:54:11] - MSG [Transports.UDP/BaseFixInput] >> activating transmission to node 'ntnu-nest-02'
+[2016/06/01 09:54:13] - MSG [Navigation.UAV.Navigation] >> Switching from UsingExernal to RtkReady. 
+[2016/06/01 09:54:13] - MSG [Navigation.UAV.Navigation] >> Switching from RtkReady to UsingRtk. 
+[2016/06/01 09:54:21] - MSG [Transports.UDP/InterVehicleCommon] >> activating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 09:54:57] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 09:54:57] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 09:54:57] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 09:54:57] - MSG [Plan.Engine] >> request -- Load Plan (land_fixedwing)
+[2016/06/01 09:54:57] - ERR [Plan.Engine] >> reply -- Load Plan (land_fixedwing) -- cannot load plan now
+[2016/06/01 09:54:57] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:54:57] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 09:54:57] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:54:57] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:54:57] - WRN [Plan.DB] >> storing plan 'land_fixedwing' issued through a PlanControl request
+[2016/06/01 09:54:57] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:54:58] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Mission Planner 1.3.38
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 09:55:23] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 09:55:23] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 09:55:23] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 09:55:23] - MSG [Plan.Engine] >> request -- Load Plan (land_fixedwing)
+[2016/06/01 09:55:23] - ERR [Plan.Engine] >> reply -- Load Plan (land_fixedwing) -- cannot load plan now
+[2016/06/01 09:55:23] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:55:23] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 09:55:23] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:55:23] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:55:23] - WRN [Plan.DB] >> storing plan 'land_fixedwing' issued through a PlanControl request
+[2016/06/01 09:55:23] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:55:39] - MSG [Plan.Engine] >> request -- Start Plan (land_fixedwing_4)
+[2016/06/01 09:55:39] - WRN [Plan.Engine] >> plan initializing: land_fixedwing_4
+[2016/06/01 09:55:39] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/06/01 09:55:39] - MSG [Plan.Engine] >> reply -- Start Plan (land_fixedwing_4) -- 1: executing maneuver
+[2016/06/01 09:55:39] - MSG [Transports.Logging] >> log stopped '20160601/093843_LoiterLand'
+[2016/06/01 09:55:39] - MSG [Transports.Logging] >> log started '20160601/095539_land_fixedwing_4'

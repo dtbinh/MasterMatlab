@@ -1,0 +1,14 @@
+[2016/05/31 16:09:44] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 16:09:44] - MSG [Control.UAV.Ardupilot/Hardware] >> throttle control - deactivating
+[2016/05/31 16:09:44] - MSG [Control.UAV.Ardupilot/Hardware] >> vertical rate control - deactivating
+[2016/05/31 16:09:44] - MSG [Control.UAV.Ardupilot/Hardware] >> bank control - deactivating
+[2016/05/31 16:09:44] - MSG [Control.UAV.Ardupilot/Hardware] >> pitch control - deactivating
+[2016/05/31 16:09:44] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Command received: 
+[2016/05/31 16:09:44] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 29.46
+[2016/05/31 16:09:52] - MSG [Plan.DB] >> set plan (LoiterLand) -- OK (updated)
+[2016/05/31 16:09:56] - MSG [Plan.Engine] >> request -- Start Plan (LoiterLand)
+[2016/05/31 16:09:56] - WRN [Plan.Engine] >> plan initializing: LoiterLand
+[2016/05/31 16:09:56] - WRN [Plan.Engine] >> Loiter1: executing maneuver
+[2016/05/31 16:09:56] - MSG [Plan.Engine] >> reply -- Start Plan (LoiterLand) -- Loiter1: executing maneuver
+[2016/05/31 16:09:56] - MSG [Transports.Logging] >> log stopped '20160531/160944'
+[2016/05/31 16:09:56] - MSG [Transports.Logging] >> log started '20160531/160956_LoiterLand'

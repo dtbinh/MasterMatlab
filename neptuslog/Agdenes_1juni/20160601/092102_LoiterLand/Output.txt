@@ -1,0 +1,61 @@
+[2016/06/01 09:21:02] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/06/01 09:21:02] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:21:02] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:21:02] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:21:02] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:21:02] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 09:21:02] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 09:21:03] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62829 9.72911 to 63.62831 9.72423
+[2016/06/01 09:21:03] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62829 9.72911 to 63.62831 9.72423
+[2016/06/01 09:21:03] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62829 9.72911 to 63.62831 9.72423
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 09:21:03] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 09:21:22] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/06/01 09:21:22] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 89.39
+[2016/06/01 09:21:23] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 88.91
+[2016/06/01 09:21:26] - MSG [Control.Path.HeightGlideslope/Hardware] >> now loitering
+[2016/06/01 09:21:26] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/06/01 09:21:26] - MSG [Control.Path.Longitudinal/Hardware] >> now loitering
+[2016/06/01 09:21:51] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> lost connection to intervehicle node 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/06/01 09:21:57] - MSG [Transports.UDP/InterVehicleCommon] >> deactivating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:24:07] - MSG [Plan.DB] >> set plan (land_fixedwing_2) -- OK (new entry)
+[2016/06/01 09:24:10] - MSG [Transports.DiscoverVehicle/InterVehicleCommon] >> new intervehicle node within range 'ntnu-hexa-004' / 6020 / 10.0.60.215
+[2016/06/01 09:24:13] - MSG [Transports.UDP/InterVehicleCommon] >> activating transmission to node 'ntnu-hexa-004'
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 09:24:33] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 09:24:33] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 09:24:33] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 09:24:33] - MSG [Plan.Engine] >> request -- Load Plan (land_fixedwing)
+[2016/06/01 09:24:33] - ERR [Plan.Engine] >> reply -- Load Plan (land_fixedwing) -- cannot load plan now
+[2016/06/01 09:24:33] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:24:33] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 09:24:33] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 09:24:33] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:24:33] - WRN [Plan.DB] >> storing plan 'land_fixedwing' issued through a PlanControl request
+[2016/06/01 09:24:33] - MSG [Plan.DB] >> set plan (land_fixedwing) -- OK (updated)
+[2016/06/01 09:25:04] - MSG [Plan.Engine] >> request -- Start Plan (land_fixedwing_2)
+[2016/06/01 09:25:04] - WRN [Plan.Engine] >> plan initializing: land_fixedwing_2
+[2016/06/01 09:25:04] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/06/01 09:25:04] - MSG [Plan.Engine] >> reply -- Start Plan (land_fixedwing_2) -- 1: executing maneuver
+[2016/06/01 09:25:04] - MSG [Transports.Logging] >> log stopped '20160601/092102_LoiterLand'
+[2016/06/01 09:25:04] - MSG [Transports.Logging] >> log started '20160601/092504_land_fixedwing_2'

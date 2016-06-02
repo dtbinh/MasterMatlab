@@ -1,0 +1,50 @@
+[2016/06/01 08:39:43] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/06/01 08:39:43] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 08:39:43] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 08:39:43] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 08:39:43] - MSG [Plan.Engine] >> reply -- Get Plan (LoiterLand) -- OK
+[2016/06/01 08:39:43] - MSG [Control.Path.HeightGlideslope/Hardware] >> path (lat/lon): 63.62857 9.72729 to 63.62831 9.72423
+[2016/06/01 08:39:43] - MSG [Control.Path.LOSnSMCuser/Hardware] >> path (lat/lon): 63.62857 9.72729 to 63.62831 9.72423
+[2016/06/01 08:39:43] - MSG [Control.Path.Longitudinal/Hardware] >> path (lat/lon): 63.62857 9.72729 to 63.62831 9.72423
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving desired path.
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> ArduPilot is in Manual mode, saving control loops.
+[2016/06/01 08:39:44] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control is NOT active
+[2016/06/01 08:40:04] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/06/01 08:40:04] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 95.43
+[2016/06/01 08:40:04] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 95.20
+[2016/06/01 08:40:11] - MSG [Control.Path.HeightGlideslope/Hardware] >> now loitering
+[2016/06/01 08:40:11] - MSG [Control.Path.LOSnSMCuser/Hardware] >> now loitering
+[2016/06/01 08:40:11] - MSG [Control.Path.Longitudinal/Hardware] >> now loitering
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Extracted arguments from neptus
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Generate a landing path
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Creating a user specified path
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Created start turn circle
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Created finish turn circle
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Created exit tangent
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Created entry tangent
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Starting to construct first arc
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Constructed first arc
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Starting to construct second arc
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Constructed second arc
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Constructed Dubins path
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Dubins path has been created
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Reached correct height
+[2016/06/01 08:40:57] - MSG [Plan.LandingPlan] >> Created longitudinal path
+[2016/06/01 08:40:57] - MSG [Plan.Engine] >> request -- Load Plan (land)
+[2016/06/01 08:40:57] - ERR [Plan.Engine] >> reply -- Load Plan (land) -- cannot load plan now
+[2016/06/01 08:40:57] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 08:40:57] - WRN [Plan.DB] >> storing plan 'land' issued through a PlanControl request
+[2016/06/01 08:40:58] - MSG [Plan.DB] >> set plan (land) -- OK (updated)
+[2016/06/01 08:42:23] - MSG [Plan.DB] >> set plan (landFBWAfinalapp90) -- OK (new entry)
+[2016/06/01 08:42:32] - MSG [Plan.Engine] >> request -- Start Plan (landFBWAfinalapp90)
+[2016/06/01 08:42:32] - WRN [Plan.Engine] >> plan initializing: landFBWAfinalapp90
+[2016/06/01 08:42:32] - WRN [Plan.Engine] >> 1: executing maneuver
+[2016/06/01 08:42:32] - MSG [Plan.Engine] >> reply -- Start Plan (landFBWAfinalapp90) -- 1: executing maneuver
+[2016/06/01 08:42:32] - MSG [Transports.Logging] >> log stopped '20160601/083943_LoiterLand'
+[2016/06/01 08:42:32] - MSG [Transports.Logging] >> log started '20160601/084232_landFBWAfinalapp90'

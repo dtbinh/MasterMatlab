@@ -1,0 +1,10 @@
+[2016/05/31 16:01:23] - WRN [Supervisors.Vehicle] >> now in 'SERVICE' mode
+[2016/05/31 16:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Executing nav command ID #16
+[2016/05/31 16:01:25] - MSG [Control.UAV.Ardupilot/Hardware] >> AP Status: Throttle enabled. Altitude 33.48
+[2016/05/31 16:01:52] - MSG [Plan.DB] >> set plan (LoiterLand) -- OK (updated)
+[2016/05/31 16:01:53] - MSG [Plan.Engine] >> request -- Start Plan (LoiterLand)
+[2016/05/31 16:01:53] - WRN [Plan.Engine] >> plan initializing: LoiterLand
+[2016/05/31 16:01:53] - WRN [Plan.Engine] >> Loiter1: executing maneuver
+[2016/05/31 16:01:53] - MSG [Plan.Engine] >> reply -- Start Plan (LoiterLand) -- Loiter1: executing maneuver
+[2016/05/31 16:01:53] - MSG [Transports.Logging] >> log stopped '20160531/160123'
+[2016/05/31 16:01:53] - MSG [Transports.Logging] >> log started '20160531/160153_LoiterLand'
