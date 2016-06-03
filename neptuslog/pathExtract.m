@@ -7,33 +7,6 @@ Path = struct;
 % load NetPosSIL2205
 NetPos = NetposSaver();
 
-C = unique(DesiredZ.src_ent);
-
-for i=1:length(C)
-row = find(EntityInfo.id==C(i));
-%     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.UAV.Ardupilot')
-%         src_ent = C(i);
-%     end
-EntityInfo.component(row(1,:),1:21)
-    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.HeightGl')
-        src_ent = C(i);
-    end
-end
-sizeOfArdupilot = length(find(DesiredZ.src_ent==src_ent));
-
-DesiredHeight = struct;
-DesiredHeight.timestamp = zeros(1,sizeOfArdupilot);
-DesiredHeight.value = zeros(1,sizeOfArdupilot);
-j = 1;
-for (i=1:length(DesiredZ.timestamp))
-    if (DesiredZ.src_ent(i)==src_ent)
-        DesiredHeight.timestamp(j) = DesiredZ.timestamp(i);
-        DesiredHeight.value(j) = DesiredZ.value(i);
-        j = j+1;
-    end
-end
-Path.DesiredHeight = DesiredHeight;
-
 rad2deg = 180/pi;
 deg2rad = pi/180;
 Path.NetPos = NetPos;

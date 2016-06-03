@@ -88,6 +88,9 @@ Estimated.DisD = zeros(1,length(EstimatedState.timestamp));
 Estimated.PathN = zeros(1,length(EstimatedState.timestamp));
 Estimated.PathE = zeros(1,length(EstimatedState.timestamp));
 Estimated.PathD = zeros(1,length(EstimatedState.timestamp));
+Estimated.phi = EstimatedState.phi;
+Estimated.theta = EstimatedState.theta;
+Estimated.psi = EstimatedState.psi;
 for i=1:length(EstimatedState.timestamp)
     Estimated.x(i) = EstimatedState.x(i);
     Estimated.y(i) = EstimatedState.y(i);
@@ -133,9 +136,37 @@ for (i=1:length(PathControlState.timestamp))
         j = j+1;
     end
 end
+
+C = unique(DesiredZ.src_ent);
+
+for i=1:length(C)
+row = find(EntityInfo.id==C(i));
+%     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.UAV.Ardupilot')
+%         src_ent = C(i);
+%     end
+EntityInfo.component(row(1,:),1:21)
+    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.HeightGl')
+        src_ent = C(i);
+    end
+end
+sizeOfArdupilot = length(find(DesiredZ.src_ent==src_ent));
+
+DesiredHeight = struct;
+DesiredHeight.timestamp = zeros(1,sizeOfArdupilot);
+DesiredHeight.value = zeros(1,sizeOfArdupilot);
+j = 1;
+for (i=1:length(DesiredZ.timestamp))
+    if (DesiredZ.src_ent(i)==src_ent)
+        DesiredHeight.timestamp(j) = DesiredZ.timestamp(i);
+        DesiredHeight.value(j) = DesiredZ.value(i);
+        j = j+1;
+    end
+end
+state.DesiredHeight = DesiredHeight;
+
 %% Find height error
 height = timeseries(state.Estimated.base_height-state.Estimated.z,state.Estimated.timestamp);
-desired = timeseries(Path.DesiredHeight.value,Path.DesiredHeight.timestamp);
+desired = timeseries(state.DesiredHeight.value,state.DesiredHeight.timestamp);
 [heightSync,desiredSync] = synchronize(height,desired,'Union');
 heightError = heightSync-desiredSync;
 state.heightError = heightError;
@@ -168,4 +199,14 @@ mean(state.heightError)
 %     j = j+1;
 % end
 % state.crossTrack = crossTrack;
+%% Extract desired roll
+m_DesiredRoll = struct;
+m_DesiredRoll.value = DesiredRoll.value;
+m_DesiredRoll.timestamp = DesiredRoll.timestamp;
+state.DesiredRoll = m_DesiredRoll;
+%% Extract desired pitch
+m_DesiredPitch = struct;
+m_DesiredPitch.value = DesiredPitch.value;
+m_DesiredPitch.timestamp = DesiredPitch.timestamp;
+state.DesiredPitch = m_DesiredPitch;
 end
