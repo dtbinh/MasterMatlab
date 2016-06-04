@@ -3,12 +3,12 @@ close all;
 clear;
 
 %% Plot a land path
-load Agdenes2405/132859_land/mra/Data;
+% load Agdenes2405/132859_land/mra/Data;
 
 rad2deg = 180/pi;
 deg2rad = pi/180;
 
-Hardware = true; % RTK was unavailable
+Hardware = true; % RTK was available
 
 % [WP3X, WP3Y, WP3Z] = ecef2ned(WP3X,WP3Y,WP3Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
 % [WP2X, WP2Y, WP2Z] = ecef2ned(WP2X,WP2Y,WP2Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
@@ -16,7 +16,7 @@ Hardware = true; % RTK was unavailable
 
 %% 31 mai test 1
 % filename = 'Agdenes_31mai/land/102726_landFBWA/mra/Data';
-filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
+% filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/103344_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/105034_landFBWA/mra/Data';
 
@@ -27,7 +27,7 @@ filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/130547_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/130911_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/131315_landFBWA/mra/Data';
-% filename = 'Agdenes_31mai/land/131844_landFBWA/mra/Data';
+filename = 'Agdenes_31mai/land/131844_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/132137_landFBWA/mra/Data';
 
 %% 1 juni 
@@ -39,6 +39,7 @@ filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
 % filename = 'Agdenes_1juni/glideslope7/083811_landFBWAglideangle7/mra/data';
 % filename = 'Agdenes_1juni/finalapp90/084232_landFBWAfinalapp90/mra/data';
 % filename = 'Agdenes_1juni/glideslope65/084656_landFBWAglideangle6k5/mra/data';
+
 
 Path1 = pathExtract(filename);
 state1 = stateExtract(Hardware,Path1,filename);
@@ -63,7 +64,7 @@ state1 = stateExtract(Hardware,Path1,filename);
 % % % plotFigures;
 
 figure(1)
-plot(Path1.PathY,Path1.PathX);
+plot(Path1.PathY,Path1.PathX,'g');
 hold on;
 grid on;
 plot(Path1.PathY(1),Path1.PathX(1),'co');
@@ -72,9 +73,9 @@ plot(state1.Estimated.PathE,state1.Estimated.PathN,'b--');
 % plot(state2.Estimated.PathE,state2.Estimated.PathN,'b--');
 % plot(state3.Estimated.PathE,state3.Estimated.PathN,'b--');
 % plot(state4.Estimated.PathE,state4.Estimated.PathN,'b--');
-legend('Approach and landing path','Start position','Net position','X8 flight path');
-xlabel('North [m]');
-ylabel('East [m]');
+legend('Landing plan','Start position','Net position','X8 flight path','Location','northwest');
+ylabel('North [m]');
+xlabel('East [m]');
 figure(2);
 plot3(Path1.PathY,Path1.PathX,-Path1.PathZ);
 grid on;
@@ -83,8 +84,8 @@ plot3(Path1.PathY(1),Path1.PathX(1),-Path1.PathZ(1),'co');
 plot3(0,0,0,'rx');
 plot3(state1.Estimated.PathE,state1.Estimated.PathN,-state1.Estimated.PathD,'b--');
 legend('Approach and landing path','Start position','Net position','X8 flight path');
-xlabel('North [m]');
-ylabel('East [m]');
+ylabel('North [m]');
+xlabel('East [m]');
 zlabel('Height from net [m]')
 figure(3)
 plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),state1.DesiredHeight.value,'r');
@@ -117,6 +118,11 @@ plot(state1.DesiredRoll.timestamp-state1.DesiredRoll.timestamp(1),state1.Desired
 hold on;
 grid on;
 plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.phi*rad2deg,'--r');
+figure(8)
+subplot(2,1,1)
+plot(state1.Rtk.timestamp-state1.Rtk.timestamp(1),state1.Rtk.type)
+subplot(2,1,2)
+plot(state1.Navsources.timestamp-state1.Navsources.timestamp(1) ,state1.Navsources.maskValue)
 % figure(4)
 % plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.crossTrack);
 % figure(5)

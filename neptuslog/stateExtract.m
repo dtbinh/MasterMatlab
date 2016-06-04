@@ -28,6 +28,9 @@ if (Hardware)
     Rtk.timestamp = zeros(1,sizeOfRtk);
     Rtk.timediff = zeros(1,sizeOfRtk-1);
     j = 1;
+    numberFix = 0;
+    numberFloat = 0;
+    numberNone = 0;
     for i=1:length(GpsFixRtk.n)
         if (GpsFixRtk.src_ent(i)==src_ent)
             Rtk.n(1,j) = GpsFixRtk.n(i);
@@ -39,13 +42,34 @@ if (Hardware)
             Rtk.base_height(1,j) = GpsFixRtk.base_height(i);
             if strcmp(GpsFixRtk.type(i,1:2),'FI')
                 Rtk.type(j) = 3;
+                numberFix = numberFix +1;
             elseif strcmp(GpsFixRtk.type(i,1:2),'FL')
                 Rtk.type(j) = 2;
+                numberFloat = numberFloat +1;
             else
                 Rtk.type(j) = 0;
+                numberNone = numberNone + 1;
             end
             j = j+1;
         end
+    end
+    if numberFix==0
+        disp('No fix');
+    else
+        disp('Fix presentage');
+        numberFix/sizeOfRtk*100
+    end
+    if numberFloat==0
+        disp('No float');
+    else
+        disp('Float presentage');
+        numberFloat/sizeOfRtk*100
+    end
+    if numberNone==0
+        disp('No none');
+    else
+        disp('None presentage');
+        numberNone/sizeOfRtk*100
     end
     for i=1:sizeOfRtk-1
         Rtk.timediff(i) = Rtk.timestamp(i+1)-Rtk.timestamp(i);
@@ -60,11 +84,12 @@ if (Hardware)
     NavSources1 = struct;
     % m_NavSources.mask = zeros(length(NavSources.mask),1);
     NavSources1.maskValue = zeros(length(NavSources.mask),1);
+    NavSources1.timestamp = NavSources.timestamp;
     for i=1:length(NavSources.mask)
     %     [m_NavSources.mask(i,:),~] = strsplit(NavSources.mask(i,:),{'GNSS_RTK','|'},'CollapseDelimiters',false,'DelimiterType','RegularExpression');
           index = strfind(NavSources.mask(i,:),'GNSS_RTK');
           NavSources1.mask= NavSources.mask(1,index:index+7);
-        if (strcmp(NavSources.mask,'GNSS_RTK'))
+        if (strcmp(NavSources1.mask,'GNSS_RTK'))
             NavSources1.maskValue(i,1) = 1;
         else
             NavSources1.maskValue(i,1) = 0;
