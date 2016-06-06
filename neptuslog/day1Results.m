@@ -12,8 +12,13 @@ mean(meanCrossTrack)
 % crossTrack  = [2.1 -4.5 -1.6 5.4 5.3 -1.6 2.3 -5.4 0.8 1.1 0.2]';
 
 %% Day 2 net passing
-heightError = [14.4 1.3 1.1 1.4 1.1 2.0 2.32 7]';
-crossTrack  = [0.1 0.6 -0.2 0.1 0.1 -0.2 0.2 0.3]';
+% heightError = [14.4 1.3 1.1 1.4 1.1 2.0 2.32 7]';
+% crossTrack  = [0.1 0.6 -0.2 0.1 0.1 -0.2 0.2 0.3]';
+
+%% SIL 0606 results
+
+heightError = [-0.6 -0.3 -0.3 -0.3 -0.2 -0.6]';
+crossTrack = [0.2 0.0 -0.2 -0.1 -0.1 0.0]';
 
 Net = [1.5 -2.5;
         -1.5 -2.5;
@@ -26,7 +31,8 @@ plot(Net(:,2),Net(:,1))
 grid on;
 hold on;
 plot(crossTrack,heightError,'rx')
-axis('equal')
+% axis('equal')
+axis([-5 5 -5 5]);
 legend('Net landing box','UAV position when passing the net');
 xlabel('Cross track error [m]');
 ylabel('Height error with respect to net center [m]')

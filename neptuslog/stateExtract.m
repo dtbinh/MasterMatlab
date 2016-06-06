@@ -95,8 +95,8 @@ if (Hardware)
             NavSources1.maskValue(i,1) = 0;
         end
     end
+    state.Navsources = NavSources1;
 end
-state.Navsources = NavSources1;
 %% Extract estimatedState
 Estimated = struct;
 
