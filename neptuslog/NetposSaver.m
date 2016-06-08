@@ -2,11 +2,11 @@ function [NetPos] = NetposSaver()
 NetPos = struct;
 
 %% SIL simulation 06/06
-NetPos.lat = 63.6281111085521;
-NetPos.lon = 9.724609316783464;
-NetPos.height = 150;
-NetPos.z = -3;
-NetPos.heading = 65;
+% NetPos.lat = 63.6281111085521;
+% NetPos.lon = 9.724609316783464;
+% NetPos.height = 150;
+% NetPos.z = -3;
+% NetPos.heading = 65;
 
 %% Agdenes 24/05
 
@@ -30,9 +30,9 @@ NetPos.heading = 65;
 % NetPos.z = -3;
 % NetPos.heading = 66.5;
 %% Agdenes 01/06
-% NetPos.lat = 63.62831245876848;
-% NetPos.lon = 9.72534155984453;
-% NetPos.height = 150;
-% NetPos.z = -3;
-% NetPos.heading = 65;
+NetPos.lat = 63.62831245876848;
+NetPos.lon = 9.72534155984453;
+NetPos.height = 150;
+NetPos.z = -3;
+NetPos.heading = 65;
 end
