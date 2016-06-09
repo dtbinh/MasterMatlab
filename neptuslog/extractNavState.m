@@ -26,6 +26,7 @@ if (Hardware)
     Rtk.base_height = zeros(1,sizeOfRtk);
     Rtk.timestamp = zeros(1,sizeOfRtk);
     Rtk.timediff = zeros(1,sizeOfRtk-1);
+    Rtk.satellite = zeros(1,sizeOfRtk);
     j = 1;
     for i=1:length(GpsFixRtk.n)
         if (GpsFixRtk.src_ent(i)==src_ent)
@@ -36,6 +37,7 @@ if (Hardware)
             Rtk.base_lon(1,j) = GpsFixRtk.base_lon(i)*180/pi;
             Rtk.base_lat(1,j) = GpsFixRtk.base_lat(i)*180/pi;
             Rtk.base_height(1,j) = GpsFixRtk.base_height(i);
+            Rtk.satellite(1,j) = GpsFixRtk.satellites(i)
             if strcmp(GpsFixRtk.type(i,1:2),'FI')
                 Rtk.type(j) = 3;
             elseif strcmp(GpsFixRtk.type(i,1:2),'FL')

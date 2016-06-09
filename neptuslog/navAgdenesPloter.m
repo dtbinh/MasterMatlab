@@ -34,9 +34,14 @@ plot(state.External.timestamp-state.External.timestamp(1),state.External.base_he
 plot(state.Rtk.timestamp-state.Rtk.timestamp(1),state.Rtk.base_height-state.Rtk.d,'--g');
 ylabel('Height (WGS84) [m]');
 xlabel('Time [s]');
-legend('UAV navigation state','External navigation data','RTK-GPS');
-
-
+legend('UAV height','External navigation data','RTK-GNSS');
+figure(4)
+plot(state.Rtk.timestamp-state.Rtk.timestamp(1),state.Rtk.satellite);
+grid on;
+ylabel('Number of valid satellites');
+xlabel('Time [s]');
+legend('Valid satellites in the RTK-GNSS system');
+ylim([0 15]);
 % ax1 = axes;
 % ax2 = axes;
 % axes(ax1)

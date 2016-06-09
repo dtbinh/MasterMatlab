@@ -1,4 +1,4 @@
-function [state] = stateExtract(Hardware,Path,filename)
+function [state] = stateExtract(Hardware,Path,filename,coop)
 state = struct;
 %% Extract state information
 load(filename)
@@ -190,6 +190,8 @@ end
 state.DesiredHeight = DesiredHeight;
 
 %% Find height error
+
+if (~coop)
 height = timeseries(state.Estimated.base_height-state.Estimated.z,state.Estimated.timestamp);
 desired = timeseries(state.DesiredHeight.value,state.DesiredHeight.timestamp);
 [heightSync,desiredSync] = synchronize(height,desired,'Union');
@@ -203,6 +205,7 @@ disp('Var cross track error');
 var(state.PathState.crossTrack)
 disp('Mean height error');
 mean(state.heightError)
+end
 % %% Find cross track error and along track distance in the lateral plane
 % 
 % alpha_k = atan2(Path.PathY(2)-Path.PathY(1),Path.PathX(2)-Path.PathX(1));

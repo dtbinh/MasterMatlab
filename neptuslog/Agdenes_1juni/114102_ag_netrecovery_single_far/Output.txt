@@ -1,0 +1,58 @@
+[2016/06/01 11:41:02] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2016/06/01 11:41:02] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 11:41:02] - MSG [Plan.Engine] >> reply -- Get Plan (ag_netrecovery_single_far) -- OK
+[2016/06/01 11:41:02] - MSG [Plan.Engine] >> request -- Get Plan ()
+[2016/06/01 11:41:02] - MSG [Plan.Engine] >> reply -- Get Plan (ag_netrecovery_single_far) -- OK
+[2016/06/01 11:41:02] - MSG [Control.Formation.Path] >> Formation path controller activated.
+[2016/06/01 11:41:02] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62850 9.72669 to 63.62859 9.72667
+[2016/06/01 11:41:02] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/06/01 11:41:02] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/06/01 11:41:02] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 11:41:02] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/06/01 11:41:02] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - activating
+[2016/06/01 11:41:02] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/06/01 11:41:02] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/06/01 11:41:02] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/06/01 11:41:03] - WRN [Plan.Engine] >> Goto3: executing maneuver
+[2016/06/01 11:41:04] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62859 9.72667 to 63.62855 9.72672
+[2016/06/01 11:41:04] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/06/01 11:41:04] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 11:41:04] - WRN [Plan.Engine] >> Goto4: executing maneuver
+[2016/06/01 11:41:05] - MSG [Control.Formation.Path] >> path (lat/lon): 63.62855 9.72672 to 63.62853 9.72662
+[2016/06/01 11:41:05] - ERR [Control.Path.Acceleration/Hardware] >> not active
+[2016/06/01 11:41:05] - MSG [Control.UAV.Ardupilot/Hardware] >> path control is NOT active
+[2016/06/01 11:41:05] - WRN [Plan.Engine] >> NetRecovery1: executing maneuver
+[2016/06/01 11:41:06] - MSG [Maneuver.NetRecovery] >> NetRecovery maneuver received
+[2016/06/01 11:41:06] - MSG [Maneuver.NetRecovery] >> DesiredNetRecoveryPath dispatched
+[2016/06/01 11:41:06] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - deactivating
+[2016/06/01 11:41:06] - MSG [Control.UAV.Ardupilot/Hardware] >> altitude control - deactivating
+[2016/06/01 11:41:06] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - deactivating
+[2016/06/01 11:41:06] - MSG [Control.UAV.Ardupilot/Hardware] >> path control - activating
+[2016/06/01 11:41:06] - MSG [Control.NetCatch.Coordinator] >> Reset coordinator
+[2016/06/01 11:41:06] - MSG [Control.NetCatch.Coordinator] >> AutopilotActivating
+[2016/06/01 11:41:06] - MSG [Control.NetCatch.Coordinator] >> Initialize net recovery maneuver
+[2016/06/01 11:41:06] - MSG [Control.NetCatch.Coordinator] >> Maneuver enabled
+[2016/06/01 11:41:06] - MSG [Control.UAV.Ardupilot/Hardware] >> speed control - activating
+[2016/06/01 11:41:06] - MSG [Control.NetCatch.Coordinator] >> Initialized, at standby
+[2016/06/01 11:41:06] - MSG [Control.NetCatch.Coordinator] >> Current state: STANDBY
+[2016/06/01 11:41:20] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:41:20] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 11:41:45] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:41:45] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 11:41:55] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:41:57] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingExernal. 
+[2016/06/01 11:42:00] - MSG [Navigation.UAV.Navigation] >> Switching from UsingExernal to RtkReady. 
+[2016/06/01 11:42:01] - MSG [Navigation.UAV.Navigation] >> Switching from RtkReady to UsingRtk. 
+[2016/06/01 11:42:07] - MSG [Navigation.UAV.Navigation] >> Switching from UsingRtk to UsingShortLossComp. 
+[2016/06/01 11:42:07] - MSG [Navigation.UAV.Navigation] >> Switching from UsingShortLossComp to UsingRtk. 
+[2016/06/01 11:42:21] - MSG [Control.NetCatch.Coordinator] >> Aircraft approaching
+[2016/06/01 11:42:21] - MSG [Control.NetCatch.Coordinator] >> Current state: APPROACH
+[2016/06/01 11:42:27] - MSG [Control.NetCatch.Coordinator] >> Start NetRecovery
+[2016/06/01 11:42:27] - MSG [Control.NetCatch.Coordinator] >> Current state: START
+[2016/06/01 11:42:39] - MSG [Control.NetCatch.Coordinator] >> Fixed-wing catched
+[2016/06/01 11:42:39] - MSG [Control.NetCatch.Coordinator] >> Current state: CATCH
+[2016/06/01 11:42:44] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2016/06/01 11:42:44] - MSG [Plan.Engine] >> reply -- Stop Plan (ag_netrecovery_single_far) -- OK
+[2016/06/01 11:42:44] - WRN [Plan.Engine] >> plan stopped
+[2016/06/01 11:42:44] - MSG [Transports.Logging] >> log stopped '20160601/114102_ag_netrecovery_single_far'
+[2016/06/01 11:42:44] - MSG [Transports.Logging] >> log started '20160601/114244'

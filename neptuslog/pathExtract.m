@@ -1,5 +1,5 @@
 %% Defining the net position
-function [Path] = pathExtract(filename)
+function [Path] = pathExtract(filename,cooperativ)
 
 load(filename)
 Path = struct;
@@ -19,7 +19,11 @@ WP1 = PlanSpecification.maneuvers{1,1}{4,1}.data{1,1};
 
 [WP3X, WP3Y, WP3Z] = geodetic2ned(WP3.lat*rad2deg,WP3.lon*rad2deg,WP3.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
 [WP2X, WP2Y, WP2Z] = geodetic2ned(WP2.lat*rad2deg,WP2.lon*rad2deg,WP2.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
-[WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat*rad2deg,WP1.lon*rad2deg,WP1.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
+if(cooperativ)
+    [WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.start_lat*rad2deg,WP1.start_lon*rad2deg,WP1.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
+else
+    [WP1X, WP1Y, WP1Z] = geodetic2ned(WP1.lat*rad2deg,WP1.lon*rad2deg,WP1.z,Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,wgs84Ellipsoid);
+end
 
 xDubin = zeros(1,length(PathDubins.points{1,1}));
 yDubin = zeros(1,length(PathDubins.points{1,1}));
