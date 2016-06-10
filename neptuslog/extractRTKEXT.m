@@ -1,4 +1,4 @@
-function [state] = stateExtract(Hardware,Path,filename,coop)
+function [state] = extractRTKEXT(Hardware,filename)
 state = struct;
 %% Extract state information
 load(filename)
@@ -128,9 +128,7 @@ for i=1:length(EstimatedState.timestamp)
                                                                                 Rtk.base_lat(1),Rtk.base_lon(1),Rtk.base_height(1),...
                                                                                 Estimated.x(i),Estimated.y(i),Estimated.z(i));
     end
-    [Estimated.PathN(i),Estimated.PathE(i),Estimated.PathD(i)] = displacement(Estimated.base_lat(i),Estimated.base_lon(i),Estimated.base_height(i),...
-                                                                                Path.NetPos.lat,Path.NetPos.lon,Path.NetPos.height-Path.NetPos.z,...
-                                                                                Estimated.x(i),Estimated.y(i),Estimated.z(i));
+    
 end
 state.Estimated = Estimated;
 
@@ -156,122 +154,19 @@ for i=1:sizeOfExternal
     External.base_height(i) = ExternalNavData.state{i,1}.height;
     [External.DisN(i),External.DisE(i),External.DisD(i)] = displacement(External.base_lat(i),External.base_lon(i),External.base_height(i),Rtk.base_lat(1),Rtk.base_lon(1),Rtk.base_height(1),External.x(i),External.y(i),External.z(i));
 end
-External.timeX = timeseries(External.x,External.timestamp);
-External.timeY = timeseries(External.y,External.timestamp);
-External.timeZ = timeseries(External.z,External.timestamp);
+External.timeX = timeseries(External.DisN,External.timestamp);
+External.timeY = timeseries(External.DisE,External.timestamp);
+External.timeZ = timeseries(External.DisD,External.timestamp);
 state.External = External;
 
 %% Calculate compensator
 comp = struct;
-[tempRTKN, tempEXTN] = synchronize(External.timeX,Rtk.timeN,'Union');
-[tempRTKE, tempEXTE] = synchronize(External.timeY,Rtk.timeY,'Union');
-[tempRTKD, tempEXTD] = synchronize(External.timeZ,Rtk.timeZ,'Union');
-comp.x = tempRTKN-tempEXTN;
-comp.y = tempRTKE-tempEXTE;
-comp.z = tempRTKD-tempEXTD;
+[External.timeX,Rtk.timeN] = synchronize(External.timeX,Rtk.timeN,'Union','KeepOriginalTimes',true);
+[External.timeY,Rtk.timeE] = synchronize(External.timeY,Rtk.timeE,'Union','KeepOriginalTimes',true);
+[External.timeZ,Rtk.timeD] = synchronize(External.timeZ,Rtk.timeD,'Union','KeepOriginalTimes',true);
+comp.x = Rtk.timeN-External.timeX;
+comp.y = Rtk.timeE-External.timeY;
+comp.z = Rtk.timeD-External.timeZ;
 state.comp = comp;
-%% Extract path state
 
-PathState = struct;
-
-C = unique(PathControlState.src_ent);
-
-for i=1:length(C)
-row = find(EntityInfo.id==C(i));
-    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.LOSnSMCu')
-        src_ent = C(i);
-    end
-end
-
-sizeOfPathState = length(find(PathControlState.src_ent==src_ent));
-
-
-PathState.crossTrack = zeros(1,sizeOfPathState);
-PathState.alongtrack = zeros(1,sizeOfPathState);
-PathState.timestamp = zeros(1,sizeOfPathState);
-j = 1;
-for (i=1:length(PathControlState.timestamp))
-    if (PathControlState.src_ent(i)==src_ent)
-        PathState.crossTrack(j) = PathControlState.y(i);
-        PathState.alongtrack(j) = PathControlState.x(i);
-        PathState.timestamp(j) = PathControlState.timestamp(i);
-        j = j+1;
-    end
-end
-
-C = unique(DesiredZ.src_ent);
-
-for i=1:length(C)
-row = find(EntityInfo.id==C(i));
-%     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.UAV.Ardupilot')
-%         src_ent = C(i);
-%     end
-EntityInfo.component(row(1,:),1:21)
-    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.HeightGl')
-        src_ent = C(i);
-    end
-end
-sizeOfArdupilot = length(find(DesiredZ.src_ent==src_ent));
-
-DesiredHeight = struct;
-DesiredHeight.timestamp = zeros(1,sizeOfArdupilot);
-DesiredHeight.value = zeros(1,sizeOfArdupilot);
-j = 1;
-for (i=1:length(DesiredZ.timestamp))
-    if (DesiredZ.src_ent(i)==src_ent)
-        DesiredHeight.timestamp(j) = DesiredZ.timestamp(i);
-        DesiredHeight.value(j) = DesiredZ.value(i);
-        j = j+1;
-    end
-end
-state.DesiredHeight = DesiredHeight;
-
-%% Find height error
-
-if (~coop)
-height = timeseries(state.Estimated.base_height-state.Estimated.z,state.Estimated.timestamp);
-desired = timeseries(state.DesiredHeight.value,state.DesiredHeight.timestamp);
-[heightSync,desiredSync] = synchronize(height,desired,'Union');
-heightError = heightSync-desiredSync;
-state.heightError = heightError;
-
-state.PathState = PathState;
-disp('Mean cross track error');
-mean(state.PathState.crossTrack)
-disp('Var cross track error');
-var(state.PathState.crossTrack)
-disp('Mean height error');
-mean(state.heightError)
-end
-% %% Find cross track error and along track distance in the lateral plane
-% 
-% alpha_k = atan2(Path.PathY(2)-Path.PathY(1),Path.PathX(2)-Path.PathX(1));
-% i = 1;
-% j = 1;
-% lengthPath = length(Path.PathY);
-% lengthState = length(EstimatedState.timestamp);
-% alongTrack = zeros(1,length(EstimatedState.timestamp));
-% crossTrack = zeros(1,length(EstimatedState.timestamp));
-% first = true;
-% 
-% while (i<(lengthPath-1) && j<lengthState)
-%     alongTrack(j) = (Estimated.PathN(j)-Path.PathX(i))*cos(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*sin(alpha_k);
-%     crossTrack(j) = -(Estimated.PathN(j)-Path.PathX(i))*sin(alpha_k) + (Estimated.PathE(j)-Path.PathY(i))*cos(alpha_k);
-%     if (alongTrack(j) >= sqrt((Path.PathX(i+1)-Path.PathX(i))^2+(Path.PathY(i+1)-Path.PathY(i))^2))
-%         i = i+1;
-%         alpha_k = atan2(Path.PathY(i+1)-Path.PathY(i),Path.PathX(i+1)-Path.PathX(i));
-%     end
-%     j = j+1;
-% end
-% state.crossTrack = crossTrack;
-%% Extract desired roll
-m_DesiredRoll = struct;
-m_DesiredRoll.value = DesiredRoll.value;
-m_DesiredRoll.timestamp = DesiredRoll.timestamp;
-state.DesiredRoll = m_DesiredRoll;
-%% Extract desired pitch
-m_DesiredPitch = struct;
-m_DesiredPitch.value = DesiredPitch.value;
-m_DesiredPitch.timestamp = DesiredPitch.timestamp;
-state.DesiredPitch = m_DesiredPitch;
 end

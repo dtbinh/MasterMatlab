@@ -1,6 +1,7 @@
 function [Path,lengthSpiral] = glideSpiral(Path,OF,Rf,RightF,h1,correctHeight,N,glideangle)
 theta0 = atan2(Path(2,end)-OF(2),Path(1,end)-OF(1));
 WP4 = Path(:,end);
+lengthSpiral = 0;
 if RightF
     theta = 0:-(2*pi)/(N-1):-2*pi;
 else
@@ -14,7 +15,7 @@ if (~correctHeight)
     D = sqrt((xnn-WPS0(1))^2+(ynn-WPS0(2))^2);
     znn = WPS0(3)+D*tan(glideangle);
     WPS1 = [xnn;ynn;znn];
-    lengthSpiral = [0 abs(theta(2))*Rf]
+    lengthSpiral = [0 abs(theta(2))*Rf];
     s = 2;
     n = 3;
     tt = length(Path) +1;

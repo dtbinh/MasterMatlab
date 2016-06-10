@@ -10,29 +10,26 @@ rad2deg = 160/pi;
 nett = [0 0 -3]';
 alpha = 3;
 descent = 3;
-a1 = 10;
+a0 = 80;
+a1 = 100;
 a2 = 300;
-a3 = 100;
-Rl = 20;
+a3 = 10;
+Rl = 75;
 nettH = 0*deg2rad;
-DescentBoxW = 20;
-DescentBoxS = 40;
-DescentBoxL = 100;
 
 %% UAV init poses in NED frame
-x0 = [500 100 -40 0 0 0*deg2rad]';
+x0 = [100 500 -100 0 0 40*deg2rad]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
 
 %% UAV spesific constants
-R_min = 20;
+R_min = 75;
 K_max = 1/R_min;
-N = 16;
+N = 32;
 
 %% Nett in net frame
-% TODO: Move the nett inbetween two waypoints.
-w1 = nett;
+w1 = nett + [-a0 0 a1*tan(alpha*deg2rad)]';
 w2 = nett + [a1 0 -a1*tan(alpha*deg2rad)]';
 w3 = w2 + [a2 0 -a2*tan(descent*deg2rad)]';
 w4 = w3 + [a3 0 0]';
@@ -49,54 +46,36 @@ wA = R*wA;
 XS = [x0(1) x0(2) x0(3) x0(6)];
 XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
 [Path,OF,RightF,success,lengthPath] = dubinsPath(XS,XF,R_min,Rl,N);
-% if ~success
-%     % Need an extra WP
-%     XF = [wA' nettH];
-%     [Path1,~,~,~] = dubinsPath(XS,XF,R_min,Rl,N);
-%     XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
-%     XS = [wA' nettH];
-%     [Path2,OF,RightF,success,lenghtPath] = dubinsPath(XS,XF,R_min,Rl,N);
-%     Path = [Path1 Path2];
-% end  
-% if ~success
-%     disp('Abort landing');
-%     return
-% end
+
     
 [Path,correctHeight] = glideslope(Path,x0(3),WPNED(3,4),descent*deg2rad);
+
 [Path,lengthSpiral] = glideSpiral(Path,OF,Rl,RightF,WPNED(3,4),correctHeight,N,descent*deg2rad);
 
-% lengthPath = zeros(1,length(Path(3,:)));
-% for i=1:length(Path)-1
-%     lengthPath(1,i+1) = lengthPath(1,i) + norm(Path(1:2,i+1)-Path(1:2,i));
-% end
 lengthPath = [lengthPath(1:end-1) lengthPath(end)+lengthSpiral];
-Path
-lengthPath
-% tt = length(Path)+1;
-% Path(:,tt) = WPNED(:,3);
-% tt = tt+1;
-% Path(:,tt) = WPNED(:,2);
-% tt = tt+1;
-% Path(:,tt) = WPNED(:,1);
-figure(2)
-plot(lengthPath,-Path(3,1:end-1));
-grid on;
-xlabel('Path length [m]');
-ylabel('Height [m]');
-legend('Path height profile');
+% figure(2)
+% plot(lengthPath,-Path(3,1:end-1));
+% grid on;
+% xlabel('Path length [m]');
+% ylabel('Height [m]');
+% legend('Path height profile');
 figure(3)
 plot3(Path(2,:),Path(1,:),-Path(3,:));
 grid on;
 hold on;
 plot3(WPNED(2,:),WPNED(1,:),-WPNED(3,:),'-x');
-legend('Landing path','Virtual runway');
+legend('Approach path','Landing path');
 xlabel('East [m]');
 ylabel('North [m]');
 zlabel('Height [m]');
-% plot(Path(2,:),Path(1,:));
-% hold on;
-% plot(WPNED(2,4),WPNED(1,4),'x');
-% plot(x0(2),x0(1),'o');
-% axis equal
-% plot(WPNED(2,:),WPNED(1,:));
+figure(4)
+plot(Path(2,:),Path(1,:));
+grid on;
+hold on;
+plot(WPNED(2,:),WPNED(1,:),'-gx');
+plot(0,0,'rx')
+plot(Path(2,1),Path(1,1),'co')
+legend('Approach path','Landing path','Net position','Start position');
+xlabel('East [m]');
+ylabel('North [m]');
+axis('equal')
