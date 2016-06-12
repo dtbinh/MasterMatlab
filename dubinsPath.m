@@ -1,4 +1,4 @@
-function [Path,OF,RightF,success,lengthPath] = dubinsPath(Xs,Xf,Rs,Rf,N)
+function [Path,OF,RightF,success,lengthPath,heading] = dubinsPath(Xs,Xf,Rs,Rf,N)
 
 %% Find shortest Dubin
 
@@ -180,6 +180,12 @@ end
 % theta = 0:((theta1-theta0))/(N-1):theta1-theta0;
 arc1 = [Xsc+Rs*cos(theta0+theta);Ysc+Rs*sin(theta0+theta)];
 lengthPath = Rs*abs(theta);
+
+heading = zeros(1,length(theta),1);
+for i=1:length(theta)
+    heading(i) = atan2(1,-tan(theta0+theta(i)));
+end
+
 Path = arc1;
 theta01 = atan2(PN(2)-Yfc,PN(1)-Xfc);
 theta11 = atan2(Xf(2)-Yfc,Xf(1)-Xfc);
@@ -208,6 +214,12 @@ end
 arc2 = [Xfc+Rf*cos(theta01+theta1);Yfc+Rf*sin(theta01+theta1)];
 Path = [Path arc2];
 lengthPath = [lengthPath(1:end-1) lengthPath(end)+Rf*abs(theta1)];
+
+heading1 = zeros(1,length(theta1));
+for i=1:length(theta1)
+    heading1(i) = atan2(1,-tan(theta01+theta1(i)));
+end
+heading = [heading heading1];
 OF = [Xfc;Yfc];
 success = true;
 

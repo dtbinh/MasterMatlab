@@ -4,7 +4,7 @@ clear;
 
 %% Diverse konstanter
 deg2rad = pi/180;
-rad2deg = 160/pi;
+rad2deg = 180/pi;
 
 %% Input parametere fra Neptus
 nett = [0 0 -3]';
@@ -15,10 +15,10 @@ a1 = 100;
 a2 = 300;
 a3 = 10;
 Rl = 75;
-nettH = 0*deg2rad;
+nettH = 20*deg2rad;
 
 %% UAV init poses in NED frame
-x0 = [100 500 -100 0 0 40*deg2rad]';
+x0 = [100 1000 -50 0 0 0*deg2rad]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
@@ -45,7 +45,7 @@ WPNED = [R*w1 R*w2 R*w3 R*w4];
 wA = R*wA;
 XS = [x0(1) x0(2) x0(3) x0(6)];
 XF = [WPNED(1,4) WPNED(2,4) WPNED(3,4) (nettH-pi)];
-[Path,OF,RightF,success,lengthPath] = dubinsPath(XS,XF,R_min,Rl,N);
+[Path,OF,RightF,success,lengthPath,heading] = dubinsPath(XS,XF,R_min,Rl,N);
 
     
 [Path,correctHeight] = glideslope(Path,x0(3),WPNED(3,4),descent*deg2rad);
@@ -79,3 +79,9 @@ legend('Approach path','Landing path','Net position','Start position');
 xlabel('East [m]');
 ylabel('North [m]');
 axis('equal')
+figure(5)
+plot(lengthPath,heading*rad2deg);
+grid on;
+legend('Path tangential');
+ylabel('[deg]');
+xlabel('Path length [m]');
