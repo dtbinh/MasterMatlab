@@ -164,8 +164,8 @@ state.External = External;
 %% Calculate compensator
 comp = struct;
 [tempRTKN, tempEXTN] = synchronize(External.timeX,Rtk.timeN,'Union');
-[tempRTKE, tempEXTE] = synchronize(External.timeY,Rtk.timeY,'Union');
-[tempRTKD, tempEXTD] = synchronize(External.timeZ,Rtk.timeZ,'Union');
+[tempRTKE, tempEXTE] = synchronize(External.timeY,Rtk.timeE,'Union');
+[tempRTKD, tempEXTD] = synchronize(External.timeZ,Rtk.timeD,'Union');
 comp.x = tempRTKN-tempEXTN;
 comp.y = tempRTKE-tempEXTE;
 comp.z = tempRTKD-tempEXTD;
@@ -184,29 +184,43 @@ row = find(EntityInfo.id==C(i));
 end
 
 sizeOfPathState = length(find(PathControlState.src_ent==src_ent));
-
+sizeOfDesiredRoll = length(find(DesiredRoll.src_ent==src_ent));
 
 PathState.crossTrack = zeros(1,sizeOfPathState);
 PathState.alongtrack = zeros(1,sizeOfPathState);
 PathState.timestamp = zeros(1,sizeOfPathState);
+
+%% Extract desired roll
+m_DesiredRoll = struct;
+m_DesiredRoll.value = DesiredRoll.value;
+m_DesiredRoll.timestamp = DesiredRoll.timestamp;
+m_DesiredRoll.value = zeros(1,sizeOfDesiredRoll);
+m_DesiredRoll.timestamp = zeros(1,sizeOfDesiredRoll);
 j = 1;
 for (i=1:length(PathControlState.timestamp))
     if (PathControlState.src_ent(i)==src_ent)
         PathState.crossTrack(j) = PathControlState.y(i);
         PathState.alongtrack(j) = PathControlState.x(i);
         PathState.timestamp(j) = PathControlState.timestamp(i);
+        m_DesiredRoll.value(j) = DesiredRoll.value(i);
+        m_DesiredRoll.timestamp(j) = DesiredRoll.timestamp(i);
+        
         j = j+1;
     end
 end
-
+j = 1;
+for i=1:length(DesiredRoll.timestamp)
+    if (DesiredRoll.src_ent(i)==src_ent)
+        m_DesiredRoll.value(j) = DesiredRoll.value(i);
+        m_DesiredRoll.timestamp(j) = DesiredRoll.timestamp(i);
+        j = j+1;
+    end
+end
+state.DesiredRoll = m_DesiredRoll;
 C = unique(DesiredZ.src_ent);
 
 for i=1:length(C)
-row = find(EntityInfo.id==C(i));
-%     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.UAV.Ardupilot')
-%         src_ent = C(i);
-%     end
-EntityInfo.component(row(1,:),1:21)
+    row = find(EntityInfo.id==C(i));
     if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.HeightGl')
         src_ent = C(i);
     end
@@ -225,6 +239,30 @@ for (i=1:length(DesiredZ.timestamp))
     end
 end
 state.DesiredHeight = DesiredHeight;
+
+C = unique(DesiredPitch.src_ent);
+disp('Find desired pitch')
+for i=1:length(C)
+row = find(EntityInfo.id==C(i));
+    if strcmp(EntityInfo.component(row(1,:),1:21),'Control.Path.Longitud')
+        src_ent = C(i);
+    end
+end
+%% Extract desired pitch
+sizeOfDesiredPitch = length(find(DesiredPitch.src_ent==src_ent));
+
+m_DesiredPitch = struct;
+m_DesiredPitch.timestamp = zeros(1,sizeOfDesiredPitch);
+m_DesiredPitch.value = zeros(1,sizeOfDesiredPitch);
+j = 1;
+for i=1:length(DesiredPitch.timestamp)
+    if (DesiredPitch.src_ent(i)==src_ent)
+        m_DesiredPitch.value(j) = DesiredPitch.value(i);
+        m_DesiredPitch.timestamp(j) = DesiredPitch.timestamp(i);
+        j = j+1;
+    end 
+end
+state.DesiredPitch = m_DesiredPitch;
 
 %% Find height error
 
@@ -264,14 +302,6 @@ end
 %     j = j+1;
 % end
 % state.crossTrack = crossTrack;
-%% Extract desired roll
-m_DesiredRoll = struct;
-m_DesiredRoll.value = DesiredRoll.value;
-m_DesiredRoll.timestamp = DesiredRoll.timestamp;
-state.DesiredRoll = m_DesiredRoll;
-%% Extract desired pitch
-m_DesiredPitch = struct;
-m_DesiredPitch.value = DesiredPitch.value;
-m_DesiredPitch.timestamp = DesiredPitch.timestamp;
-state.DesiredPitch = m_DesiredPitch;
+
+
 end

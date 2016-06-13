@@ -9,6 +9,8 @@ rad2deg = 180/pi;
 deg2rad = pi/180;
 
 Hardware = true; % RTK was available
+cooperativ = false;
+coop = false;
 
 % [WP3X, WP3Y, WP3Z] = ecef2ned(WP3X,WP3Y,WP3Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
 % [WP2X, WP2Y, WP2Z] = ecef2ned(WP2X,WP2Y,WP2Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
@@ -35,20 +37,20 @@ Hardware = true; % RTK was available
 % filename = 'Agdenes_1juni/lookaheadraduis75/082345_landFBWALookahead30/mra/data';
 % filename = 'Agdenes_1juni/segment10/082745_landFBWASegDistance10/mra/data';
 % filename = 'Agdenes_1juni/segment10/083107_landFBWASegDistance10/mra/data';
-% filename = 'Agdenes_1juni/segment10/083423_landFBWASegDistance10/mra/data';
+filename = 'Agdenes_1juni/segment10/083423_landFBWASegDistance10/mra/data';
 % filename = 'Agdenes_1juni/glideslope7/083811_landFBWAglideangle7/mra/data';
 % filename = 'Agdenes_1juni/finalapp90/084232_landFBWAfinalapp90/mra/data';
 % filename = 'Agdenes_1juni/glideslope65/084656_landFBWAglideangle6k5/mra/data';
 
 %% Cooperative
-filename = 'Agdenes_1juni/114124_land_fixedwing_4_run2/mra/data';
-cooperativ = true;
-coop = true;
+% filename = 'Agdenes_1juni/114124_land_fixedwing_4_run2/mra/data';
+% cooperativ = true;
+% coop = true;
 Path1 = pathExtract(filename,cooperativ);
 state1 = stateExtract(Hardware,Path1,filename,coop);
-
-filename = 'Agdenes_1juni/114102_ag_netrecovery_single_far/mra/data';
-hexa = stateExtract(Hardware,Path1,filename,coop);
+% 
+% filename = 'Agdenes_1juni/114102_ag_netrecovery_single_far/mra/data';
+% hexa = stateExtract(Hardware,Path1,filename,coop);
 % plotFigures;
 
 % filename =  'Agdenes2405/133227_land/mra/Data';
@@ -159,17 +161,19 @@ else
     hold on;
     plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.theta*rad2deg,'--r')
     grid on;
-    ylabel('Pitch angle [Deg]');
+    ylabel('Angle [Deg]');
     xlabel('Time [s]');
     legend('\theta_d','\theta')
+    title('Desired and actual pitch of the UAV')
     figure(7)
     plot(state1.DesiredRoll.timestamp-state1.DesiredRoll.timestamp(1),state1.DesiredRoll.value*rad2deg);
     hold on;
     grid on;
     plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.phi*rad2deg,'--r');
     xlabel('Time [s]');
-    ylabel('Roll angle [deg]')
+    ylabel('Angle [deg]')
     legend('\phi_d','\phi');
+    title('Desired and acutal roll of the UAV')
     figure(8)
     subplot(2,1,1)
     plot(state1.Rtk.timestamp-state1.Rtk.timestamp(1),state1.Rtk.type)
