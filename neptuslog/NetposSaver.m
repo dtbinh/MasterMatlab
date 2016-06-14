@@ -17,11 +17,11 @@ NetPos = struct;
 % NetPos.heading = 66.5;
 
 %% Agdenes 31/05 test 1
-% NetPos.lat = 63.62852832784504
-% NetPos.lon = 9.726611753451145;
-% NetPos.height = 150;
-% NetPos.z = -3;
-% NetPos.heading = 66.5;
+NetPos.lat = 63.62852832784504
+NetPos.lon = 9.726611753451145;
+NetPos.height = 150;
+NetPos.z = -3;
+NetPos.heading = 66.5;
 
 %% Agdenes 31/05 test 2
 % NetPos.lat = 63.62860673728398;
@@ -30,9 +30,9 @@ NetPos = struct;
 % NetPos.z = -3;
 % NetPos.heading = 66.5;
 %% Agdenes 01/06
-NetPos.lat = 63.62831245876848;
-NetPos.lon = 9.72534155984453;
-NetPos.height = 150;
-NetPos.z = -3;
-NetPos.heading = 65;
+% NetPos.lat = 63.62831245876848;
+% NetPos.lon = 9.72534155984453;
+% NetPos.height = 150;
+% NetPos.z = -3;
+% NetPos.heading = 65;
 end

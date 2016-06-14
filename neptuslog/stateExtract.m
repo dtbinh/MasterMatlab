@@ -302,6 +302,20 @@ end
 %     j = j+1;
 % end
 % state.crossTrack = crossTrack;
+m_DesiredSpeed = struct;
+m_DesiredSpeed.value = DesiredSpeed.value;
+m_DesiredSpeed.timestamp = DesiredSpeed.timestamp;
 
+state.DesiredSpeed = m_DesiredSpeed;
 
+m_airspeed = struct;
+m_airspeed.value = IndicatedSpeed.value;
+m_airspeed.timestamp = IndicatedSpeed.timestamp;
+
+state.IndicatedSpeed = m_airspeed;
+
+m_trueSpeed = struct;
+m_trueSpeed.value = TrueSpeed.value;
+m_trueSpeed.timestamp = TrueSpeed.timestamp;
+state.TrueSpeed = m_trueSpeed;
 end

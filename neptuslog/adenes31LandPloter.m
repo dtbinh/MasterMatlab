@@ -18,7 +18,7 @@ coop = false;
 
 %% 31 mai test 1
 % filename = 'Agdenes_31mai/land/102726_landFBWA/mra/Data';
-% filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
+filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/103344_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/105034_landFBWA/mra/Data';
 
@@ -37,7 +37,7 @@ coop = false;
 % filename = 'Agdenes_1juni/lookaheadraduis75/082345_landFBWALookahead30/mra/data';
 % filename = 'Agdenes_1juni/segment10/082745_landFBWASegDistance10/mra/data';
 % filename = 'Agdenes_1juni/segment10/083107_landFBWASegDistance10/mra/data';
-filename = 'Agdenes_1juni/segment10/083423_landFBWASegDistance10/mra/data';
+% filename = 'Agdenes_1juni/segment10/083423_landFBWASegDistance10/mra/data';
 % filename = 'Agdenes_1juni/glideslope7/083811_landFBWAglideangle7/mra/data';
 % filename = 'Agdenes_1juni/finalapp90/084232_landFBWAfinalapp90/mra/data';
 % filename = 'Agdenes_1juni/glideslope65/084656_landFBWAglideangle6k5/mra/data';
@@ -179,6 +179,16 @@ else
     plot(state1.Rtk.timestamp-state1.Rtk.timestamp(1),state1.Rtk.type)
     subplot(2,1,2)
     plot(state1.Navsources.timestamp-state1.Navsources.timestamp(1) ,state1.Navsources.maskValue)
+    figure(9)
+    plot(state1.DesiredSpeed.timestamp-state1.DesiredSpeed.timestamp(1),state1.DesiredSpeed.value);
+    hold on;
+    plot(state1.IndicatedSpeed.timestamp-state1.IndicatedSpeed.timestamp(1),state1.IndicatedSpeed.value,'--r');
+    plot(state1.TrueSpeed.timestamp-state1.TrueSpeed.timestamp(1),state1.TrueSpeed.value,'--g');
+    grid on;
+    ylabel('Speed [m/s]');
+    xlabel('Time [s]');
+    title('Airspeed measured by the UAV');
+    legend('Desired speed','Measured airspeed','Ground speed');
 end
 
 % figure(4)
