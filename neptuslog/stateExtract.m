@@ -208,6 +208,14 @@ for (i=1:length(PathControlState.timestamp))
         j = j+1;
     end
 end
+%% Find net passing time
+j = length(PathState.alongtrack);
+while PathState.alongtrack(j)<80
+    j = j-1;
+end
+netPassing = struct;
+netPassing.timestamp = PathState.timestamp(j)-PathState.timestamp(1)
+state.netPassign = netPassing;
 j = 1;
 for i=1:length(DesiredRoll.timestamp)
     if (DesiredRoll.src_ent(i)==src_ent)

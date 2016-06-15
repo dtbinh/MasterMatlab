@@ -135,17 +135,20 @@ else
     xlabel('East [m]');
     zlabel('Height from net [m]')
     figure(3)
+    netHeight = ones(1,length(state1.DesiredHeight.timestamp))*153;
     plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),state1.DesiredHeight.value,'r');
     grid on;
     hold on;
     plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.base_height-state1.Estimated.z,'--b');
+    plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),netHeight,'g');
+    plot(state1.netPassign.timestamp,153,'gx')
     % plot(state2.Estimated.timestamp-state2.Estimated.timestamp(1),state2.Estimated.base_height-state2.Estimated.z,'-b');
     % plot(state3.Estimated.timestamp-state3.Estimated.timestamp(1),state3.Estimated.base_height-state3.Estimated.z,'-b');
     % plot(state4.Estimated.timestamp-state4.Estimated.timestamp(1),state4.Estimated.base_height-state4.Estimated.z,'-b');
 
     ylabel('Height (WGS84) [m]');
     xlabel('Time [s]');
-    legend('Desired height','UAV height');
+    legend('Desired height','UAV height','Net center height','UAV passed net');
     figure(4)
     plot(state1.PathState.timestamp-state1.PathState.timestamp(1),state1.PathState.crossTrack);
     grid on;
@@ -180,6 +183,7 @@ else
     subplot(2,1,2)
     plot(state1.Navsources.timestamp-state1.Navsources.timestamp(1) ,state1.Navsources.maskValue)
     figure(9)
+    subplot(2,1,1)
     plot(state1.DesiredSpeed.timestamp-state1.DesiredSpeed.timestamp(1),state1.DesiredSpeed.value);
     hold on;
     plot(state1.IndicatedSpeed.timestamp-state1.IndicatedSpeed.timestamp(1),state1.IndicatedSpeed.value,'--r');
@@ -189,6 +193,14 @@ else
     xlabel('Time [s]');
     title('Airspeed measured by the UAV');
     legend('Desired speed','Measured airspeed','Ground speed');
+    subplot(2,1,2)
+    plot(state1.PathState.timestamp-state1.PathState.timestamp(1),state1.PathState.crossTrack);
+    grid on;
+    ylim([-100 100]);
+    title('Cross track error');
+    ylabel('Distance [m]');
+    xlabel('Time [s]');
+    legend('Cross track error')
 end
 
 % figure(4)
