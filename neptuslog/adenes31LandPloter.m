@@ -18,12 +18,12 @@ coop = false;
 
 %% 31 mai test 1
 % filename = 'Agdenes_31mai/land/102726_landFBWA/mra/Data';
-filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
+% filename = 'Agdenes_31mai/land/103029_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/103344_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/105034_landFBWA/mra/Data';
 
 %% 31 mai test 2
-% filename = 'Agdenes_31mai/land/125420_landFBWA/mra/Data';
+filename = 'Agdenes_31mai/land/125420_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/125736_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/130234_landFBWA/mra/Data';
 % filename = 'Agdenes_31mai/land/130547_landFBWA/mra/Data';
@@ -141,6 +141,8 @@ else
     hold on;
     plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.base_height-state1.Estimated.z,'--b');
     plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),netHeight,'g');
+    %% Net passing 1 juni 083423
+%     state1.netPassign.timestamp = 70.857;
     plot(state1.netPassign.timestamp,153,'gx')
     % plot(state2.Estimated.timestamp-state2.Estimated.timestamp(1),state2.Estimated.base_height-state2.Estimated.z,'-b');
     % plot(state3.Estimated.timestamp-state3.Estimated.timestamp(1),state3.Estimated.base_height-state3.Estimated.z,'-b');
@@ -153,13 +155,32 @@ else
     plot(state1.PathState.timestamp-state1.PathState.timestamp(1),state1.PathState.crossTrack);
     grid on;
     ylim([-20 20]);
-    ylabel('Cross track error [m]');
+    ylabel('Error [m]');
     xlabel('Time [s]');
+    title('Cross track error');
     legend('Cross track error','Location','northwest')
     figure(5)
     plot(state1.PathState.timestamp-state1.PathState.timestamp(1),state1.PathState.alongtrack);
     grid on;
     figure(6)
+    subplot(2,1,1)
+    netHeight = ones(1,length(state1.DesiredHeight.timestamp))*153;
+    plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),state1.DesiredHeight.value,'r');
+    grid on;
+    hold on;
+    plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.base_height-state1.Estimated.z,'--b');
+    plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),netHeight,'g');
+    %% Net passing 1 juni 083423
+%     state1.netPassign.timestamp = 70.857;
+    plot(state1.netPassign.timestamp,153,'gx')
+    % plot(state2.Estimated.timestamp-state2.Estimated.timestamp(1),state2.Estimated.base_height-state2.Estimated.z,'-b');
+    % plot(state3.Estimated.timestamp-state3.Estimated.timestamp(1),state3.Estimated.base_height-state3.Estimated.z,'-b');
+    % plot(state4.Estimated.timestamp-state4.Estimated.timestamp(1),state4.Estimated.base_height-state4.Estimated.z,'-b');
+
+    ylabel('Height (WGS84) [m]');
+    xlabel('Time [s]');
+    legend('Desired height','UAV height','Net center height','UAV passed net');
+    subplot(2,1,2)
     plot(state1.DesiredPitch.timestamp-state1.DesiredPitch.timestamp(1),state1.DesiredPitch.value*rad2deg);
     hold on;
     plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.theta*rad2deg,'--r')
@@ -196,11 +217,35 @@ else
     subplot(2,1,2)
     plot(state1.PathState.timestamp-state1.PathState.timestamp(1),state1.PathState.crossTrack);
     grid on;
-    ylim([-100 100]);
+    ylim([-30 30]);
     title('Cross track error');
     ylabel('Distance [m]');
     xlabel('Time [s]');
     legend('Cross track error')
+    figure(10)
+    subplot(2,1,1)
+    plot(Path1.PathY,Path1.PathX,'g');
+    hold on;
+    grid on;
+%     plot(Path1.PathY(1),Path1.PathX(1),'co');
+%     plot(0,0,'rx');
+    plot(state1.Estimated.PathE,state1.Estimated.PathN,'b--');
+    % plot(state2.Estimated.PathE,state2.Estimated.PathN,'b--');
+    % plot(state3.Estimated.PathE,state3.Estimated.PathN,'b--');
+    % plot(state4.Estimated.PathE,state4.Estimated.PathN,'b--');
+    legend('Landing plan','UAV flight path','Location','northwest');
+%     legend('Landing plan','Start position','Net position','UAV flight path','Location','northwest');
+    ylabel('North [m]');
+    xlabel('East [m]');
+    subplot(2,1,2)
+    plot(state1.DesiredRoll.timestamp-state1.DesiredRoll.timestamp(1),state1.DesiredRoll.value*rad2deg);
+    hold on;
+    grid on;
+    plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.phi*rad2deg,'--r');
+    xlabel('Time [s]');
+    ylabel('Angle [deg]')
+    legend('\phi_d','\phi');
+    title('Desired and acutal roll of the UAV')
 end
 
 % figure(4)

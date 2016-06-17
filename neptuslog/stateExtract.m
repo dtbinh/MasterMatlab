@@ -210,7 +210,9 @@ for (i=1:length(PathControlState.timestamp))
 end
 %% Find net passing time
 j = length(PathState.alongtrack);
+PathState.alongtrack
 while PathState.alongtrack(j)<80
+    PathState.alongtrack(j)
     j = j-1;
 end
 netPassing = struct;
