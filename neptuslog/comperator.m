@@ -42,6 +42,7 @@ plot(state1.Rtk.timestamp-state1.Rtk.timestamp(1),state1.Rtk.type);
 legend('RTK-GNSS','UAV navigation source')
 ylabel(gca,'RTKGNSS solution type');
 set(gca,'Box','off','YTick',[0 2 3],'YTickLabel',{'NONE', 'FLOAT', 'FIX'});
+grid on;
 figure(2)
 subplot(3,1,1);
 plot(state1.comp.x.Time-state1.comp.x.Time(1),state1.comp.x.Data(:));

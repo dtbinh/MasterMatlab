@@ -26,6 +26,7 @@ HNewAxes = axes('Position',axesPosition,...
             'XTick',[],...
             'Box','off');
 ylabel(HNewAxes,'Navigation source');
+grid on;
 figure(3)
 plot(state.Estimated.timestamp-state.Estimated.timestamp(1),state.Estimated.base_height-state.Estimated.z)
 hold on;

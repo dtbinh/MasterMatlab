@@ -15,16 +15,16 @@ Hardware = false; % RTK was available
 % [WP2X, WP2Y, WP2Z] = ecef2ned(WP2X,WP2Y,WP2Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
 % [WP1X, WP1Y, WP1Z] = ecef2ned(WP1X,WP1Y,WP1Z,PathDubins.lat,PathDubins.lon,PathDubins.z,wgs84Ellipsoid);
 
-% filename = 'X8SIL06juni/090145_landFBWA_BenchmarkTest/mra/data';
+filename = 'X8SIL06juni/090145_landFBWA_BenchmarkTest/mra/data';
 % filename = 'X8SIL06juni/090557_landFBWA_BenchmarkTest/mra/data';
 % filename = 'X8SIL06juni/090859_landFBWA_BenchmarkTest/mra/data';
 % filename = 'X8SIL06juni/091119_landFBWA_BenchmarkTest/mra/data';
 % filename = 'X8SIL06juni/091542_landFBWA_BenchmarkTest/mra/data';
-filename = 'X8SIL06juni/092307_landFBWASpiral/mra/data';
+% filename = 'X8SIL06juni/092307_landFBWASpiral/mra/data';
 
-
-Path1 = pathExtract(filename);
-state1 = stateExtract(Hardware,Path1,filename);
+cooperativ = false;
+Path1 = pathExtract(filename,cooperativ);
+state1 = stateExtract(Hardware,Path1,filename,cooperativ);
 % plotFigures;
 
 % filename =  'Agdenes2405/133227_land/mra/Data';
@@ -70,17 +70,19 @@ ylabel('North [m]');
 xlabel('East [m]');
 zlabel('Height from net [m]')
 figure(3)
-plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),state1.DesiredHeight.value,'r');
-grid on;
-hold on;
-plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.base_height-state1.Estimated.z,'--b');
-% plot(state2.Estimated.timestamp-state2.Estimated.timestamp(1),state2.Estimated.base_height-state2.Estimated.z,'-b');
-% plot(state3.Estimated.timestamp-state3.Estimated.timestamp(1),state3.Estimated.base_height-state3.Estimated.z,'-b');
-% plot(state4.Estimated.timestamp-state4.Estimated.timestamp(1),state4.Estimated.base_height-state4.Estimated.z,'-b');
-
-ylabel('Height (WGS84) [m]');
-xlabel('Time [s]');
-legend('Desired height','UAV height');
+netHeight = ones(1,length(state1.DesiredHeight.timestamp))*153;
+    plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),state1.DesiredHeight.value,'r');
+    grid on;
+    hold on;
+    plot(state1.Estimated.timestamp-state1.Estimated.timestamp(1),state1.Estimated.base_height-state1.Estimated.z,'--b');
+    plot(state1.DesiredHeight.timestamp-state1.DesiredHeight.timestamp(1),netHeight,'g');
+    %% Net passing 1 juni 083423
+%     state1.netPassign.timestamp = 70.857;
+    plot(state1.netPassign.timestamp,153,'gx')
+    
+    ylabel('Height (WGS84) [m]');
+    xlabel('Time [s]');
+    legend('Desired height','UAV height','Net center height','UAV passed net');
 figure(4)
 plot(state1.PathState.timestamp-state1.PathState.timestamp(1),state1.PathState.crossTrack);
 grid on;

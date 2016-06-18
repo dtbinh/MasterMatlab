@@ -135,6 +135,7 @@ end
 state.Estimated = Estimated;
 
 %% Extract exernal
+if (Hardware)
 External = struct;
 sizeOfExternal = length(ExternalNavData.state);
 External.x = zeros(1,sizeOfExternal);
@@ -170,6 +171,7 @@ comp.x = tempRTKN-tempEXTN;
 comp.y = tempRTKE-tempEXTE;
 comp.z = tempRTKD-tempEXTD;
 state.comp = comp;
+end
 %% Extract path state
 
 PathState = struct;
