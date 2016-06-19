@@ -250,6 +250,6 @@ title('Dubins path');
 xlabel('East [m]');
 ylabel('North [m]');
 grid on;
-legend('Path','Start pose','Finish pose','Exit tangent point on start circle','Entry tangent point on finish cricle');
+legend('Path','Start pose','Finish pose','Exit tangent point on start circle','Entry tangent point on finish circle');
 
 end

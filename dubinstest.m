@@ -15,10 +15,10 @@ a1 = 100;
 a2 = 300;
 a3 = 10;
 Rl = 75;
-nettH = 20*deg2rad;
+nettH = 60*deg2rad;
 
 %% UAV init poses in NED frame
-x0 = [100 1000 -50 0 0 0*deg2rad]';
+x0 = [500 50 -50 0 0 0*deg2rad]';
 p0 = x0(1:2);
 p01 = p0 +[2*cos(x0(6)*deg2rad);2*sin(x0(6)*deg2rad)];
 p01 = 10*(p01/norm(p01));
